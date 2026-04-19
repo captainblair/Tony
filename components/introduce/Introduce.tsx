@@ -17,8 +17,8 @@ const divisor = 1000 * 60 * 60 * 24 * 365.2421897
 export const Introduce: React.FC = () => {
     const data = useSiteData()
 
-    const [myAge, setMyAge] = React.useState<string>('')
-    const [myExp, setMyExp] = React.useState<string>('')
+    const [myAge, setMyAge] = React.useState<string>('000')
+    const [myExp, setMyExp] = React.useState<string>('000')
 
     const expTime = useMemo(() => {
         const firstDate = data?.experience?.[0]?.period ? findEarliestDate(data.experience) : null
