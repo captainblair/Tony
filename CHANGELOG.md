@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.2
+
+### Patch Changes
+
+- Set default age/exp in `Introduce.tsx` to fix hydration mismatch and prevent NaN display on first render
+- Bumped dependencies
+
 ## 2.0.1
 
 ### Patch Changes
