@@ -28,8 +28,8 @@
             "link": "https://t.me/miksoft"
         },
         {
-            "icon": "facebook",
-            "label": "Facebook",
+            "icon": "social",
+            "label": "Social",
             "link": "https://facebook.com/miksoft.pro"
         },
         {
@@ -42,37 +42,85 @@
         {
             "group": "Frontend Engineering",
             "skills": [
-                { "name": "TypeScript", "level": 90 },
-                { "name": "React / Next.js", "level": 92 },
-                { "name": "Redux", "level": 85 },
-                { "name": "UI Architecture", "level": 88 }
+                {
+                    "name": "TypeScript",
+                    "level": 90
+                },
+                {
+                    "name": "React / Next.js",
+                    "level": 92
+                },
+                {
+                    "name": "Redux",
+                    "level": 85
+                },
+                {
+                    "name": "UI Architecture",
+                    "level": 88
+                }
             ]
         },
         {
             "group": "Backend & APIs",
             "skills": [
-                { "name": "Node.js", "level": 80 },
-                { "name": "PHP / Laravel", "level": 85 },
-                { "name": "Python", "level": 70 },
-                { "name": "System Design", "level": 92 }
+                {
+                    "name": "Node.js",
+                    "level": 80
+                },
+                {
+                    "name": "PHP / Laravel",
+                    "level": 85
+                },
+                {
+                    "name": "Python",
+                    "level": 70
+                },
+                {
+                    "name": "System Design",
+                    "level": 92
+                }
             ]
         },
         {
             "group": "Infrastructure & DevOps",
             "skills": [
-                { "name": "Linux", "level": 90 },
-                { "name": "Docker", "level": 75 },
-                { "name": "CI/CD", "level": 90 },
-                { "name": "SQL & Databases", "level": 82 }
+                {
+                    "name": "Linux",
+                    "level": 90
+                },
+                {
+                    "name": "Docker",
+                    "level": 75
+                },
+                {
+                    "name": "CI/CD",
+                    "level": 90
+                },
+                {
+                    "name": "SQL & Databases",
+                    "level": 82
+                }
             ]
         },
         {
             "group": "AI & Automation",
             "skills": [
-                { "name": "LLM Integration", "level": 75 },
-                { "name": "AI Features", "level": 72 },
-                { "name": "Prompt Engineering", "level": 70 },
-                { "name": "Workflow Automation", "level": 82 }
+                {
+                    "name": "LLM Integration",
+                    "level": 75
+                },
+                {
+                    "name": "AI Features",
+                    "level": 72
+                },
+                {
+                    "name": "Prompt Engineering",
+                    "level": 70
+                },
+                {
+                    "name": "Workflow Automation",
+                    "level": 82
+                }
             ]
         }
     ],

@@ -3,7 +3,7 @@ export const iconNames = {
     github: 'github',
     linkedin: 'linkedin',
     web: 'web',
-    facebook: 'facebook',
+    social: 'social',
     left: 'left',
     right: 'right',
     sun: 'sun',
