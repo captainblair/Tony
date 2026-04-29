@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { type GetStaticProps } from 'next'
 import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo'
 
@@ -19,7 +18,6 @@ import {
     Stats
 } from '@/components'
 import { GithubDataProvider, useSiteData } from '@/utils'
-import { fetchGithubData, type GithubData } from '@/utils/github-fetch'
 
 import styles from './styles/index.module.sass'
 
@@ -35,15 +33,11 @@ const GithubCalendar = dynamic(() => import('@/components/github-calendar/Github
     ssr: false
 })
 
-type MainPageProps = {
-    githubData: GithubData
-}
-
-const MainPage: React.FC<MainPageProps> = ({ githubData }) => {
+const MainPage: React.FC = () => {
     const data = useSiteData()
 
     return (
-        <GithubDataProvider data={githubData}>
+        <GithubDataProvider>
             <NextSeo
                 title={data?.seo?.index?.title}
                 description={data?.seo?.index?.description}
@@ -138,12 +132,6 @@ const MainPage: React.FC<MainPageProps> = ({ githubData }) => {
             </div>
         </GithubDataProvider>
     )
-}
-
-export const getStaticProps: GetStaticProps<MainPageProps> = async () => {
-    const githubData = await fetchGithubData()
-
-    return { props: { githubData } }
 }
 
 export default MainPage
