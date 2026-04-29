@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.3
+
+### Patch Changes
+
+- Fetch GitHub data inside provider
+- Rename facebook icon to social and update SVG
+
 ## 2.0.2
 
 ### Patch Changes
