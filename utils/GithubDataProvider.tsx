@@ -8,7 +8,9 @@ export const GithubDataProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     const [data, setData] = useState<GithubData | null>(null)
 
     useEffect(() => {
-        fetchGithubData().then(setData).catch(() => {})
+        fetchGithubData()
+            .then(setData)
+            .catch(() => {})
     }, [])
 
     return <GithubDataContext.Provider value={data}>{children}</GithubDataContext.Provider>
