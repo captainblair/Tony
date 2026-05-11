@@ -62,7 +62,7 @@ Current layout is desktop-centric (800px container, no hamburger menu).
 
 Current hero is functional but minimal. Make it more impactful:
 
-- Larger avatar with subtle ring/glow animation using `--highlight-color`
+- Larger tony with subtle ring/glow animation using `--highlight-color`
 - Typing animation for the title ("Software Architect & Tech Lead") — use `framer-motion` or CSS
 - Animated gradient or particle effect in background (keep `StarField` or augment it)
 - Prominent CTA buttons: "View My Work" (scrolls to projects) + "Download CV" (PDF)
@@ -151,9 +151,9 @@ Add a minimal footer:
 
 ### 5.1 Image optimization ✅
 
-- ✅ Convert `photo.jpg` (About component) and `avatar.jpg` to `.webp` (avatar: 207KB → 76KB)
+- ✅ Convert `photo.jpg` (About component) and `tony.jpg` to `.webp` (tony: 207KB → 76KB)
 - ✅ Project images already `.webp`
-- ✅ Add `sizes` attribute and `priority` to avatar `next/image` in Introduce
+- ✅ Add `sizes` attribute and `priority` to tony `next/image` in Introduce
 - ✅ Jest config updated to mock `.webp` imports
 
 ### 5.2 Loading states ✅

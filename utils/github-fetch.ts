@@ -44,7 +44,7 @@ export interface GithubData {
 
 // ── Constants ──────────────────────────────────────────────────────────────────
 
-const GITHUB_USERNAME = process.env.GITHUB_USERNAME ?? 'miksrv'
+const GITHUB_USERNAME = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? 'captainblair'
 const CONTRIBUTIONS_PROXY = `https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}`
 const GITHUB_API = 'https://api.github.com'
 

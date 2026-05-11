@@ -49,7 +49,7 @@ Dark theme (`--body-background: #1b1b1b`) with golden accent (`--highlight-color
 | Component        | Purpose                                                                  |
 | ---------------- | ------------------------------------------------------------------------ |
 | `Header`         | Navigation bar with active link state                                    |
-| `Introduce`      | Hero section: avatar, name, live age/exp counters, contact links         |
+| `Introduce`      | Hero section: tony, name, live age/exp counters, contact links         |
 | `About`          | Bio section with photo and paragraphs                                    |
 | `GithubActivity` | GitHub calendar (dynamic import, ssr: false)                             |
 | `Projects`       | Project cards with images, links, GitHub links                           |

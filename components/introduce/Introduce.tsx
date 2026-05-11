@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Icon, IconTypes } from '@/components'
-import avatarPic from '@/public/avatar.webp'
+import tonyPic from '@/public/tony.jpeg'
 import { update } from '@/update'
 import { useSiteData } from '@/utils'
 
@@ -50,19 +50,19 @@ export const Introduce: React.FC = () => {
 
     return (
         <section className={styles.introduceSection}>
-            {/* Avatar with animated glow ring */}
-            <div className={styles.avatarWrapper}>
+            {/* tony with animated glow ring */}
+            <div className={styles.tonyWrapper}>
                 <div
-                    className={styles.avatarGlow}
+                    className={styles.tonyGlow}
                     aria-hidden={'true'}
                 />
-                <div className={styles.avatarContainer}>
+                <div className={styles.tonyContainer}>
                     <Image
-                        src={avatarPic}
+                        src={tonyPic}
                         fill
                         sizes={'(max-width: 768px) 240px, 45vw'}
                         style={{ objectFit: 'cover' }}
-                        alt={"Hi I'm - Misha - Picture of the author"}
+                        alt={"Hi I'm -Tony - Picture of the author"}
                         priority
                     />
                 </div>
@@ -136,14 +136,11 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.description}>
                     <p>
-                        {'I design systems, define'} <b>{'technical direction'}</b>
-                        {', and lead engineering teams through complete delivery cycles — from the first'}{' '}
-                        <b>{'architecture decision'}</b> {'to live production at scale.'}
+                        {'I build full-stack applications and backend systems using'} <b>{'Python, Django'}</b>
+                        {', and modern web technologies. I focus on turning ideas into functional products, from initial design to working deployments.'}
                     </p>
                     <p>
-                        {
-                            '19+ years of end-to-end ownership across government, media, and tech. I take products from 0 to launch and build the teams that sustain them.'
-                        }
+                        {'I have hands-on experience building real projects including web applications, APIs, and system-based solutions, with a strong focus on'} <b>{'clean code'}</b>{', databases, and practical software engineering.'}
                     </p>
                 </div>
 

@@ -45,7 +45,7 @@ const MainPage: React.FC = () => {
                     images: [
                         {
                             height: 1333,
-                            url: 'https://miksoft.pro/avatar.webp',
+                            url: 'https://miksoft.pro/tony.jpeg',
                             width: 1000
                         }
                     ],

@@ -43,12 +43,12 @@
 - Added `Footer` component with styles and tests
 - Added `Stats` component displaying key profile statistics
 - Added expandable timeline and tag UI to `Experience` component
-- Enhanced `Introduce` section: avatar glow effect, live counters, and CTA buttons
+- Enhanced `Introduce` section: tony glow effect, live counters, and CTA buttons
 - Added image overlay and refactored styles in `Projects` component
 - Added JSON-LD structured data (`Person` schema) injected in `_document.tsx`
 - Added skip-to-content accessibility link and `reportWebVitals` logging in `_app.tsx`
 - Added Yandex.Metrika analytics loaded via `next/script`
-- Switched avatar image to WebP format and updated public images
+- Switched tony image to WebP format and updated public images
 - Hidden header, footer, and print resume on 404 pages
 - Bumped dependencies and switched TypeScript `moduleResolution` to `bundler`
 
@@ -215,7 +215,7 @@
 - Updated UI libraries
 - Created function cn (concat class names)
 - Improved CSS
-- Added favicon
+- Added t-icon.jpg
 - Fixed code-style
 
 ## 1.1.6

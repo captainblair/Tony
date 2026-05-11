@@ -47,25 +47,25 @@ const App = ({ Component, pageProps }: AppProps) => {
                     content={'#1b1b1b'}
                 />
                 <link
-                    rel={'apple-touch-icon'}
+                    rel={'t-icon.jpg'}
                     sizes={'180x180'}
-                    href={'/apple-touch-icon.png'}
+                    href={'/t-icon.jpg.png'}
                 />
                 <link
                     rel={'icon'}
                     type={'image/png'}
                     sizes={'32x32'}
-                    href={'/favicon-32x32.png'}
+                    href={'/t-icon.jpg-32x32.png'}
                 />
                 <link
                     rel={'icon'}
                     type={'image/png'}
                     sizes={'16x16'}
-                    href={'/favicon-16x16.png'}
+                    href={'/t-icon.jpg-16x16.png'}
                 />
                 <link
                     rel={'icon'}
-                    href={'/favicon.ico'}
+                    href={'/t-icon.jpg.ico'}
                     type={'image/x-icon'}
                 />
                 <link

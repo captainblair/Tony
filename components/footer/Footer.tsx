@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
                 <span className={styles.copyright}>
                     {'© '}
                     {new Date().getFullYear()}
-                    {' Misha. Built with '}
+                    {'Tony. Built with '}
                     <span>{'Next.js'}</span>
                     {' & '}
                     <span>{'TypeScript'}</span>

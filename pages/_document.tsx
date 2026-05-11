@@ -8,7 +8,7 @@ const jsonLd = {
     name: data.biography.name,
     jobTitle: data.biography.title,
     url: 'https://miksoft.pro',
-    image: 'https://miksoft.pro/avatar.webp',
+    image: 'https://miksoft.pro/tony.jpeg',
     address: {
         '@type': 'PostalAddress',
         addressLocality: data.biography.location

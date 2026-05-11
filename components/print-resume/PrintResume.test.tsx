@@ -4,9 +4,9 @@ import { render, screen } from '@testing-library/react'
 
 import { PrintResume } from './PrintResume'
 
-jest.mock('@/public/avatar.webp', () => ({
+jest.mock('@/public/tony.jpeg', () => ({
     __esModule: true,
-    default: 'mocked-avatar.webp'
+    default: 'mocked-tony.jpeg'
 }))
 
 jest.mock('@/utils', () => ({
@@ -167,13 +167,13 @@ describe('PrintResume', () => {
         expect(widths).toContain('80%')
     })
 
-    it('renders the avatar image with the biography name as alt text', () => {
+    it('renders the tony image with the biography name as alt text', () => {
         render(<PrintResume />)
         const images = screen.getAllByTestId('project-image')
         expect(images[0]).toHaveAttribute('alt', 'John Doe')
     })
 
-    it('falls back to "Photo" as avatar alt text when biography name is absent', () => {
+    it('falls back to "Photo" as tony alt text when biography name is absent', () => {
         // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
         jest.spyOn(require('@/utils'), 'useSiteData').mockReturnValue({
             biography: { title: 'Developer', location: 'Remote' }
