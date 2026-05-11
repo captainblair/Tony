@@ -9,10 +9,30 @@
 
     --container-width: 960px;
 
-    --body-background: #1b1b1b;
-    --container-background: #2c2d2e;
+    --body-background: #f0f2f5;
+    --container-background: #ffffff;
 
     --border-radius: 4px;
+
+    --text-color-primary: #1a1a1a;
+    --text-color-secondary: #4a4a4e;
+    --text-color-third: #6a6c6e;
+
+    --box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+
+    --btn-ghost-bg: rgba(0, 0, 0, 0.04);
+    --btn-ghost-bg-hover: rgba(0, 0, 0, 0.08);
+    --btn-ghost-border: rgba(0, 0, 0, 0.12);
+
+    --header-scrolled-bg: rgba(240, 242, 245, 0.88);
+    --header-scrolled-border: rgba(0, 0, 0, 0.08);
+    --mobile-menu-bg: rgba(248, 249, 250, 0.97);
+    --mobile-menu-border: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+    --body-background: #1b1b1b;
+    --container-background: #2c2d2e;
 
     --text-color-primary: #e1e3e6;
     --text-color-secondary: #a5a5a9;

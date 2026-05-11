@@ -13,13 +13,13 @@ const ThemeContext = createContext<ThemeContextValue>({
 })
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [theme, setTheme] = useState<Theme>('dark')
+    const [theme, setTheme] = useState<Theme>('light')
 
     useEffect(() => {
-        const stored = document.documentElement.getAttribute('data-theme') as Theme | null
-        if (stored === 'light' || stored === 'dark') {
-            setTheme(stored)
-        }
+        const stored = localStorage.getItem('theme') as Theme | null
+        const initial = stored === 'light' || stored === 'dark' ? stored : 'light'
+        setTheme(initial)
+        document.documentElement.setAttribute('data-theme', initial)
     }, [])
 
     const toggleTheme = () => {
