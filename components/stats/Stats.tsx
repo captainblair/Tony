@@ -61,7 +61,7 @@ export const Stats: React.FC = () => {
     }, [githubData?.contributions?.contributions])
 
     const statItems = [
-        { delay: 0, label: 'Years of experience', suffix: '+', value: yearsExp },
+        { delay: 0, label: 'Years of experience', suffix: '+', value: 2 },
         { delay: 0.15, label: 'Roles & companies', value: 1 },
         { delay: 0.3, label: 'Pet projects', value: data?.projects?.length ?? 0 }
     ]
