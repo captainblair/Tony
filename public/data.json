@@ -115,7 +115,7 @@
                 },
                 {
                     "name": "Workflow Automation",
-                    "level": 82
+                    "level": 80
                 }
             ]
         }
@@ -161,6 +161,27 @@
                     "stack": ["Git", "GitHub", "Virtual Environments (venv)", "XAMPP"]
                 }
             ]
+            
+        },
+         {
+            "period": ["01/01/20"],
+            "role": "Freelance Full Stack Developer",
+            "duties": "Designing and developing web applications across the full stack, handling both frontend interfaces and backend systems. Building structured, maintainable applications with attention to performance, usability, and reliable data management.",
+            "skills": [
+                {
+                    "area": "Frontend",
+                    "stack": ["JavaScript", "HTML5", "CSS3", "Tailwind CSS"]
+                },
+                {
+                    "area": "Backend",
+                    "stack": ["Python", "Django", "Flask", "REST API", "MySQL"]
+                },
+                {
+                    "area": "Tools & Workflow",
+                    "stack": ["Git", "GitHub", "Virtual Environments (venv)", "XAMPP"]
+                }
+            ]
+            
         }
     ],
     "seo": {

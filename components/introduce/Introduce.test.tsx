@@ -9,6 +9,7 @@ import { Introduce } from './Introduce'
 
 import '@testing-library/jest-dom'
 
+
 jest.mock('next/image', () => ({
     __esModule: true,
     // eslint-disable-next-line next/no-img-element
@@ -100,6 +101,7 @@ describe('Introduce Component', () => {
         expect(screen.getByText('Experience')).toBeInTheDocument()
     })
 
+    
     it('renders CTA buttons', () => {
         render(<Introduce />)
         expect(screen.getByText('View My Work')).toBeInTheDocument()
@@ -107,3 +109,5 @@ describe('Introduce Component', () => {
         expect(screen.getByText('Contact Me')).toBeInTheDocument()
     })
 })
+
+
