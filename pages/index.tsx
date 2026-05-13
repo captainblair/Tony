@@ -45,12 +45,12 @@ const MainPage: React.FC = () => {
                     images: [
                         {
                             height: 1333,
-                            url: 'https://miksoft.pro/tony.jpeg',
+                            url: 'https://tony.vercel.app/tony.jpeg',
                             width: 1000
                         }
                     ],
                     locale: 'en-US',
-                    siteName: 'miksoft.pro'
+                    siteName: 'Tony Wangolo'
                 }}
             />
 

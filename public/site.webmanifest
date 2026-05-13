@@ -1,6 +1,6 @@
 {
-   "name":"Misha Portfolio",
-   "short_name":"Portfolio",
+   "name":"Tony Wangolo Portfolio",
+   "short_name":"Tony",
    "icons":[
       {
          "src":"/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
          "type":"image/png"
       }
    ],
-   "theme_color":"#1b1b1b",
-   "background_color":"#1b1b1b",
+   "theme_color":"#f0f2f5",
+   "background_color":"#f0f2f5",
    "display":"standalone"
 }

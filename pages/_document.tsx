@@ -7,8 +7,8 @@ const jsonLd = {
     '@type': 'Person',
     name: data.biography.name,
     jobTitle: data.biography.title,
-    url: 'https://miksoft.pro',
-    image: 'https://miksoft.pro/tony.jpeg',
+    url: 'https://tony.vercel.app',
+    image: 'https://tony.vercel.app/tony.jpeg',
     address: {
         '@type': 'PostalAddress',
         addressLocality: data.biography.location
