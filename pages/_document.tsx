@@ -24,6 +24,14 @@ export default function Document() {
                     rel={'preconnect'}
                     href={'https://api.github.com'}
                 />
+                <link
+                    rel={'icon'}
+                    href={'/t-icon.jpg'}
+                />
+                <link
+                    rel={'apple-touch-icon'}
+                    href={'/t-icon.jpg'}
+                />
                 {/* Prevent flash of wrong theme — runs before React hydrates */}
                 <script
                     dangerouslySetInnerHTML={{
