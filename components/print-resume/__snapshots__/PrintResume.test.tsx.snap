@@ -9,20 +9,20 @@ exports[`PrintResume matches snapshot 1`] = `
     <div>
       <div>
         <img
-          alt="John Doe"
+          alt="Tony Wangolo Inganga"
           data-testid="project-image"
           src="mocked-tony.jpeg"
         />
       </div>
       <div>
         <h1>
-          John Doe
+          Tony Wangolo Inganga
         </h1>
         <p>
           Software Engineer
         </p>
         <p>
-          New York, USA
+          Nairobi, Kenya | +254 111 414 441 | wangolotony4@gmail.com
         </p>
         <ul>
           <li>
@@ -31,7 +31,7 @@ exports[`PrintResume matches snapshot 1`] = `
             </span>
              
             <span>
-              https://github.com/johndoe
+              github.com/captainblair
             </span>
           </li>
           <li>
@@ -40,114 +40,171 @@ exports[`PrintResume matches snapshot 1`] = `
             </span>
              
             <span>
-              https://linkedin.com/in/johndoe
+              linkedin.com/in/tony-wangolo-545b23285
+            </span>
+          </li>
+          <li>
+            <span>
+              X:
+            </span>
+             
+            <span>
+              x.com/Tony_Blair01
             </span>
           </li>
         </ul>
       </div>
     </div>
     <p>
-      Experienced full-stack developer with 10+ years.
+      Highly motivated Full Stack Software Engineer with a strong foundation in backend development and system architecture. Proven ability to design and deploy scalable web applications using Python, PHP, Django, and Flask. Experienced in building RESTful APIs, managing MySQL databases, and collaborating in Agile environments to deliver secure, efficient, and user-focused software solutions.
     </p>
     <div>
       <div>
         <h2>
-          Experience
+          Professional Experience
         </h2>
         <div>
           <div>
             <span>
-              Jan 2020 – Dec 2022
-            </span>
-            <span>
-              2 yrs 11 mos
+              January 2026 – Present
             </span>
           </div>
           <h3>
-            Senior Developer
+            ICT Lead 
+            <span>
+              | ODM Comrades Chapter
+            </span>
           </h3>
           <p>
-            Led development of web applications.
+            Spearheaded the engineering and development of a centralized digital system used by the chapter to support student registration across multiple universities. Managed large-scale user data to improve operational efficiency and streamline organizational workflows.
           </p>
-          <ul>
-            <li>
-              <strong>
-                Frontend:
-              </strong>
-               React, TypeScript
-            </li>
-            <li>
-              <strong>
-                Backend:
-              </strong>
-               Node.js, PostgreSQL
-            </li>
-          </ul>
         </div>
         <div>
           <div>
             <span>
-              Jun 2018 – Present
-            </span>
-            <span>
-              7 yrs 10 mos
+              2024 – Present
             </span>
           </div>
           <h3>
-            Junior Developer
+            Freelance Full Stack Developer 
+            <span>
+              | Remote
+            </span>
           </h3>
           <p>
-            Assisted in building REST APIs.
+            Developed and deployed full-stack web applications using Python, Flask/Django, Streamlit, and MySQL, focusing on authentication systems, database design, and scalable backend architecture. Built and integrated user-centric platforms supporting data management, registration systems, and service-based matching systems. Contributed to systems involving data analysis and machine learning integration for real-world applications including prediction models and decision-support tools.
+          </p>
+        </div>
+        <div>
+          <div>
+            <span>
+              2024 – Present
+            </span>
+          </div>
+          <h3>
+            Volunteer Computer Skills Trainer 
+            <span>
+              | LEA Organization
+            </span>
+          </h3>
+          <p>
+            Empowered community members by teaching digital literacy, foundational programming concepts, and version control using Git and GitHub. Facilitated technical workshops to build proficiency in modern office tools and web development fundamentals.
+          </p>
+        </div>
+        <h2>
+          Education
+        </h2>
+        <div>
+          <div>
+            <span>
+              Expected Graduation: 2027
+            </span>
+          </div>
+          <h3>
+            Bachelor of Technology: Communications and Computer Networks
+          </h3>
+          <p>
+            Technical University of Kenya
+          </p>
+        </div>
+        <div>
+          <div>
+            <span>
+              Graduated
+            </span>
+          </div>
+          <h3>
+            Professional Backend Web Development
+          </h3>
+          <p>
+            ALX Africa
+          </p>
+        </div>
+        <div>
+          <div>
+            <span>
+              Graduated
+            </span>
+          </div>
+          <h3>
+            Backend Web Development
+          </h3>
+          <p>
+            ALX Africa
           </p>
         </div>
       </div>
       <div>
         <h2>
-          Skills
+          Technical Skills
         </h2>
         <div>
           <h3>
-            Frontend
+            Languages
           </h3>
-          <ul>
-            <li>
-              <span>
-                React
-              </span>
-              <span>
-                <span
-                  style="width: 90%;"
-                />
-              </span>
-            </li>
-            <li>
-              <span>
-                TypeScript
-              </span>
-              <span>
-                <span
-                  style="width: 85%;"
-                />
-              </span>
-            </li>
-          </ul>
+          <p>
+            Python · PHP · HTML5 · CSS3 · JavaScript · TypeScript
+          </p>
         </div>
         <div>
           <h3>
-            Backend
+            Frameworks
           </h3>
-          <ul>
-            <li>
-              <span>
-                Node.js
-              </span>
-              <span>
-                <span
-                  style="width: 80%;"
-                />
-              </span>
-            </li>
-          </ul>
+          <p>
+            Django · Flask · Laravel · React · Redux · SASS · TailwindCSS · Streamlit
+          </p>
+        </div>
+        <div>
+          <h3>
+            Databases
+          </h3>
+          <p>
+            MySQL · SQL Server
+          </p>
+        </div>
+        <div>
+          <h3>
+            Infrastructure
+          </h3>
+          <p>
+            Docker · Git · Jenkins · Linux · GitHub Actions
+          </p>
+        </div>
+        <div>
+          <h3>
+            Tools & DevOps
+          </h3>
+          <p>
+            RESTful APIs · XAMPP · venv / pip · PythonAnywhere
+          </p>
+        </div>
+        <div>
+          <h3>
+            Core Competencies
+          </h3>
+          <p>
+            System Architecture · RBAC · Data Analysis · Technical Training · Leadership
+          </p>
         </div>
       </div>
     </div>

@@ -8,16 +8,22 @@ import styles from './styles.module.sass'
 
 const SKILLS = [
     { group: 'Languages', items: ['Python', 'PHP', 'HTML5', 'CSS3', 'JavaScript', 'TypeScript'] },
-    { group: 'Frameworks', items: ['Django', 'Flask', 'Laravel', 'React', 'Redux', 'SASS', 'TailwindCSS', 'Streamlit'] },
+    {
+        group: 'Frameworks',
+        items: ['Django', 'Flask', 'Laravel', 'React', 'Redux', 'SASS', 'TailwindCSS', 'Streamlit']
+    },
     { group: 'Databases', items: ['MySQL', 'SQL Server'] },
     { group: 'Infrastructure', items: ['Docker', 'Git', 'Jenkins', 'Linux', 'GitHub Actions'] },
     { group: 'Tools & DevOps', items: ['RESTful APIs', 'XAMPP', 'venv / pip', 'PythonAnywhere'] },
-    { group: 'Core Competencies', items: ['System Architecture', 'RBAC', 'Data Analysis', 'Technical Training', 'Leadership'] }
+    {
+        group: 'Core Competencies',
+        items: ['System Architecture', 'RBAC', 'Data Analysis', 'Technical Training', 'Leadership']
+    }
 ]
 
 const EXPERIENCE = [
     {
-        role: 'ICT Director',
+        role: 'ICT Lead',
         org: 'ODM Comrades Chapter',
         period: 'January 2026 – Present',
         duties: 'Spearheaded the engineering and development of a centralized digital system used by the chapter to support student registration across multiple universities. Managed large-scale user data to improve operational efficiency and streamline organizational workflows.'
@@ -71,18 +77,29 @@ export const PrintResume: React.FC = () => (
             </div>
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
-                <p className={styles.titleRole}>{'Software Engineer | ICT Director'}</p>
+                <p className={styles.titleRole}>{'Software Engineer'}</p>
                 <p className={styles.location}>{'Nairobi, Kenya | +254 111 414 441 | wangolotony4@gmail.com'}</p>
                 <ul className={styles.contactList}>
-                    <li><span className={styles.contactLabel}>{'GitHub:'}</span>{' '}<span className={styles.contactValue}>{'github.com/captainblair'}</span></li>
-                    <li><span className={styles.contactLabel}>{'LinkedIn:'}</span>{' '}<span className={styles.contactValue}>{'linkedin.com/in/tony-wangolo-545b23285'}</span></li>
-                    <li><span className={styles.contactLabel}>{'X:'}</span>{' '}<span className={styles.contactValue}>{'x.com/Tony_Blair01'}</span></li>
+                    <li>
+                        <span className={styles.contactLabel}>{'GitHub:'}</span>{' '}
+                        <span className={styles.contactValue}>{'github.com/captainblair'}</span>
+                    </li>
+                    <li>
+                        <span className={styles.contactLabel}>{'LinkedIn:'}</span>{' '}
+                        <span className={styles.contactValue}>{'linkedin.com/in/tony-wangolo-545b23285'}</span>
+                    </li>
+                    <li>
+                        <span className={styles.contactLabel}>{'X:'}</span>{' '}
+                        <span className={styles.contactValue}>{'x.com/Tony_Blair01'}</span>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <p className={styles.summary}>
-            {'Highly motivated Full Stack Software Engineer with a strong foundation in backend development and system architecture. Proven ability to design and deploy scalable web applications using Python, PHP, Django, and Flask. Experienced in building RESTful APIs, managing MySQL databases, and collaborating in Agile environments to deliver secure, efficient, and user-focused software solutions.'}
+            {
+                'Highly motivated Full Stack Software Engineer with a strong foundation in backend development and system architecture. Proven ability to design and deploy scalable web applications using Python, PHP, Django, and Flask. Experienced in building RESTful APIs, managing MySQL databases, and collaborating in Agile environments to deliver secure, efficient, and user-focused software solutions.'
+            }
         </p>
 
         <div className={styles.body}>
@@ -96,7 +113,13 @@ export const PrintResume: React.FC = () => (
                         <div className={styles.roleMeta}>
                             <span className={styles.period}>{item.period}</span>
                         </div>
-                        <h3 className={styles.roleTitle}>{item.role} <span className={styles.roleOrg}>{'| '}{item.org}</span></h3>
+                        <h3 className={styles.roleTitle}>
+                            {item.role}{' '}
+                            <span className={styles.roleOrg}>
+                                {'| '}
+                                {item.org}
+                            </span>
+                        </h3>
                         <p className={styles.duties}>{item.duties}</p>
                     </div>
                 ))}
