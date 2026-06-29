@@ -21,7 +21,10 @@
         max-width: var(--container-width)
         width: 100%
         margin: 0 auto
-        padding: 0
+        padding: 0 16px
+
+        @media screen and (max-width: variables.$mobileMaxWidth)
+            padding: 0 10px
 
 // Desktop navigation
 .desktopNav
@@ -38,7 +41,7 @@
     align-items: center
     justify-content: end
     gap: 4px
-    width: 100%
+    margin-left: auto
 
     @media screen and (max-width: variables.$mobileMaxWidth)
         justify-content: space-between

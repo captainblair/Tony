@@ -37,7 +37,7 @@ const EXPERIENCE = [
     {
         role: 'Volunteer Computer Skills Trainer',
         org: 'LEA Organization',
-        period: '2024 – Present',
+        period: '2024 – June 2026',
         duties: 'Empowered community members by teaching digital literacy, foundational programming concepts, and version control using Git and GitHub. Facilitated technical workshops to build proficiency in modern office tools and web development fundamentals.'
     }
 ]

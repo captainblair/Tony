@@ -9,8 +9,6 @@ import { PageTransition } from '@/components/page-transition'
 import { childVariants, parentVariants } from '@/components/page-transition/constants'
 import { useSiteData } from '@/utils'
 
-import { ProjectType } from './types'
-
 import styles from './styles.module.sass'
 
 export const Projects: React.FC = () => {
@@ -22,12 +20,36 @@ export const Projects: React.FC = () => {
                 parentVariants={parentVariants.slide}
                 childVariants={childVariants.slide}
             >
-                {data?.projects.map((item: ProjectType) => (
+                {data?.projects.map((item) => {
+                    const imageWidth = item.imageWidth ?? 176
+                    const imageHeight = item.imageHeight ?? 176
+                    const imageFit: 'cover' | 'contain' = item.imageFit === 'contain' ? 'contain' : 'cover'
+                    const imagePosition = item.imagePosition ?? 'center'
+                    const isLandscape = imageWidth > imageHeight
+
+                    const projectImage = (
+                        <Image
+                            src={item.image}
+                            alt={item.title}
+                            width={imageWidth}
+                            height={imageHeight}
+                            loading={'lazy'}
+                            style={{
+                                objectFit: imageFit,
+                                objectPosition: imagePosition
+                            }}
+                        />
+                    )
+
+                    return (
                     <div
                         key={`project-${item?.link ?? item?.title}`}
                         className={styles.item}
                     >
-                        <div className={styles.imageWrapper}>
+                        <div
+                            className={`${styles.imageWrapper}${isLandscape ? ` ${styles.imageWrapperLandscape}` : ''}`}
+                            style={{ width: imageWidth, height: imageHeight }}
+                        >
                             {item.link ? (
                                 <Link
                                     href={item.link}
@@ -37,22 +59,10 @@ export const Projects: React.FC = () => {
                                     tabIndex={-1}
                                     aria-hidden={'true'}
                                 >
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        width={176}
-                                        height={176}
-                                        loading={'lazy'}
-                                    />
+                                    {projectImage}
                                 </Link>
                             ) : (
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    width={176}
-                                    height={176}
-                                    loading={'lazy'}
-                                />
+                                projectImage
                             )}
                             {item.link && (
                                 <div
@@ -101,7 +111,8 @@ export const Projects: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                ))}
+                    )
+                })}
             </PageTransition>
         </section>
     )

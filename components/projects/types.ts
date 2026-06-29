@@ -4,4 +4,8 @@ export type ProjectType = {
     image: string
     github?: string
     description?: string
+    imageWidth?: number
+    imageHeight?: number
+    imageFit?: 'cover' | 'contain'
+    imagePosition?: string
 }

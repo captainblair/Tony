@@ -97,6 +97,14 @@
                 border: 1px solid rgba(255, 255, 255, 0.3)
                 border-radius: 4px
 
+    .imageWrapperLandscape
+        background-color: #0a1014
+
+        @media screen and (max-width: variables.$mobileMaxWidth)
+            width: 100% !important
+            height: auto !important
+            aspect-ratio: 16 / 9
+
     // ── Description ───────────────────────────────
     .description
         width: 100%

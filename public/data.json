@@ -4,7 +4,7 @@
         "title": "Full Stack Software Engineer",
         "location": "Nairobi, Kenya",
         "timezone": "East Africa Time (UTC+3)",
-        "birthDate": "2003-08-09T05:15:00",
+        "birthDate": "2003-08-16T05:15:00",
         "availableForWork": true,
         "bio": {
             "lead": "Full-stack developer focused on backend systems, building applications using Python, Django, and modern web technologies.",
@@ -129,11 +129,14 @@
             "description": "Collaborated on the engineering and development of a centralized digital platform used for large-scale student registration across multiple universities. Contributed to system design and data management to support high-volume usage and streamlined organizational workflows."
         },
         {
-            "image": "/images/vertex.png",
-            "title": "Vertex — Multi-Vendor E-Commerce Platform",
-            "link": "https://vertex-five-rosy.vercel.app/",
-            "github": "https://github.com/captainblair/vertex",
-            "description": "Designed and developed a high-end multi-vendor e-commerce platform with a strong focus on performance, user experience, and scalable architecture. Built a modern storefront experience with structured product management, dynamic interfaces, and secure checkout flows."
+            "image": "/images/trap.png",
+            "imageWidth": 220,
+            "imageHeight": 124,
+            "imageFit": "contain",
+            "imagePosition": "right center",
+            "title": "Traviona Consulting — Global Strategy, Insights & Talent Solutions",
+            "link": "https://travionaconsulting.top/",
+            "description": "Built a modern, professional platform for an international consulting firm specializing in business strategy, geopolitical intelligence, and global talent recruitment. Delivered a trustworthy digital presence with dynamic content, seamless user flows, and powerful tools for connecting organizations with top international professionals."
         },
         {
             "image": "/images/digitalleap.png",
