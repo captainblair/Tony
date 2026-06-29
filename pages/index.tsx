@@ -18,6 +18,7 @@ import {
     Stats
 } from '@/components'
 import { GithubDataProvider, useSiteData } from '@/utils'
+import { fetchGithubData, type GithubData } from '@/utils/github-fetch'
 
 import styles from './styles/index.module.sass'
 
@@ -33,11 +34,11 @@ const GithubCalendar = dynamic(() => import('@/components/github-calendar/Github
     ssr: false
 })
 
-const MainPage: React.FC = () => {
+const MainPage: React.FC<{ githubData: GithubData }> = ({ githubData }) => {
     const data = useSiteData()
 
     return (
-        <GithubDataProvider>
+        <GithubDataProvider data={githubData}>
             <NextSeo
                 title={data?.seo?.index?.title}
                 description={data?.seo?.index?.description}
@@ -132,6 +133,16 @@ const MainPage: React.FC = () => {
             </div>
         </GithubDataProvider>
     )
+}
+
+export async function getStaticProps() {
+    const githubData = await fetchGithubData()
+
+    return {
+        props: {
+            githubData
+        }
+    }
 }
 
 export default MainPage
