@@ -129,6 +129,12 @@
             "description": "Collaborated on the engineering and development of a centralized digital platform used for large-scale student registration across multiple universities. Contributed to system design and data management to support high-volume usage and streamlined organizational workflows."
         },
         {
+            "image": "/images/ustawi.jpeg",
+            "title": "Ustawi — The Smart Rental Platform for Homes and Business Spaces",
+            "link": "https://ustawi-1.vercel.app/",
+            "description": "Built a clean, efficient rental platform that connects property owners with tenants looking for residential homes, apartments, and commercial properties. Delivered a professional digital solution with easy listing management, smart matching, secure transactions, and excellent user experience."
+        },
+        {
             "image": "/images/trap.png",
             "imageWidth": 220,
             "imageHeight": 124,
