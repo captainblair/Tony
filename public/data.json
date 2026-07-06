@@ -145,6 +145,12 @@
             "description": "Built a modern, professional platform for an international consulting firm specializing in business strategy, geopolitical intelligence, and global talent recruitment. Delivered a trustworthy digital presence with dynamic content, seamless user flows, and powerful tools for connecting organizations with top international professionals."
         },
         {
+            "image": "/images/sys.png",
+            "title": "SchoolSys — School Management & Operations Platform",
+            "link": "https://schoolsys-00mj.onrender.com/",
+            "description": "Built a full-stack school administration platform for managing students, teachers, and day-to-day academic operations. Delivered role-based dashboards, profile approvals, attendance and results tracking, admissions, fees, library loans, internal messaging, and a production-ready deploy on Render with PostgreSQL—giving schools a single, secure system to run enrollment, communication, and records in one place."
+        },
+        {
             "image": "/images/digitalleap.png",
             "title": "Digital Leap Africa — Finance Lead (Partner Org.)",
             "link": "https://digitalleap.africa/",
