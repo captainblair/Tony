@@ -77,6 +77,13 @@ export const Projects: React.FC = () => {
                         <div className={styles.description}>
                             <div>
                                 <h2>{item.title}</h2>
+                                {item.migrationNotice && (
+                                    <p className={styles.migrationBanner}>
+                                        {
+                                            '🔄 Infrastructure Migration Notice: Database currently migrating to a permanent serverless cluster. Code repository accessible below.'
+                                        }
+                                    </p>
+                                )}
                                 {item?.description && <p>{item.description}</p>}
                             </div>
 

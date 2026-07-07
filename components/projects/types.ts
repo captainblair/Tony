@@ -8,4 +8,5 @@ export type ProjectType = {
     imageHeight?: number
     imageFit?: 'cover' | 'contain'
     imagePosition?: string
+    migrationNotice?: boolean
 }

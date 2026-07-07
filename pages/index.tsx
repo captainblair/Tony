@@ -14,7 +14,6 @@ import {
     Introduce,
     Projects,
     Skills,
-    SkillsCloud,
     Stats
 } from '@/components'
 import { GithubDataProvider, useSiteData } from '@/utils'
@@ -118,8 +117,6 @@ const MainPage: React.FC<{ githubData: GithubData }> = ({ githubData }) => {
                     <h2 className={'pageTitle'}>{data?.seo?.skills?.title}</h2>
                     <p>{data?.seo?.skills?.skillsIntro}</p>
                 </section>
-
-                <SkillsCloud />
 
                 <Skills />
             </div>

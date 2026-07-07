@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react'
+import React from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,27 +8,10 @@ import tonyPic from '@/public/tony.jpeg'
 import { update } from '@/update'
 import { useSiteData } from '@/utils'
 
-import { findEarliestDate } from './utils'
-
 import styles from './styles.module.sass'
-
-const divisor = 1000 * 60 * 60 * 24 * 365.2421897
 
 export const Introduce: React.FC = () => {
     const data = useSiteData()
-
-    const [myAge, setMyAge] = React.useState<string>('000')
-    const [myExp, setMyExp] = React.useState<string>('000')
-
-    const expTime = useMemo(() => {
-        const firstDate = data?.experience?.[0]?.period ? findEarliestDate(data.experience) : null
-
-        return new Date(firstDate ?? '2007-10-15T10:00:00').getTime()
-    }, [data?.experience])
-
-    const birthTime = useMemo(() => {
-        return new Date(data?.biography?.birthDate ?? '1989-09-09T05:15:00').getTime()
-    }, [data?.biography?.birthDate])
 
     const dateUpdate = new Date(update).toLocaleDateString('en-us', {
         day: 'numeric',
@@ -36,17 +19,6 @@ export const Introduce: React.FC = () => {
         weekday: 'long',
         year: 'numeric'
     })
-
-    const tick = () => {
-        setMyAge(((Date.now() - birthTime) / divisor).toFixed(9))
-        setMyExp(((Date.now() - expTime) / divisor).toFixed(9))
-    }
-
-    useEffect(() => {
-        const timer = setInterval(() => tick(), 100)
-
-        return () => clearInterval(timer)
-    }, [birthTime, expTime])
 
     return (
         <section className={styles.introduceSection}>
@@ -108,19 +80,13 @@ export const Introduce: React.FC = () => {
                     )}
                 </div>
 
-                {/* Live counter pills */}
                 <div className={styles.counterPills}>
                     <div className={styles.pill}>
-                        <span className={styles.pillValue}>{myAge}</span>
-                        <span className={styles.pillLabel}>{'My age'}</span>
-                    </div>
-                    <div className={styles.pill}>
-                        <span className={styles.pillValue}>{myExp}</span>
+                        <span className={styles.pillValue}>{'1.5+ Years'}</span>
                         <span className={styles.pillLabel}>{'Experience'}</span>
                     </div>
                 </div>
 
-                {/* Location / Timezone / Updated */}
                 <ul className={styles.factsList}>
                     {[
                         { title: 'Location', value: data?.biography?.location },
@@ -136,15 +102,13 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.description}>
                     <p>
-                        {'I build full-stack applications and backend systems using'} <b>{'Python, Django'}</b>
-                        {', and modern web technologies. I focus on turning ideas into functional products, from initial design to working deployments.'}
+                        {'Full Stack Software Engineer specializing in scalable backend architecture, relational database design, and end-to-end web deployment. I build production-ready systems with'} <b>{'Python (Django/Flask)'}</b>{' and '}<b>{'JavaScript/TypeScript'}</b>{', with a focus on RBAC, API design, and cloud-native delivery.'}
                     </p>
                     <p>
-                        {'I have hands-on experience building real projects including web applications, APIs, and system-based solutions, with a strong focus on'} <b>{'clean code'}</b>{', databases, and practical software engineering.'}
+                        {'Shipped enterprise platforms including school administration systems, rental marketplaces, and university registration hubs — architecting secure data pipelines, optimized schemas, and role-based dashboards for real-world scale.'}
                     </p>
                 </div>
 
-                {/* CTA buttons */}
                 <div className={styles.ctaGroup}>
                     <a
                         href={'#projects'}

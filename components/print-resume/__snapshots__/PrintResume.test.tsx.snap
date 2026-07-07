@@ -19,7 +19,7 @@ exports[`PrintResume matches snapshot 1`] = `
           Tony Wangolo Inganga
         </h1>
         <p>
-          Software Engineer
+          Software Engineer | 1.5+ Years Experience
         </p>
         <p>
           Nairobi, Kenya | +254 111 414 441 | wangolotony4@gmail.com
@@ -56,17 +56,72 @@ exports[`PrintResume matches snapshot 1`] = `
       </div>
     </div>
     <p>
-      Highly motivated Full Stack Software Engineer with a strong foundation in backend development and system architecture. Proven ability to design and deploy scalable web applications using Python, PHP, Django, and Flask. Experienced in building RESTful APIs, managing MySQL databases, and collaborating in Agile environments to deliver secure, efficient, and user-focused software solutions.
+      Highly motivated Full Stack Software Engineer specializing in scalable backend architecture, robust relational database design, and end-to-end web deployment ecosystems. Proven track record of developing production-ready systems using Python (Django | Flask) and JavaScript | TypeScript. Adept at creating optimized data structures, implementing secure Role-Based Access Control (RBAC), and maximizing software utility under cloud infrastructure resource constraints.
     </p>
     <div>
       <div>
+        <h2>
+          Core Production Projects
+        </h2>
+        <div>
+          <h3>
+            SchoolSys | School Management & Operations Platform
+          </h3>
+          <p>
+            <span>
+              Technical Stack:
+            </span>
+             Python | Django | PostgreSQL | Render | TailwindCSS
+          </p>
+          <p>
+            Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.
+          </p>
+          <p>
+            <span>
+              Live Link:
+            </span>
+             schoolsys-00mj.onrender.com
+          </p>
+          <p>
+            <span>
+              Repository:
+            </span>
+             github.com/captainblair/schoolsys1
+          </p>
+        </div>
+        <div>
+          <h3>
+            Ustawi | The Smart Rental & Property Platform
+          </h3>
+          <p>
+            <span>
+              Technical Stack:
+            </span>
+             Python | Django | Next.js | PostgreSQL (Neon Serverless) | Vercel
+          </p>
+          <p>
+            Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance metrics efficiently while respecting tight environment resource baselines.
+          </p>
+          <p>
+            <span>
+              Live Link:
+            </span>
+             ustawi-1.vercel.app
+          </p>
+          <p>
+            <span>
+              Repository:
+            </span>
+             github.com/captainblair/USTAWI1
+          </p>
+        </div>
         <h2>
           Professional Experience
         </h2>
         <div>
           <div>
             <span>
-              January 2026 – Present
+              January 2026 | Present | Nairobi, Kenya
             </span>
           </div>
           <h3>
@@ -75,14 +130,22 @@ exports[`PrintResume matches snapshot 1`] = `
               | ODM Comrades Chapter
             </span>
           </h3>
-          <p>
-            Spearheaded the engineering and development of a centralized digital system used by the chapter to support student registration across multiple universities. Managed large-scale user data to improve operational efficiency and streamline organizational workflows.
-          </p>
+          <ul>
+            <li>
+              Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.
+            </li>
+            <li>
+              Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university directories, improving operational data extraction efficiency by 40%.
+            </li>
+            <li>
+              Collaborated with backend engineers to integrate Laravel REST endpoints and structure high-volume concurrent submission interfaces with clean, maintainable frontend architecture.
+            </li>
+          </ul>
         </div>
         <div>
           <div>
             <span>
-              2024 – Present
+              2024 | Present
             </span>
           </div>
           <h3>
@@ -91,14 +154,22 @@ exports[`PrintResume matches snapshot 1`] = `
               | Remote
             </span>
           </h3>
-          <p>
-            Developed and deployed full-stack web applications using Python, Flask/Django, Streamlit, and MySQL, focusing on authentication systems, database design, and scalable backend architecture. Built and integrated user-centric platforms supporting data management, registration systems, and service-based matching systems. Contributed to systems involving data analysis and machine learning integration for real-world applications including prediction models and decision-support tools.
-          </p>
+          <ul>
+            <li>
+              Architected, tested, and deployed end-to-end full-stack web platforms using Python (Flask | Django), Streamlit, and MySQL, focusing heavily on secure authentication modules and robust backend query structures.
+            </li>
+            <li>
+              Implemented machine learning and analytical models into custom dashboard interfaces, providing automated decision support tools and predictive analysis layers for localized business platforms.
+            </li>
+            <li>
+              Authored clean, maintainable, and reusable codebase patterns, collaborating iteratively to integrate frontend responsive designs with complex relational data systems.
+            </li>
+          </ul>
         </div>
         <div>
           <div>
             <span>
-              2024 – June 2026
+              January 2025 | June 2026 | Nairobi, Kenya
             </span>
           </div>
           <h3>
@@ -107,9 +178,14 @@ exports[`PrintResume matches snapshot 1`] = `
               | LEA Organization
             </span>
           </h3>
-          <p>
-            Empowered community members by teaching digital literacy, foundational programming concepts, and version control using Git and GitHub. Facilitated technical workshops to build proficiency in modern office tools and web development fundamentals.
-          </p>
+          <ul>
+            <li>
+              Upskilled and trained over 50 community members in digital literacy, version control fundamentals utilizing Git | GitHub, and core programming paradigms.
+            </li>
+            <li>
+              Orchestrated technical engineering workshops, guiding junior learners through local workflow environments, structural web basics, and clean programming code principles.
+            </li>
+          </ul>
         </div>
         <h2>
           Education
@@ -117,11 +193,11 @@ exports[`PrintResume matches snapshot 1`] = `
         <div>
           <div>
             <span>
-              Expected Graduation: 2027
+              Expected Graduation | 2027
             </span>
           </div>
           <h3>
-            Bachelor of Technology: Communications and Computer Networks
+            Bachelor of Technology | Communications and Computer Networks
           </h3>
           <p>
             Technical University of Kenya
@@ -134,20 +210,7 @@ exports[`PrintResume matches snapshot 1`] = `
             </span>
           </div>
           <h3>
-            Professional Backend Web Development
-          </h3>
-          <p>
-            ALX Africa
-          </p>
-        </div>
-        <div>
-          <div>
-            <span>
-              Graduated
-            </span>
-          </div>
-          <h3>
-            Backend Web Development
+            Professional Backend Web Development Certification
           </h3>
           <p>
             ALX Africa
@@ -163,39 +226,31 @@ exports[`PrintResume matches snapshot 1`] = `
             Languages
           </h3>
           <p>
-            Python · PHP · HTML5 · CSS3 · JavaScript · TypeScript
+            Python | JavaScript | TypeScript | PHP | SQL | HTML5 | CSS3 | SASS
           </p>
         </div>
         <div>
           <h3>
-            Frameworks
+            Frameworks & Libraries
           </h3>
           <p>
-            Django · Flask · Laravel · React · Redux · SASS · TailwindCSS · Streamlit
+            Django | Flask | Next.js | React | Laravel | TailwindCSS | Streamlit | Redux
           </p>
         </div>
         <div>
           <h3>
-            Databases
+            Databases & Storage
           </h3>
           <p>
-            MySQL · SQL Server
+            PostgreSQL | MySQL | SQL Server | Supabase
           </p>
         </div>
         <div>
           <h3>
-            Infrastructure
+            Infrastructure & DevOps
           </h3>
           <p>
-            Docker · Git · Jenkins · Linux · GitHub Actions
-          </p>
-        </div>
-        <div>
-          <h3>
-            Tools & DevOps
-          </h3>
-          <p>
-            RESTful APIs · XAMPP · venv / pip · PythonAnywhere
+            Docker | Linux | Git | GitHub Actions | Jenkins | Render | Vercel
           </p>
         </div>
         <div>
@@ -203,7 +258,7 @@ exports[`PrintResume matches snapshot 1`] = `
             Core Competencies
           </h3>
           <p>
-            System Architecture · RBAC · Data Analysis · Technical Training · Leadership
+            API Design | Role-Based Access Control (RBAC) | Data Analysis | System Architecture
           </p>
         </div>
       </div>

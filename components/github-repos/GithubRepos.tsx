@@ -1,8 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-import { useGithubData } from '@/utils'
-
 import styles from './styles.module.sass'
 
 const StarIcon = () => (
@@ -29,6 +27,33 @@ const ForkIcon = () => (
     </svg>
 )
 
+const FEATURED_REPOS = [
+    {
+        description: 'Full-Stack Django/PostgreSQL School ERP — role-based dashboards, attendance, fees, and library management.',
+        forks: 0,
+        language: 'Python',
+        name: 'schoolsys1',
+        stars: 0,
+        url: 'https://github.com/captainblair/schoolsys1'
+    },
+    {
+        description: 'Next.js/Django Smart Rental Platform — two-sided marketplace with serverless PostgreSQL on Neon.',
+        forks: 0,
+        language: 'TypeScript',
+        name: 'USTAWI1',
+        stars: 0,
+        url: 'https://github.com/captainblair/USTAWI1'
+    },
+    {
+        description: 'Django enterprise consulting platform — editorial publishing, recruitment pipelines, and role-based access control.',
+        forks: 0,
+        language: 'Python',
+        name: 'Traviona1',
+        stars: 0,
+        url: 'https://github.com/captainblair/Traviona1'
+    }
+]
+
 const containerVariants = {
     hidden: {},
     visible: { transition: { staggerChildren: 0.08 } }
@@ -40,16 +65,9 @@ const cardVariants = {
 }
 
 export const GithubRepos: React.FC = () => {
-    const githubData = useGithubData()
-    const repos = githubData?.topRepos ?? []
-
-    if (!repos.length) {
-        return null
-    }
-
     return (
         <section className={styles.reposSection}>
-            <h2 className={'pageTitle'}>{'Top Repositories'}</h2>
+            <h2 className={'pageTitle'}>{'Featured Production Repositories'}</h2>
 
             <motion.ul
                 className={styles.reposGrid}
@@ -58,7 +76,7 @@ export const GithubRepos: React.FC = () => {
                 viewport={{ once: true, amount: 0.1 }}
                 variants={containerVariants}
             >
-                {repos.map((repo) => (
+                {FEATURED_REPOS.map((repo) => (
                     <motion.li
                         key={repo.name}
                         variants={cardVariants}

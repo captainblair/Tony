@@ -23,12 +23,7 @@ jest.mock('@/utils', () => ({
             { period: ['01/01/2010', '01/01/2015'], role: 'Dev', duties: '', skills: [] }
         ],
         projects: [{ title: 'P1' }, { title: 'P2' }, { title: 'P3' }]
-    }),
-    useGithubData: () => null
-}))
-
-jest.mock('@/utils/github-streak', () => ({
-    calculateStreak: () => ({ currentStreak: 5, longestStreak: 14, totalContributions: 300 })
+    })
 }))
 
 jest.mock('@/components/introduce/utils', () => ({
@@ -40,9 +35,7 @@ describe('Stats', () => {
         render(<Stats />)
         expect(screen.getByText('Years of experience')).toBeInTheDocument()
         expect(screen.getByText('Roles & companies')).toBeInTheDocument()
-        expect(screen.getByText('Pet projects')).toBeInTheDocument()
-        expect(screen.getByText('Current streak')).toBeInTheDocument()
-        expect(screen.getByText('Longest streak')).toBeInTheDocument()
+        expect(screen.getByText('Production projects')).toBeInTheDocument()
     })
 
     it('renders the stats section container', () => {

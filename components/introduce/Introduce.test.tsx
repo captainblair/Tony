@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { act, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import { update } from '@/update'
 import { formatDate } from '@/utils/date'
@@ -22,86 +22,55 @@ jest.mock('@/update', () => ({
 
 jest.mock('@/utils', () => ({
     useSiteData: () => ({
+        biography: {
+            name: 'Tony Wangolo Inganga',
+            title: 'Full Stack Software Engineer',
+            location: 'Nairobi, Kenya',
+            timezone: 'East Africa Time (UTC+3)',
+            availableForWork: true
+        },
+        contactLinks: [
+            { link: 'https://github.com/captainblair', label: 'GitHub', icon: 'github' },
+            { link: 'https://x.com/Tony_Blair01', label: 'X', icon: 'X' }
+        ],
         experience: [
             {
-                title: 'Software Engineer',
-                period: ['2010-01-01'],
-                company: 'Tech Inc'
+                role: 'Freelance Full Stack Developer',
+                period: ['01/01/2024']
             }
         ]
     })
 }))
 
 describe('Introduce Component', () => {
-    beforeEach(() => {
-        jest.useFakeTimers()
-    })
-
-    afterEach(() => {
-        jest.useRealTimers()
-    })
-
     it('renders links correctly', async () => {
-        // eslint-disable-next-line @typescript-eslint/no-require-imports,@typescript-eslint/no-var-requires
-        jest.spyOn(require('@/utils'), 'useSiteData').mockReturnValue({
-            contactLinks: [
-                { link: 'https://github.com/miksrv', label: 'GitHub', icon: 'github' },
-                { link: 'https://t.me/miksoft', label: 'Telegram', icon: 'telegram' }
-            ]
-        })
-
         render(<Introduce />)
 
         const githubLink = await screen.findByTitle('GitHub')
         expect(githubLink).toBeInTheDocument()
-        expect(githubLink).toHaveAttribute('href', 'https://github.com/miksrv')
-
-        const telegramLink = await screen.findByTitle('Telegram')
-        expect(telegramLink).toBeInTheDocument()
-        expect(telegramLink).toHaveAttribute('href', 'https://t.me/miksoft')
+        expect(githubLink).toHaveAttribute('href', 'https://github.com/captainblair')
     })
 
     it('displays facts correctly', () => {
         render(<Introduce />)
 
-        // Age and Experience are now pill labels
-        expect(screen.getByText('My age')).toBeInTheDocument()
+        expect(screen.getByText('1.5+ Years')).toBeInTheDocument()
+        expect(screen.getByText('Experience')).toBeInTheDocument()
         expect(screen.getByText('Updated')).toBeInTheDocument()
         expect(screen.getByText(formatDate(update, 'dddd, MMM D, YYYY'))).toBeInTheDocument()
     })
 
-    it('updates age and experience over time', () => {
+    it('does not render age tracker', () => {
         render(<Introduce />)
 
-        expect(screen.getByText('My age')).toBeInTheDocument()
-        expect(screen.getByText('Experience')).toBeInTheDocument()
-
-        act(() => {
-            jest.advanceTimersByTime(1000)
-            // Labels remain visible in counter pills
-            expect(screen.getByText('My age')).toBeInTheDocument()
-            expect(screen.getByText('Experience')).toBeInTheDocument()
-        })
+        expect(screen.queryByText('My age')).not.toBeInTheDocument()
     })
 
     it('renders the description text', () => {
         render(<Introduce />)
-        expect(screen.getByText(/technical direction/i)).toBeInTheDocument()
+        expect(screen.getByText(/scalable backend architecture/i)).toBeInTheDocument()
     })
 
-    it('calls findEarliestDate when experience entry has a period', () => {
-        // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
-        jest.spyOn(require('@/utils'), 'useSiteData').mockReturnValue({
-            experience: [{ period: ['2010-01-01'], title: 'Developer', company: 'Acme Corp' }]
-        })
-
-        render(<Introduce />)
-
-        expect(screen.getByText('My age')).toBeInTheDocument()
-        expect(screen.getByText('Experience')).toBeInTheDocument()
-    })
-
-    
     it('renders CTA buttons', () => {
         render(<Introduce />)
         expect(screen.getByText('View My Work')).toBeInTheDocument()
@@ -109,5 +78,3 @@ describe('Introduce Component', () => {
         expect(screen.getByText('Contact Me')).toBeInTheDocument()
     })
 })
-
-

@@ -48,6 +48,29 @@ const GITHUB_USERNAME = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? 'captainblair
 const CONTRIBUTIONS_PROXY = `https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}`
 const GITHUB_API = 'https://api.github.com'
 
+/** Used when the GitHub REST API is unavailable (rate limits, offline builds, etc.) */
+const PROFILE_FALLBACK: { user: GithubUser; stats: GithubStats } = {
+    user: {
+        followers: 5,
+        following: 5,
+        login: GITHUB_USERNAME,
+        publicRepos: 60
+    },
+    stats: {
+        languageDistribution: {
+            CSS: 3,
+            HTML: 5,
+            JavaScript: 12,
+            PHP: 2,
+            Python: 28,
+            Shell: 2,
+            TypeScript: 8
+        },
+        totalForks: 0,
+        totalStars: 1
+    }
+}
+
 function buildHeaders(): Record<string, string> {
     const headers: Record<string, string> = {
         Accept: 'application/vnd.github.v3+json'
@@ -153,8 +176,8 @@ export async function fetchGithubData(): Promise<GithubData> {
 
     return {
         contributions,
-        stats: userAndStats?.stats ?? null,
+        stats: userAndStats?.stats ?? PROFILE_FALLBACK.stats,
         topRepos: userAndStats?.topRepos ?? null,
-        user: userAndStats?.user ?? null
+        user: userAndStats?.user ?? PROFILE_FALLBACK.user
     }
 }
