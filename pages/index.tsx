@@ -1,6 +1,5 @@
 import React from 'react'
 
-import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo'
 
 import {
@@ -9,8 +8,6 @@ import {
     Experience,
     GithubLanguages,
     GithubRepos,
-    GithubSparkline,
-    GithubStats,
     Introduce,
     Projects,
     Skills,
@@ -20,18 +17,6 @@ import { GithubDataProvider, useSiteData } from '@/utils'
 import { fetchGithubData, type GithubData } from '@/utils/github-fetch'
 
 import styles from './styles/index.module.sass'
-
-const GithubCalendar = dynamic(() => import('@/components/github-calendar/GithubCalendar'), {
-    loading: () => (
-        <section
-            className={styles.githubSkeleton}
-            aria-label={'Loading GitHub activity'}
-            aria-busy={'true'}
-            role={'status'}
-        />
-    ),
-    ssr: false
-})
 
 const MainPage: React.FC<{ githubData: GithubData }> = ({ githubData }) => {
     const data = useSiteData()
@@ -61,20 +46,13 @@ const MainPage: React.FC<{ githubData: GithubData }> = ({ githubData }) => {
                 <About />
             </div>
 
-            {/* ── GitHub Activity ─────────────────────────────────────── */}
+            {/* ── GitHub ──────────────────────────────────────────────── */}
             <div
                 id={'activity'}
                 className={styles.sectionBlock}
-                aria-label={'GitHub Activity'}
+                aria-label={'GitHub'}
             >
-                <section>
-                    <h2 className={'pageTitle'}>{data?.seo?.activity?.title}</h2>
-                    <p>{data?.seo?.activity?.description}</p>
-                </section>
-                <GithubCalendar />
-                <GithubStats />
                 <GithubLanguages />
-                <GithubSparkline />
                 <GithubRepos />
             </div>
 

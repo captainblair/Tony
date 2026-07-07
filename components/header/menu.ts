@@ -9,7 +9,7 @@ export const menu: MenuItemType[] = [
         url: '#intro'
     },
     {
-        label: 'Activity',
+        label: 'GitHub',
         url: '#activity'
     },
     {
