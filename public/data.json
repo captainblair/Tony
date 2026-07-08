@@ -79,12 +79,11 @@
     ],
     "projects": [
         {
-            "image": "/images/sys.png",
-            "title": "SchoolSys — School Management & Operations Platform",
-            "link": "https://schoolsys-00mj.onrender.com/",
-            "github": "https://github.com/captainblair/schoolsys1",
-            "description": "Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards for students, teachers, and administrators. Optimized database schemas for profile approvals, attendance, financial fee records, and library loans into a unified platform.",
-            "migrationNotice": true
+            "image": "/images/occ.jpeg",
+            "title": "ODM Comrades Platform — Centralized University Registration Hub",
+            "link": "https://occ.co.ke/",
+            "github": "https://github.com/osumba404/occ",
+            "description": "Led frontend engineering for a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
         },
         {
             "image": "/images/image.png",
@@ -93,13 +92,6 @@
             "github": "https://github.com/captainblair/USTAWI1",
             "description": "Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance efficiently while respecting tight environment resource baselines.",
             "migrationNotice": true
-        },
-        {
-            "image": "/images/occ.jpeg",
-            "title": "ODM Comrades Platform — Centralized University Registration Hub",
-            "link": "https://occ.co.ke/",
-            "github": "https://github.com/osumba404/occ",
-            "description": "Led frontend engineering for a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
         },
         {
             "image": "/images/trap.png",
@@ -111,6 +103,14 @@
             "link": "https://travionaconsulting.top/",
             "github": "https://github.com/captainblair/Traviona1",
             "description": "Built a modern, professional platform for an international consulting firm specializing in business strategy, geopolitical intelligence, and global talent recruitment.",
+            "migrationNotice": true
+        },
+        {
+            "image": "/images/sys.png",
+            "title": "SchoolSys — School Management & Operations Platform",
+            "link": "https://schoolsys-00mj.onrender.com/",
+            "github": "https://github.com/captainblair/schoolsys1",
+            "description": "Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards for students, teachers, and administrators. Optimized database schemas for profile approvals, attendance, financial fee records, and library loans into a unified platform.",
             "migrationNotice": true
         },
         {
