@@ -28,14 +28,34 @@ describe('PrintResume', () => {
         expect(screen.getByText(/Nairobi, Kenya \| \+254 111 414 441/)).toBeInTheDocument()
     })
 
-    it('renders contact links with labels and values', () => {
+    it('renders contact links with labels and https hrefs', () => {
         render(<PrintResume />)
         expect(screen.getByText('GitHub:')).toBeInTheDocument()
-        expect(screen.getByText('github.com/captainblair')).toBeInTheDocument()
+        expect(screen.getByRole('link', { name: 'https://github.com/captainblair', hidden: true })).toHaveAttribute(
+            'href',
+            'https://github.com/captainblair'
+        )
         expect(screen.getByText('LinkedIn:')).toBeInTheDocument()
-        expect(screen.getByText('linkedin.com/in/tony-wangolo-545b23285')).toBeInTheDocument()
+        expect(
+            screen.getByRole('link', { name: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', hidden: true })
+        ).toHaveAttribute('href', 'https://www.linkedin.com/in/tony-wangolo-545b23285/')
         expect(screen.getByText('X:')).toBeInTheDocument()
-        expect(screen.getByText('x.com/Tony_Blair01')).toBeInTheDocument()
+        expect(screen.getByRole('link', { name: 'https://x.com/Tony_Blair01', hidden: true })).toHaveAttribute(
+            'href',
+            'https://x.com/Tony_Blair01'
+        )
+    })
+
+    it('renders clickable project live and repository links', () => {
+        render(<PrintResume />)
+        expect(screen.getByRole('link', { name: 'https://schoolsys-00mj.onrender.com/', hidden: true })).toHaveAttribute(
+            'href',
+            'https://schoolsys-00mj.onrender.com/'
+        )
+        expect(screen.getByRole('link', { name: 'https://github.com/captainblair/schoolsys1', hidden: true })).toHaveAttribute(
+            'href',
+            'https://github.com/captainblair/schoolsys1'
+        )
     })
 
     it('renders the summary description', () => {

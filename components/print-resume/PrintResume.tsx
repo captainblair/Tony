@@ -8,6 +8,27 @@ import styles from './styles.module.sass'
 
 const formatList = (items: string[]): string => items.join(' | ')
 
+const CONTACT_LINKS = [
+    { href: 'https://github.com/captainblair', label: 'GitHub:' },
+    { href: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', label: 'LinkedIn:' },
+    { href: 'https://x.com/Tony_Blair01', label: 'X:' }
+]
+
+type ResumeLinkProps = {
+    href: string
+    children: React.ReactNode
+}
+
+const ResumeLink: React.FC<ResumeLinkProps> = ({ href, children }) => (
+    <a
+        href={href}
+        className={styles.resumeLink}
+        rel={'noopener noreferrer'}
+    >
+        {children}
+    </a>
+)
+
 const SKILLS = [
     { group: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'HTML5', 'CSS3', 'SASS'] },
     {
@@ -31,16 +52,16 @@ const PROJECTS = [
         stack: ['Python', 'Django', 'PostgreSQL', 'Render', 'TailwindCSS'],
         impact:
             'Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.',
-        link: 'schoolsys-00mj.onrender.com',
-        repo: 'github.com/captainblair/schoolsys1'
+        link: 'https://schoolsys-00mj.onrender.com/',
+        repo: 'https://github.com/captainblair/schoolsys1'
     },
     {
         title: 'Ustawi | The Smart Rental & Property Platform',
         stack: ['Python', 'Django', 'Next.js', 'PostgreSQL (Neon Serverless)', 'Vercel'],
         impact:
             'Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance metrics efficiently while respecting tight environment resource baselines.',
-        link: 'ustawi-1.vercel.app',
-        repo: 'github.com/captainblair/USTAWI1'
+        link: 'https://ustawi-1.vercel.app/',
+        repo: 'https://github.com/captainblair/USTAWI1'
     }
 ]
 
@@ -107,20 +128,17 @@ export const PrintResume: React.FC = () => (
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
                 <p className={styles.titleRole}>{'Software Engineer | 1.5+ Years Experience'}</p>
-                <p className={styles.location}>{'Nairobi, Kenya | +254 111 414 441 | wangolotony4@gmail.com'}</p>
+                <p className={styles.location}>
+                    {'Nairobi, Kenya | +254 111 414 441 | '}
+                    <ResumeLink href={'mailto:wangolotony4@gmail.com'}>{'wangolotony4@gmail.com'}</ResumeLink>
+                </p>
                 <ul className={styles.contactList}>
-                    <li>
-                        <span className={styles.contactLabel}>{'GitHub:'}</span>{' '}
-                        <span className={styles.contactValue}>{'github.com/captainblair'}</span>
-                    </li>
-                    <li>
-                        <span className={styles.contactLabel}>{'LinkedIn:'}</span>{' '}
-                        <span className={styles.contactValue}>{'linkedin.com/in/tony-wangolo-545b23285'}</span>
-                    </li>
-                    <li>
-                        <span className={styles.contactLabel}>{'X:'}</span>{' '}
-                        <span className={styles.contactValue}>{'x.com/Tony_Blair01'}</span>
-                    </li>
+                    {CONTACT_LINKS.map((item) => (
+                        <li key={item.href}>
+                            <span className={styles.contactLabel}>{item.label}</span>{' '}
+                            <ResumeLink href={item.href}>{item.href}</ResumeLink>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
@@ -145,11 +163,13 @@ export const PrintResume: React.FC = () => (
                         </p>
                         <p className={styles.duties}>{project.impact}</p>
                         <p className={styles.projectLink}>
-                            <span className={styles.contactLabel}>{'Live Link:'}</span> {project.link}
+                            <span className={styles.contactLabel}>{'Live Link:'}</span>{' '}
+                            <ResumeLink href={project.link}>{project.link}</ResumeLink>
                         </p>
                         {'repo' in project && project.repo && (
                             <p className={styles.projectLink}>
-                                <span className={styles.contactLabel}>{'Repository:'}</span> {project.repo}
+                                <span className={styles.contactLabel}>{'Repository:'}</span>{' '}
+                                <ResumeLink href={project.repo}>{project.repo}</ResumeLink>
                             </p>
                         )}
                     </div>

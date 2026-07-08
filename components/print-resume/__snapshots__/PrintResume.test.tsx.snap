@@ -22,7 +22,13 @@ exports[`PrintResume matches snapshot 1`] = `
           Software Engineer | 1.5+ Years Experience
         </p>
         <p>
-          Nairobi, Kenya | +254 111 414 441 | wangolotony4@gmail.com
+          Nairobi, Kenya | +254 111 414 441 | 
+          <a
+            href="mailto:wangolotony4@gmail.com"
+            rel="noopener noreferrer"
+          >
+            wangolotony4@gmail.com
+          </a>
         </p>
         <ul>
           <li>
@@ -30,27 +36,36 @@ exports[`PrintResume matches snapshot 1`] = `
               GitHub:
             </span>
              
-            <span>
-              github.com/captainblair
-            </span>
+            <a
+              href="https://github.com/captainblair"
+              rel="noopener noreferrer"
+            >
+              https://github.com/captainblair
+            </a>
           </li>
           <li>
             <span>
               LinkedIn:
             </span>
              
-            <span>
-              linkedin.com/in/tony-wangolo-545b23285
-            </span>
+            <a
+              href="https://www.linkedin.com/in/tony-wangolo-545b23285/"
+              rel="noopener noreferrer"
+            >
+              https://www.linkedin.com/in/tony-wangolo-545b23285/
+            </a>
           </li>
           <li>
             <span>
               X:
             </span>
              
-            <span>
-              x.com/Tony_Blair01
-            </span>
+            <a
+              href="https://x.com/Tony_Blair01"
+              rel="noopener noreferrer"
+            >
+              https://x.com/Tony_Blair01
+            </a>
           </li>
         </ul>
       </div>
@@ -80,13 +95,25 @@ exports[`PrintResume matches snapshot 1`] = `
             <span>
               Live Link:
             </span>
-             schoolsys-00mj.onrender.com
+             
+            <a
+              href="https://schoolsys-00mj.onrender.com/"
+              rel="noopener noreferrer"
+            >
+              https://schoolsys-00mj.onrender.com/
+            </a>
           </p>
           <p>
             <span>
               Repository:
             </span>
-             github.com/captainblair/schoolsys1
+             
+            <a
+              href="https://github.com/captainblair/schoolsys1"
+              rel="noopener noreferrer"
+            >
+              https://github.com/captainblair/schoolsys1
+            </a>
           </p>
         </div>
         <div>
@@ -106,13 +133,25 @@ exports[`PrintResume matches snapshot 1`] = `
             <span>
               Live Link:
             </span>
-             ustawi-1.vercel.app
+             
+            <a
+              href="https://ustawi-1.vercel.app/"
+              rel="noopener noreferrer"
+            >
+              https://ustawi-1.vercel.app/
+            </a>
           </p>
           <p>
             <span>
               Repository:
             </span>
-             github.com/captainblair/USTAWI1
+             
+            <a
+              href="https://github.com/captainblair/USTAWI1"
+              rel="noopener noreferrer"
+            >
+              https://github.com/captainblair/USTAWI1
+            </a>
           </p>
         </div>
         <h2>
