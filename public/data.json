@@ -86,7 +86,7 @@
             "description": "Led frontend engineering for a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
         },
         {
-            "image": "/images/image.png",
+            "image": "/images/Ustawilive.png",
             "title": "Ustawi — The Smart Rental & Property Platform",
             "link": "https://ustawi-1.vercel.app/",
             "github": "https://github.com/captainblair/USTAWI1",
