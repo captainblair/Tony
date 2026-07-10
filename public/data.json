@@ -95,10 +95,6 @@
         },
         {
             "image": "/images/travionalive.png",
-            "imageWidth": 220,
-            "imageHeight": 124,
-            "imageFit": "contain",
-            "imagePosition": "right center",
             "title": "Traviona Consulting — Global Strategy, Insights & Talent Solutions",
             "link": "https://travionaconsulting.top/",
             "github": "https://github.com/captainblair/Traviona1",
