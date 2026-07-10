@@ -10,6 +10,7 @@ import { childVariants, parentVariants } from '@/components/page-transition/cons
 import { useSiteData } from '@/utils'
 
 import styles from './styles.module.sass'
+import { ProjectType } from './types'
 
 export const Projects: React.FC = () => {
     const data = useSiteData()
@@ -20,7 +21,7 @@ export const Projects: React.FC = () => {
                 parentVariants={parentVariants.slide}
                 childVariants={childVariants.slide}
             >
-                {data?.projects.map((item) => {
+                {(data?.projects as ProjectType[] | undefined)?.map((item) => {
                     const imageWidth = item.imageWidth ?? 176
                     const imageHeight = item.imageHeight ?? 176
                     const imageFit: 'cover' | 'contain' = item.imageFit === 'contain' ? 'contain' : 'cover'
