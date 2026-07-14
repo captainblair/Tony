@@ -6,9 +6,9 @@ import {
     About,
     Contact,
     Experience,
-    GithubLanguages,
     GithubRepos,
     Introduce,
+    PrimaryTechnologies,
     Projects,
     Skills,
     Stats
@@ -52,7 +52,7 @@ const MainPage: React.FC<{ githubData: GithubData }> = ({ githubData }) => {
                 className={styles.sectionBlock}
                 aria-label={'GitHub'}
             >
-                <GithubLanguages />
+                <PrimaryTechnologies />
                 <GithubRepos />
             </div>
 

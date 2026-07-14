@@ -82,8 +82,8 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.counterPills}>
                     <div className={styles.pill}>
-                        <span className={styles.pillValue}>{'Hands-on'}</span>
-                        <span className={styles.pillLabel}>{'Development Experience'}</span>
+                        <span className={styles.pillValue}>{'Building Software'}</span>
+                        <span className={styles.pillLabel}>{'Since 2024'}</span>
                     </div>
                 </div>
 
@@ -105,7 +105,7 @@ export const Introduce: React.FC = () => {
                         {'Full Stack Developer focused on backend engineering with'} <b>{'Python'}</b>{', '}
                         <b>{'Django'}</b>{', REST APIs, '}
                         <b>{'PostgreSQL'}</b>
-                        {', and modern JavaScript frameworks. I build practical web applications with authentication, database-driven workflows, and responsive user interfaces.'}
+                        {', and modern frontend technologies. I build practical web applications with authentication, database-driven workflows, and responsive user interfaces.'}
                     </p>
                     <p>
                         {
@@ -124,6 +124,7 @@ export const Introduce: React.FC = () => {
                     <a
                         href={'/'}
                         className={styles.ctaSecondary}
+                        title={"Opens print dialog — choose 'Save as PDF' in Edge or Chrome so links stay clickable"}
                         onClick={(event) => {
                             event.preventDefault()
                             window.print()

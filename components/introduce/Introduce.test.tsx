@@ -24,7 +24,7 @@ jest.mock('@/utils', () => ({
     useSiteData: () => ({
         biography: {
             name: 'Tony Wangolo Inganga',
-            title: 'Junior Full Stack Developer',
+            title: 'Full Stack Developer',
             location: 'Nairobi, Kenya',
             timezone: 'East Africa Time (UTC+3)',
             availableForWork: true
@@ -54,8 +54,8 @@ describe('Introduce Component', () => {
     it('displays facts correctly', () => {
         render(<Introduce />)
 
-        expect(screen.getByText('Hands-on')).toBeInTheDocument()
-        expect(screen.getByText('Development Experience')).toBeInTheDocument()
+        expect(screen.getByText('Building Software')).toBeInTheDocument()
+        expect(screen.getByText('Since 2024')).toBeInTheDocument()
         expect(screen.getByText('Updated')).toBeInTheDocument()
         expect(screen.getByText(formatDate(update, 'dddd, MMM D, YYYY'))).toBeInTheDocument()
     })

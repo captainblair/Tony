@@ -1,1 +1,1 @@
-export { GithubLanguages } from './GithubLanguages'
+export { GithubLanguages, PrimaryTechnologies } from './GithubLanguages'

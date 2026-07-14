@@ -19,15 +19,24 @@ type ResumeLinkProps = {
     children: React.ReactNode
 }
 
-const ResumeLink: React.FC<ResumeLinkProps> = ({ href, children }) => (
-    <a
-        href={href}
-        className={styles.resumeLink}
-        rel={'noopener noreferrer'}
-    >
-        {children}
-    </a>
-)
+const ResumeLink: React.FC<ResumeLinkProps> = ({ href, children }) => {
+    const isWebLink = href.startsWith('http')
+
+    return (
+        <a
+            href={href}
+            className={styles.resumeLink}
+            {...(isWebLink
+                ? {
+                      rel: 'noopener noreferrer',
+                      target: '_blank'
+                  }
+                : {})}
+        >
+            {children}
+        </a>
+    )
+}
 
 const SKILLS = [
     { group: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'PHP', 'HTML/CSS'] },
@@ -116,6 +125,7 @@ export const PrintResume: React.FC = () => (
         id={'print-resume'}
         className={styles.printResume}
         aria-hidden={'true'}
+        inert
     >
         <div className={styles.header}>
             <div className={styles.tony}>

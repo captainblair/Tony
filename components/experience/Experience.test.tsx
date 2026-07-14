@@ -31,8 +31,7 @@ jest.mock('@/utils', () => ({
 }))
 
 jest.mock('@/utils/date', () => ({
-    formatDate: (date: string, _format: string) => (date == null ? 'Present' : `formatted-${date}`),
-    formatPeriod: (period: [string, string | null]) => `period-${period[0]}-${period[1]}`
+    formatDate: (date: string, _format: string) => (date == null ? 'Present' : `formatted-${date}`)
 }))
 
 describe('Experience', () => {
@@ -54,8 +53,12 @@ describe('Experience', () => {
             expect(screen.getByText(item.role)).toBeInTheDocument()
             expect(screen.getByText(item.duties)).toBeInTheDocument()
             expect(document.body.textContent).toContain(`formatted-${item.period[0]}`)
-            expect(screen.getByText(`period-${item.period[0]}-${item.period[1]}`)).toBeInTheDocument()
         })
+    })
+
+    it('does not emphasize role duration', () => {
+        render(<Experience />)
+        expect(screen.queryByText(/yrs|mos/i)).not.toBeInTheDocument()
     })
 
     it('renders skills if present', () => {

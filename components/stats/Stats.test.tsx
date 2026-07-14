@@ -19,9 +19,9 @@ afterEach(() => {
 describe('Stats', () => {
     it('renders all stat labels', () => {
         render(<Stats />)
-        expect(screen.getByText('Projects Built')).toBeInTheDocument()
-        expect(screen.getByText('Platforms Developed')).toBeInTheDocument()
-        expect(screen.getByText('Years Learning & Building')).toBeInTheDocument()
+        expect(screen.getByText('Full-Stack Projects')).toBeInTheDocument()
+        expect(screen.getByText('Deployed Applications')).toBeInTheDocument()
+        expect(screen.getByText('Years Building Software')).toBeInTheDocument()
     })
 
     it('renders the stats section container', () => {

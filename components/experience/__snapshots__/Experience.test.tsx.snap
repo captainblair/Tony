@@ -27,11 +27,6 @@ exports[`Experience matches snapshot 1`] = `
               >
                 formatted-2020-01-01 — formatted-2021-01-01
               </div>
-              <div
-                class="period"
-              >
-                period-2020-01-01-2021-01-01
-              </div>
             </div>
             <div
               class="roleRow"
@@ -118,11 +113,6 @@ exports[`Experience matches snapshot 1`] = `
                 class="date"
               >
                 formatted-2021-02-01 — Present
-              </div>
-              <div
-                class="period"
-              >
-                period-2021-02-01-null
               </div>
             </div>
             <div

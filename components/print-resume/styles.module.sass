@@ -1,7 +1,22 @@
 .printResume
-    display: none
+    // Keep in layout (not display:none) so print-to-PDF engines embed hyperlinks.
+    // Off-screen + inert (set in JSX) prevents interaction on the live site.
+    position: absolute
+    left: -10000px
+    top: 0
+    width: 210mm
+    overflow: hidden
+    pointer-events: none
+    visibility: hidden
 
     @media print
+        position: static
+        left: auto
+        top: auto
+        width: auto
+        overflow: visible
+        pointer-events: auto
+        visibility: visible
         display: block
         color: #111
         background: #fff
@@ -67,12 +82,17 @@
             color: #555
 
         .resumeLink
-            color: #1155cc
-            text-decoration: underline
+            color: #1155cc !important
+            text-decoration: underline !important
             word-break: break-all
+            cursor: pointer
+            // Helps Chromium/Edge embed working PDF annotations
+            -webkit-print-color-adjust: exact
+            print-color-adjust: exact
 
+            &:link,
             &:visited
-                color: #1155cc
+                color: #1155cc !important
 
         // ── Summary ─────────────────────────────────────────────────────
         .summary

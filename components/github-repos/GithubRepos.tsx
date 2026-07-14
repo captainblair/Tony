@@ -30,7 +30,7 @@ const ForkIcon = () => (
 const FEATURED_REPOS = [
     {
         description:
-            'Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL.',
+            'Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property management workflows, and database-driven functionality.',
         forks: 0,
         language: 'TypeScript',
         name: 'USTAWI1',
@@ -39,7 +39,7 @@ const FEATURED_REPOS = [
     },
     {
         description:
-            'Django/PostgreSQL school management platform with dashboards for students, teachers, and administrators. Includes attendance, fee tracking, and library management features.',
+            'Django/PostgreSQL school management platform with dashboards for students, teachers, and administrators. Includes attendance tracking, fee management, and library operations.',
         forks: 0,
         language: 'Python',
         name: 'schoolsys1',
@@ -47,7 +47,8 @@ const FEATURED_REPOS = [
         url: 'https://github.com/captainblair/schoolsys1'
     },
     {
-        description: 'Django-based consulting platform with content management features, user roles, and business workflows.',
+        description:
+            'Built a Django-based consulting platform with content management features, user roles, and business workflows.',
         forks: 0,
         language: 'Python',
         name: 'Traviona1',

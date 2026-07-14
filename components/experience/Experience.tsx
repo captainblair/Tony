@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { PageTransition } from '@/components'
 import { childVariants, parentVariants } from '@/components/page-transition/constants'
 import { useSiteData } from '@/utils'
-import { formatDate, formatPeriod } from '@/utils/date'
+import { formatDate } from '@/utils/date'
 import { cn } from '@/utils/tools'
 
 import { ExperienceType } from './types'
@@ -54,7 +54,6 @@ export const Experience: React.FC = () => {
                                         {' — '}
                                         {isCurrent ? 'Present' : formatDate(item.period?.[1], 'MMM YYYY')}
                                     </div>
-                                    <div className={styles.period}>{formatPeriod(item.period)}</div>
                                 </div>
 
                                 <div className={styles.roleRow}>

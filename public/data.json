@@ -1,13 +1,13 @@
 {
     "biography": {
         "name": "Tony Wangolo Inganga",
-        "title": "Junior Full Stack Developer",
+        "title": "Full Stack Developer",
         "location": "Nairobi, Kenya",
         "timezone": "East Africa Time (UTC+3)",
         "birthDate": "2003-08-16T05:15:00",
         "availableForWork": true,
         "bio": {
-            "lead": "I am a Full Stack Developer passionate about building useful software solutions using Python, Django, React, and modern web technologies. I enjoy designing backend systems, creating clean user experiences, and turning ideas into functional applications.",
+            "lead": "I am a Full Stack Developer passionate about building useful software solutions using Python, Django, React, and modern web technologies. I enjoy designing backend solutions, creating clean user experiences, and turning ideas into functional applications.",
             "bullets": [
                 "Building full-stack applications using Python (Django/Flask) and JavaScript/TypeScript",
                 "Developing REST APIs, authentication systems, RBAC, and relational database structures",
@@ -79,8 +79,7 @@
             "group": "Additional Experience",
             "skills": [
                 { "name": "PHP", "level": 75 },
-                { "name": "Laravel", "level": 72 },
-                { "name": "Data Analysis", "level": 78 }
+                { "name": "Laravel", "level": 72 }
             ]
         }
     ],
@@ -90,29 +89,28 @@
             "title": "Ustawi — Smart Rental & Property Platform",
             "link": "https://ustawi-1.vercel.app/",
             "github": "https://github.com/captainblair/USTAWI1",
-            "description": "Developed a rental platform connecting tenants with property managers. Implemented authentication, property management workflows, database models, and API communication between backend and frontend systems.",
-            "statusNotice": "Currently improving deployment infrastructure and database reliability."
+            "description": "Full-stack rental platform connecting tenants with property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property management workflows, and database-driven functionality."
         },
         {
             "image": "/images/school1.png",
             "title": "SchoolSys — School Management & Operations Platform",
             "link": "https://schoolsys-00mj.onrender.com/",
             "github": "https://github.com/captainblair/schoolsys1",
-            "description": "Built a full-stack school management application for handling student records, attendance, fees, and library workflows."
+            "description": "Built a full-stack school management application for handling student records, attendance tracking, fee management, and library operations. Implemented role-based dashboards and backend workflows for students, teachers, and administrators."
         },
         {
             "image": "/images/occ.jpeg",
             "title": "ODM Comrades Platform — University Registration Hub",
             "link": "https://occ.co.ke/",
             "github": "https://github.com/osumba404/occ",
-            "description": "Contributed as ICT Lead to the development of a university registration platform using PHP and Laravel. Built responsive interfaces, registration workflows, and dashboard components used to manage student information and improve digital registration processes."
+            "description": "Served as ICT Lead on a university registration platform built with PHP and Laravel. Implemented responsive interfaces, registration workflows, and dashboard components used to manage student information and improve digital registration processes."
         },
         {
             "image": "/images/travionalive.png",
             "title": "Traviona Consulting — Strategy, Insights & Talent Solutions",
             "link": "https://travionaconsulting.top/",
             "github": "https://github.com/captainblair/Traviona1",
-            "description": "Django-based consulting platform with content management features, user roles, and business workflows."
+            "description": "Built a Django-based consulting platform with content management features, user roles, and business workflows."
         },
         {
             "image": "/images/digitalleap.png",
@@ -155,8 +153,8 @@
     ],
     "seo": {
         "index": {
-            "title": "Tony Wangolo Inganga — Junior Full Stack Developer",
-            "description": "Junior Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern JavaScript frameworks. Building practical web applications since 2024."
+            "title": "Tony Wangolo Inganga — Full Stack Developer",
+            "description": "Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern frontend technologies. Building practical web applications since 2024."
         },
         "activity": {
             "title": "Work Activity",
