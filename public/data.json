@@ -84,7 +84,7 @@
             "title": "Ustawi — Smart Rental & Property Platform",
             "link": "https://ustawi-1.vercel.app/",
             "github": "https://github.com/captainblair/USTAWI1",
-            "description": "Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs."
+            "description": "Full-stack rental platform helping tenants discover properties and allowing property managers to manage listings. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs."
         },
         {
             "image": "/images/school1.png",
@@ -110,9 +110,9 @@
     ],
     "experience": [
         {
-            "period": ["01/01/2025"],
+            "period": ["01/01/2024"],
             "role": "Freelance Developer",
-            "duties": "Built and deployed full-stack web applications using Django, Flask, Streamlit, and MySQL. Developed authentication systems, backend APIs, database structures, and responsive interfaces for personal and freelance projects.",
+            "duties": "Built and deployed full-stack web applications using Django, Flask, and MySQL. Developed authentication systems, backend APIs, database structures, and responsive interfaces for personal and freelance projects.",
             "skills": [
                 {
                     "area": "Frontend",
@@ -143,7 +143,7 @@
     "seo": {
         "index": {
             "title": "Tony Wangolo Inganga — Full Stack Developer",
-            "description": "Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern frontend technologies. Building practical web applications since January 2025."
+            "description": "Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern frontend technologies. Building practical web applications since 2024."
         },
         "activity": {
             "title": "Work Activity",

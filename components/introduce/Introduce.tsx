@@ -83,7 +83,7 @@ export const Introduce: React.FC = () => {
                 <div className={styles.counterPills}>
                     <div className={styles.pill}>
                         <span className={styles.pillValue}>{'Building Software'}</span>
-                        <span className={styles.pillLabel}>{'Since Jan 2025'}</span>
+                        <span className={styles.pillLabel}>{'Since 2024'}</span>
                     </div>
                 </div>
 

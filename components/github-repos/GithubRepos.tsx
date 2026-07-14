@@ -6,14 +6,14 @@ import styles from './styles.module.sass'
 const FEATURED_REPOS = [
     {
         description:
-            'Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs.',
+            'Full-stack rental platform helping tenants discover properties and allowing property managers to manage listings. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs.',
         language: 'TypeScript',
         name: 'USTAWI1',
         url: 'https://github.com/captainblair/USTAWI1'
     },
     {
         description:
-            'Django/PostgreSQL school management platform with dashboards for different user roles including students, teachers, and administrators. Includes attendance tracking, fee management, and library operations.',
+            'Django/PostgreSQL school management platform with role-based dashboards for students, teachers, and administrators. Includes attendance tracking, fee management, and library operations.',
         language: 'Python',
         name: 'schoolsys1',
         url: 'https://github.com/captainblair/schoolsys1'

@@ -43,7 +43,7 @@ describe('GithubRepos', () => {
 
     it('renders repo descriptions', () => {
         render(<GithubRepos />)
-        expect(screen.getByText(/Full-stack rental platform connecting tenants and property managers/)).toBeInTheDocument()
+        expect(screen.getByText(/helping tenants discover properties and allowing property managers to manage listings/)).toBeInTheDocument()
         expect(
             screen.getByText(/supporting content management, user roles, and business workflows for a professional services organization/)
         ).toBeInTheDocument()

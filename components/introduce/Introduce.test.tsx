@@ -35,7 +35,7 @@ jest.mock('@/utils', () => ({
         experience: [
             {
                 role: 'Freelance Developer',
-                period: ['01/01/2025']
+                period: ['01/01/2024']
             }
         ]
     })
@@ -54,7 +54,7 @@ describe('Introduce Component', () => {
         render(<Introduce />)
 
         expect(screen.getByText('Building Software')).toBeInTheDocument()
-        expect(screen.getByText('Since Jan 2025')).toBeInTheDocument()
+        expect(screen.getByText('Since 2024')).toBeInTheDocument()
         expect(screen.getByText('Updated')).toBeInTheDocument()
         expect(screen.getByText(formatDate(update, 'dddd, MMM D, YYYY'))).toBeInTheDocument()
     })
