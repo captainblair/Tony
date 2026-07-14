@@ -107,11 +107,6 @@ export const Introduce: React.FC = () => {
                         <b>{'PostgreSQL'}</b>
                         {', and modern frontend technologies. I build practical web applications with authentication, database-driven workflows, and responsive user interfaces.'}
                     </p>
-                    <p>
-                        {
-                            'I have built management systems, rental platforms, and digital registration solutions while gaining hands-on experience in backend development, database design, deployment, and software delivery.'
-                        }
-                    </p>
                 </div>
 
                 <div className={styles.ctaGroup}>

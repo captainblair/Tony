@@ -39,7 +39,7 @@ describe('GithubRepos', () => {
     it('renders repo descriptions', () => {
         render(<GithubRepos />)
         expect(screen.getByText(/Full-stack rental platform connecting tenants and property managers/)).toBeInTheDocument()
-        expect(screen.getByText(/featuring authentication, property management workflows/)).toBeInTheDocument()
+        expect(screen.getByText(/featuring authentication, property listings, user workflows, and backend APIs/)).toBeInTheDocument()
     })
 
     it('renders repo links with correct href', () => {

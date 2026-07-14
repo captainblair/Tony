@@ -39,11 +39,7 @@ describe('PrintResume', () => {
         expect(
             screen.getByRole('link', { name: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', hidden: true })
         ).toHaveAttribute('href', 'https://www.linkedin.com/in/tony-wangolo-545b23285/')
-        expect(screen.getByText('X:')).toBeInTheDocument()
-        expect(screen.getByRole('link', { name: 'https://x.com/Tony_Blair01', hidden: true })).toHaveAttribute(
-            'href',
-            'https://x.com/Tony_Blair01'
-        )
+        expect(screen.queryByText('X:')).not.toBeInTheDocument()
     })
 
     it('renders clickable project live and repository links', () => {

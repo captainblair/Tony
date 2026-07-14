@@ -57,19 +57,6 @@ exports[`PrintResume matches snapshot 1`] = `
               https://www.linkedin.com/in/tony-wangolo-545b23285/
             </a>
           </li>
-          <li>
-            <span>
-              X:
-            </span>
-             
-            <a
-              href="https://x.com/Tony_Blair01"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              https://x.com/Tony_Blair01
-            </a>
-          </li>
         </ul>
       </div>
     </div>

@@ -23,11 +23,6 @@
             "link": "https://github.com/captainblair/"
         },
         {
-            "icon": "X",
-            "label": "X",
-            "link": "https://x.com/Tony_Blair01"
-        },
-        {
             "icon": "linkedin",
             "label": "LinkedIn",
             "link": "https://www.linkedin.com/in/tony-wangolo-545b23285/"
@@ -89,21 +84,21 @@
             "title": "Ustawi — Smart Rental & Property Platform",
             "link": "https://ustawi-1.vercel.app/",
             "github": "https://github.com/captainblair/USTAWI1",
-            "description": "Full-stack rental platform connecting tenants with property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property management workflows, and database-driven functionality."
+            "description": "Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs."
         },
         {
             "image": "/images/school1.png",
             "title": "SchoolSys — School Management & Operations Platform",
             "link": "https://schoolsys-00mj.onrender.com/",
             "github": "https://github.com/captainblair/schoolsys1",
-            "description": "Built a full-stack school management application for handling student records, attendance tracking, fee management, and library operations. Implemented role-based dashboards and backend workflows for students, teachers, and administrators."
+            "description": "Built a full-stack school management application for handling student records, attendance tracking, fee management, and library operations. Implemented role-based dashboards and backend workflows for different user roles including students, teachers, and administrators."
         },
         {
             "image": "/images/occ.jpeg",
             "title": "ODM Comrades Platform — University Registration Hub",
             "link": "https://occ.co.ke/",
             "github": "https://github.com/osumba404/occ",
-            "description": "Served as ICT Lead on a university registration platform built with PHP and Laravel. Implemented responsive interfaces, registration workflows, and dashboard components used to manage student information and improve digital registration processes."
+            "description": "Served as ICT Lead for a university registration platform built with PHP and Laravel. Implemented responsive interfaces, registration workflows, and dashboard components used to manage student information and improve digital registration processes."
         },
         {
             "image": "/images/travionalive.png",
@@ -167,7 +162,7 @@
         },
         "experience": {
             "title": "Development Experience — Tony Wangolo Inganga",
-            "description": "Hands-on experience building full-stack applications using Python, Django, JavaScript/TypeScript, and PostgreSQL."
+            "description": "Experience building and deploying full-stack applications using Python, Django, JavaScript/TypeScript, and PostgreSQL."
         },
         "projects": {
             "title": "Full-Stack Projects",

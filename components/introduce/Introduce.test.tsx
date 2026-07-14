@@ -30,8 +30,7 @@ jest.mock('@/utils', () => ({
             availableForWork: true
         },
         contactLinks: [
-            { link: 'https://github.com/captainblair', label: 'GitHub', icon: 'github' },
-            { link: 'https://x.com/Tony_Blair01', label: 'X', icon: 'X' }
+            { link: 'https://github.com/captainblair', label: 'GitHub', icon: 'github' }
         ],
         experience: [
             {

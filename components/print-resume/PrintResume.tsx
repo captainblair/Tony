@@ -10,8 +10,7 @@ const formatList = (items: string[]): string => items.join(' | ')
 
 const CONTACT_LINKS = [
     { href: 'https://github.com/captainblair', label: 'GitHub:' },
-    { href: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', label: 'LinkedIn:' },
-    { href: 'https://x.com/Tony_Blair01', label: 'X:' }
+    { href: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', label: 'LinkedIn:' }
 ]
 
 type ResumeLinkProps = {
