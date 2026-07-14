@@ -36,10 +36,17 @@ describe('GithubRepos', () => {
         expect(screen.getByText('Traviona1')).toBeInTheDocument()
     })
 
+    it('does not show zero star or fork counts', () => {
+        render(<GithubRepos />)
+        expect(screen.queryByText(/^0$/)).not.toBeInTheDocument()
+    })
+
     it('renders repo descriptions', () => {
         render(<GithubRepos />)
         expect(screen.getByText(/Full-stack rental platform connecting tenants and property managers/)).toBeInTheDocument()
-        expect(screen.getByText(/featuring authentication, property listings, user workflows, and backend APIs/)).toBeInTheDocument()
+        expect(
+            screen.getByText(/supporting content management, user roles, and business workflows for a professional services organization/)
+        ).toBeInTheDocument()
     })
 
     it('renders repo links with correct href', () => {

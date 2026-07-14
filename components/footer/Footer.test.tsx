@@ -5,10 +5,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-    it('renders copyright text with Next.js mention', () => {
+    it('renders copyright with full name', () => {
         render(<Footer />)
-        expect(screen.getByText('Next.js')).toBeInTheDocument()
-        expect(screen.getByText('TypeScript')).toBeInTheDocument()
+        expect(screen.getByText(/Tony Wangolo Inganga/)).toBeInTheDocument()
     })
 
     it('renders current year', () => {

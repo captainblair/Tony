@@ -13,11 +13,7 @@ export const Footer: React.FC = () => {
                 <span className={styles.copyright}>
                     {'© '}
                     {new Date().getFullYear()}
-                    {'Tony. Built with '}
-                    <span>{'Next.js'}</span>
-                    {' & '}
-                    <span>{'TypeScript'}</span>
-                    {'.'}
+                    {' Tony Wangolo Inganga'}
                 </span>
                 <button
                     className={styles.backToTop}

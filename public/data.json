@@ -9,7 +9,7 @@
         "bio": {
             "lead": "I am a Full Stack Developer passionate about building useful software solutions using Python, Django, React, and modern web technologies. I enjoy designing backend solutions, creating clean user experiences, and turning ideas into functional applications.",
             "bullets": [
-                "Building full-stack applications using Python frameworks such as Django and Flask, alongside JavaScript and TypeScript",
+                "Building full-stack applications using Python (Django, Flask) and JavaScript/TypeScript",
                 "Developing REST APIs, authentication systems, RBAC, and relational database structures",
                 "Projects include school management systems, rental platforms, and digital registration applications",
                 "Experience deploying applications using Render, Vercel, PostgreSQL hosting services, and Git-based workflows"
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "group": "Additional Technologies",
+            "group": "Other Technologies",
             "skills": [
                 { "name": "PHP", "level": 75 },
                 { "name": "Laravel", "level": 72 }
@@ -105,12 +105,12 @@
             "title": "Traviona Consulting — Strategy, Insights & Talent Solutions",
             "link": "https://travionaconsulting.top/",
             "github": "https://github.com/captainblair/Traviona1",
-            "description": "Built a Django-based consulting platform with content management features, user roles, and business workflows."
+            "description": "Built a Django-based consulting platform supporting content management, user roles, and business workflows for a professional services organization."
         }
     ],
     "experience": [
         {
-            "period": ["01/01/2024"],
+            "period": ["01/01/2025"],
             "role": "Freelance Developer",
             "duties": "Built and deployed full-stack web applications using Django, Flask, Streamlit, and MySQL. Developed authentication systems, backend APIs, database structures, and responsive interfaces for personal and freelance projects.",
             "skills": [
@@ -143,7 +143,7 @@
     "seo": {
         "index": {
             "title": "Tony Wangolo Inganga — Full Stack Developer",
-            "description": "Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern frontend technologies. Building practical web applications since 2024."
+            "description": "Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern frontend technologies. Building practical web applications since January 2025."
         },
         "activity": {
             "title": "Work Activity",

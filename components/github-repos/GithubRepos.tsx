@@ -3,56 +3,26 @@ import { motion } from 'framer-motion'
 
 import styles from './styles.module.sass'
 
-const StarIcon = () => (
-    <svg
-        viewBox={'0 0 24 24'}
-        fill={'currentColor'}
-        aria-hidden={'true'}
-    >
-        <path d={'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'} />
-    </svg>
-)
-
-const ForkIcon = () => (
-    <svg
-        viewBox={'0 0 24 24'}
-        fill={'currentColor'}
-        aria-hidden={'true'}
-    >
-        <path
-            d={
-                'M12 21a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-4-14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM8 7v1.5a4 4 0 0 0 3 3.87V17a4 4 0 0 0 2 0v-4.63A4 4 0 0 0 16 8.5V7'
-            }
-        />
-    </svg>
-)
-
 const FEATURED_REPOS = [
     {
         description:
             'Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs.',
-        forks: 0,
         language: 'TypeScript',
         name: 'USTAWI1',
-        stars: 0,
         url: 'https://github.com/captainblair/USTAWI1'
     },
     {
         description:
             'Django/PostgreSQL school management platform with dashboards for different user roles including students, teachers, and administrators. Includes attendance tracking, fee management, and library operations.',
-        forks: 0,
         language: 'Python',
         name: 'schoolsys1',
-        stars: 0,
         url: 'https://github.com/captainblair/schoolsys1'
     },
     {
         description:
-            'Built a Django-based consulting platform with content management features, user roles, and business workflows.',
-        forks: 0,
+            'Built a Django-based consulting platform supporting content management, user roles, and business workflows for a professional services organization.',
         language: 'Python',
         name: 'Traviona1',
-        stars: 0,
         url: 'https://github.com/captainblair/Traviona1'
     }
 ]
@@ -96,17 +66,6 @@ export const GithubRepos: React.FC = () => {
                             </div>
 
                             {repo.description && <p className={styles.repoDesc}>{repo.description}</p>}
-
-                            <div className={styles.repoMeta}>
-                                <span className={styles.metaStat}>
-                                    <StarIcon />
-                                    {repo.stars}
-                                </span>
-                                <span className={styles.metaStat}>
-                                    <ForkIcon />
-                                    {repo.forks}
-                                </span>
-                            </div>
                         </a>
                     </motion.li>
                 ))}

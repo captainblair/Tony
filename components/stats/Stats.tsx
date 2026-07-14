@@ -43,7 +43,7 @@ export const Stats: React.FC = () => {
     const statItems = [
         { delay: 0, label: 'Full-Stack Projects', suffix: '+', value: 5 },
         { delay: 0.15, label: 'Deployed Applications', suffix: '+', value: 3 },
-        { delay: 0.3, label: 'Years Building Software', suffix: '+', value: 2 }
+        { delay: 0.3, label: 'Years Building Software', suffix: '+', value: 1 }
     ]
 
     return (

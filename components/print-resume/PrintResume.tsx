@@ -91,7 +91,7 @@ const EXPERIENCE = [
     {
         role: 'Freelance Developer',
         org: 'Remote',
-        period: '2024 | Present',
+        period: 'January 2025 | Present',
         duties: [
             'Built and deployed full-stack web applications using Python, Django, Flask, Streamlit, and MySQL. Developed backend APIs, authentication systems, database structures, and responsive user interfaces for different client and personal projects. Worked across the software development lifecycle including planning, development, testing, deployment, and maintenance.'
         ]
