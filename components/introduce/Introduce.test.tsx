@@ -34,7 +34,7 @@ jest.mock('@/utils', () => ({
         ],
         experience: [
             {
-                role: 'Freelance Full Stack Developer',
+                role: 'Freelance Developer',
                 period: ['01/01/2024']
             }
         ]

@@ -89,7 +89,7 @@ const EXPERIENCE = [
         ]
     },
     {
-        role: 'Freelance Full Stack Developer',
+        role: 'Freelance Developer',
         org: 'Remote',
         period: '2024 | Present',
         duties: [

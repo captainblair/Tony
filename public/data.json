@@ -9,7 +9,7 @@
         "bio": {
             "lead": "I am a Full Stack Developer passionate about building useful software solutions using Python, Django, React, and modern web technologies. I enjoy designing backend solutions, creating clean user experiences, and turning ideas into functional applications.",
             "bullets": [
-                "Building full-stack applications using Python (Django/Flask) and JavaScript/TypeScript",
+                "Building full-stack applications using Python frameworks such as Django and Flask, alongside JavaScript and TypeScript",
                 "Developing REST APIs, authentication systems, RBAC, and relational database structures",
                 "Projects include school management systems, rental platforms, and digital registration applications",
                 "Experience deploying applications using Render, Vercel, PostgreSQL hosting services, and Git-based workflows"
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "group": "Additional Experience",
+            "group": "Additional Technologies",
             "skills": [
                 { "name": "PHP", "level": 75 },
                 { "name": "Laravel", "level": 72 }
@@ -91,7 +91,7 @@
             "title": "SchoolSys — School Management & Operations Platform",
             "link": "https://schoolsys-00mj.onrender.com/",
             "github": "https://github.com/captainblair/schoolsys1",
-            "description": "Built a full-stack school management application for handling student records, attendance tracking, fee management, and library operations. Implemented role-based dashboards and backend workflows for different user roles including students, teachers, and administrators."
+            "description": "Built a full-stack school management application for student records, attendance tracking, fee management, and library operations. Implemented role-based dashboards and backend workflows for students, teachers, and administrators."
         },
         {
             "image": "/images/occ.jpeg",
@@ -106,18 +106,12 @@
             "link": "https://travionaconsulting.top/",
             "github": "https://github.com/captainblair/Traviona1",
             "description": "Built a Django-based consulting platform with content management features, user roles, and business workflows."
-        },
-        {
-            "image": "/images/digitalleap.png",
-            "title": "Digital Leap Africa — Finance Lead (Partner Org.)",
-            "link": "https://digitalleap.africa/",
-            "description": "Responsible for financial oversight and operational support within the organization, contributing to the sustainability and growth of digital initiatives across the region."
         }
     ],
     "experience": [
         {
             "period": ["01/01/2024"],
-            "role": "Freelance Full Stack Developer",
+            "role": "Freelance Developer",
             "duties": "Built and deployed full-stack web applications using Django, Flask, Streamlit, and MySQL. Developed authentication systems, backend APIs, database structures, and responsive interfaces for personal and freelance projects.",
             "skills": [
                 {

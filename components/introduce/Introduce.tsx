@@ -105,7 +105,7 @@ export const Introduce: React.FC = () => {
                         {'Full Stack Developer focused on backend engineering with'} <b>{'Python'}</b>{', '}
                         <b>{'Django'}</b>{', REST APIs, '}
                         <b>{'PostgreSQL'}</b>
-                        {', and modern frontend technologies. I build practical web applications with authentication, database-driven workflows, and responsive user interfaces.'}
+                        {', and modern frontend technologies. I build practical web applications with authentication, business workflows, and responsive user interfaces.'}
                     </p>
                 </div>
 

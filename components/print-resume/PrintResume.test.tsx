@@ -83,7 +83,7 @@ describe('PrintResume', () => {
             screen.getByRole('heading', { level: 3, name: 'ICT Lead (Volunteer) | ODM Comrades Chapter', hidden: true })
         ).toBeInTheDocument()
         expect(
-            screen.getByRole('heading', { level: 3, name: 'Freelance Full Stack Developer | Remote', hidden: true })
+            screen.getByRole('heading', { level: 3, name: 'Freelance Developer | Remote', hidden: true })
         ).toBeInTheDocument()
         expect(
             screen.getByRole('heading', {
