@@ -1,18 +1,18 @@
 {
     "biography": {
         "name": "Tony Wangolo Inganga",
-        "title": "Full Stack Software Engineer",
+        "title": "Junior Full Stack Developer",
         "location": "Nairobi, Kenya",
         "timezone": "East Africa Time (UTC+3)",
         "birthDate": "2003-08-16T05:15:00",
         "availableForWork": true,
         "bio": {
-            "lead": "Full Stack Software Engineer specializing in scalable backend architecture, relational database design, and end-to-end web deployment ecosystems.",
+            "lead": "I am a Full Stack Developer passionate about building useful software solutions using Python, Django, React, and modern web technologies. I enjoy designing backend systems, creating clean user experiences, and turning ideas into functional applications.",
             "bullets": [
-                "Production-ready systems using Python (Django/Flask) and JavaScript/TypeScript",
-                "Secure Role-Based Access Control (RBAC), API design, and optimized relational database schemas",
-                "Shipped enterprise platforms: school administration, rental marketplaces, and university registration hubs",
-                "Cloud deployment on Render, Vercel, and serverless PostgreSQL with CI/CD via GitHub Actions and Jenkins"
+                "Building full-stack applications using Python (Django/Flask) and JavaScript/TypeScript",
+                "Developing REST APIs, authentication systems, RBAC, and relational database structures",
+                "Projects include school management systems, rental platforms, and digital registration applications",
+                "Experience deploying applications using Render, Vercel, PostgreSQL hosting services, and Git-based workflows"
             ]
         }
     },
@@ -35,79 +35,84 @@
     ],
     "skills": [
         {
-            "group": "Languages",
+            "group": "Backend Development",
             "skills": [
                 { "name": "Python", "level": 92 },
+                { "name": "Django", "level": 90 },
+                { "name": "Django REST Framework", "level": 88 },
+                { "name": "Flask", "level": 85 },
+                { "name": "REST APIs", "level": 90 },
+                { "name": "Authentication & Authorization", "level": 88 },
+                { "name": "Role-Based Access Control (RBAC)", "level": 88 }
+            ]
+        },
+        {
+            "group": "Frontend Development",
+            "skills": [
                 { "name": "JavaScript", "level": 85 },
                 { "name": "TypeScript", "level": 80 },
-                { "name": "PHP", "level": 75 },
+                { "name": "React", "level": 82 },
+                { "name": "Next.js", "level": 80 },
+                { "name": "Tailwind CSS", "level": 82 }
+            ]
+        },
+        {
+            "group": "Databases",
+            "skills": [
+                { "name": "PostgreSQL", "level": 90 },
+                { "name": "MySQL", "level": 85 },
                 { "name": "SQL", "level": 88 }
             ]
         },
         {
-            "group": "Frameworks & Libraries",
+            "group": "Tools & Deployment",
             "skills": [
-                { "name": "Django", "level": 92 },
-                { "name": "Flask", "level": 85 },
-                { "name": "Next.js", "level": 80 },
-                { "name": "React", "level": 80 },
-                { "name": "Laravel", "level": 75 },
-                { "name": "TailwindCSS", "level": 82 },
-                { "name": "Redux", "level": 70 }
-            ]
-        },
-        {
-            "group": "Infrastructure & Databases",
-            "skills": [
-                { "name": "PostgreSQL", "level": 90 },
-                { "name": "MySQL", "level": 85 },
-                { "name": "Docker", "level": 78 },
-                { "name": "Linux", "level": 90 },
+                { "name": "Git", "level": 90 },
                 { "name": "GitHub Actions", "level": 85 },
-                { "name": "Jenkins", "level": 80 }
+                { "name": "Docker", "level": 78 },
+                { "name": "Linux", "level": 88 },
+                { "name": "Vercel", "level": 82 },
+                { "name": "Render", "level": 82 }
             ]
         },
         {
-            "group": "Core Competencies",
+            "group": "Additional Experience",
             "skills": [
-                { "name": "System Architecture", "level": 90 },
-                { "name": "RESTful APIs", "level": 92 },
-                { "name": "Role-Based Access Control (RBAC)", "level": 88 },
-                { "name": "Data Analysis", "level": 82 }
+                { "name": "PHP", "level": 75 },
+                { "name": "Laravel", "level": 72 },
+                { "name": "Data Analysis", "level": 78 }
             ]
         }
     ],
     "projects": [
         {
-            "image": "/images/occ.jpeg",
-            "title": "ODM Comrades Platform — Centralized University Registration Hub",
-            "link": "https://occ.co.ke/",
-            "github": "https://github.com/osumba404/occ",
-            "description": "Led frontend engineering for a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
-        },
-        {
             "image": "/images/Ustawilive.png",
-            "title": "Ustawi — The Smart Rental & Property Platform",
+            "title": "Ustawi — Smart Rental & Property Platform",
             "link": "https://ustawi-1.vercel.app/",
             "github": "https://github.com/captainblair/USTAWI1",
-            "description": "Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance efficiently while respecting tight environment resource baselines.",
-            "migrationNotice": true
-        },
-        {
-            "image": "/images/travionalive.png",
-            "title": "Traviona Consulting — Global Strategy, Insights & Talent Solutions",
-            "link": "https://travionaconsulting.top/",
-            "github": "https://github.com/captainblair/Traviona1",
-            "description": "Built a modern, professional platform for an international consulting firm specializing in business strategy, geopolitical intelligence, and global talent recruitment.",
-            "migrationNotice": true
+            "description": "Developed a rental platform connecting tenants with property managers. Implemented authentication, property management workflows, database models, and API communication between backend and frontend systems.",
+            "statusNotice": "Currently improving deployment infrastructure and database reliability."
         },
         {
             "image": "/images/school1.png",
             "title": "SchoolSys — School Management & Operations Platform",
             "link": "https://schoolsys-00mj.onrender.com/",
             "github": "https://github.com/captainblair/schoolsys1",
-            "description": "Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards for students, teachers, and administrators. Optimized database schemas for profile approvals, attendance, financial fee records, and library loans into a unified platform.",
-            "migrationNotice": true
+            "description": "Built a full-stack school management application for handling student records, attendance, fees, and library workflows."
+        },
+        {
+            "image": "/images/occ.jpeg",
+            "title": "ODM Comrades Platform — University Registration Hub",
+            "link": "https://occ.co.ke/",
+            "github": "https://github.com/osumba404/occ",
+            "description": "Contributed as ICT Lead to the development of a university registration platform using PHP and Laravel. Built responsive interfaces, registration workflows, and dashboard components used to manage student information and improve digital registration processes."
+        },
+        {
+            "image": "/images/travionalive.png",
+            "title": "Traviona Consulting — Strategy, Insights & Talent Solutions",
+            "link": "https://travionaconsulting.top/",
+            "github": "https://github.com/captainblair/Traviona1",
+            "description": "Django-based consulting platform with content management features, user roles, and business workflows."
         },
         {
             "image": "/images/digitalleap.png",
@@ -120,7 +125,7 @@
         {
             "period": ["01/01/2024"],
             "role": "Freelance Full Stack Developer",
-            "duties": "Architected, tested, and deployed end-to-end full-stack web platforms using Python (Flask/Django), Streamlit, and MySQL, focusing heavily on secure authentication modules and robust backend query structures. Implemented machine learning and analytical models into custom dashboard interfaces, providing automated decision support tools and predictive analysis layers for localized business platforms.",
+            "duties": "Built and deployed full-stack web applications using Django, Flask, Streamlit, and MySQL. Developed authentication systems, backend APIs, database structures, and responsive interfaces for personal and freelance projects.",
             "skills": [
                 {
                     "area": "Frontend",
@@ -139,7 +144,7 @@
         {
             "period": ["01/01/2025", "06/01/2026"],
             "role": "Volunteer Computer Skills Trainer",
-            "duties": "Upskilled and trained over 50 community members in digital literacy, version control fundamentals utilizing Git/GitHub, and core programming paradigms. Orchestrated technical engineering workshops, guiding junior learners through local workflow environments, structural web basics, and clean programming code principles.",
+            "duties": "Trained community members in digital literacy, Git/GitHub, programming fundamentals, and basic web development concepts through practical sessions.",
             "skills": [
                 {
                     "area": "Training",
@@ -150,8 +155,8 @@
     ],
     "seo": {
         "index": {
-            "title": "Tony Wangolo Inganga — Full Stack Software Engineer",
-            "description": "Full Stack Software Engineer specializing in scalable backend architecture, Django, PostgreSQL, and production-ready web platforms. 1.5+ years building enterprise systems."
+            "title": "Tony Wangolo Inganga — Junior Full Stack Developer",
+            "description": "Junior Full Stack Developer focused on backend engineering with Python, Django, REST APIs, PostgreSQL, and modern JavaScript frameworks. Building practical web applications since 2024."
         },
         "activity": {
             "title": "Work Activity",
@@ -159,16 +164,16 @@
         },
         "skills": {
             "title": "Technical Skills — Tony Wangolo Inganga",
-            "description": "1.5+ years building production systems across Python, Django, Next.js, PostgreSQL, and cloud infrastructure — API design, RBAC, and system architecture.",
-            "skillsIntro": "A production-focused skill set built through real enterprise platforms — school administration systems, rental marketplaces, and university registration hubs."
+            "description": "Technologies I use to build web applications — Python, Django, Next.js, PostgreSQL, and modern deployment workflows.",
+            "skillsIntro": "Technologies and tools I use to build web applications."
         },
         "experience": {
-            "title": "Engineering Experience — Tony Wangolo Inganga",
-            "description": "Hands-on experience building full-stack applications using Python, Django, JavaScript/TypeScript, and PostgreSQL, with emphasis on scalable systems, RBAC, and secure data pipelines."
+            "title": "Development Experience — Tony Wangolo Inganga",
+            "description": "Hands-on experience building full-stack applications using Python, Django, JavaScript/TypeScript, and PostgreSQL."
         },
         "projects": {
-            "title": "Core Production Projects",
-            "description": "Production platforms shipped end-to-end — school ERP systems, rental marketplaces, and university registration hubs. Each reflects real architectural decisions and hands-on engineering at scale."
+            "title": "Full-Stack Projects",
+            "description": "School management systems, rental platforms, and digital registration solutions built end-to-end."
         }
     }
 }

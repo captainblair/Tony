@@ -34,7 +34,7 @@ export const Introduce: React.FC = () => {
                         fill
                         sizes={'(max-width: 768px) 240px, 45vw'}
                         style={{ objectFit: 'cover' }}
-                        alt={"Hi I'm -Tony - Picture of the author"}
+                        alt={"Hi, I'm Tony - Picture of the author"}
                         priority
                     />
                 </div>
@@ -44,7 +44,7 @@ export const Introduce: React.FC = () => {
                 <div className={styles.header}>
                     <div className={styles.title}>
                         <h1>
-                            {"Hi I'm - "}
+                            {"Hi, I'm "}
                             {/* eslint-disable-next-line react/jsx-max-depth */}
                             <span>{data?.biography?.name}</span>
                         </h1>
@@ -82,8 +82,8 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.counterPills}>
                     <div className={styles.pill}>
-                        <span className={styles.pillValue}>{'1.5+ Years'}</span>
-                        <span className={styles.pillLabel}>{'Experience'}</span>
+                        <span className={styles.pillValue}>{'Hands-on'}</span>
+                        <span className={styles.pillLabel}>{'Development Experience'}</span>
                     </div>
                 </div>
 
@@ -102,10 +102,15 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.description}>
                     <p>
-                        {'Full Stack Software Engineer specializing in scalable backend architecture, relational database design, and end-to-end web deployment. I build production-ready systems with'} <b>{'Python (Django/Flask)'}</b>{' and '}<b>{'JavaScript/TypeScript'}</b>{', with a focus on RBAC, API design, and cloud-native delivery.'}
+                        {'Full Stack Developer focused on backend engineering with'} <b>{'Python'}</b>{', '}
+                        <b>{'Django'}</b>{', REST APIs, '}
+                        <b>{'PostgreSQL'}</b>
+                        {', and modern JavaScript frameworks. I build practical web applications with authentication, database-driven workflows, and responsive user interfaces.'}
                     </p>
                     <p>
-                        {'Shipped enterprise platforms including school administration systems, rental marketplaces, and university registration hubs — architecting secure data pipelines, optimized schemas, and role-based dashboards for real-world scale.'}
+                        {
+                            'I have built management systems, rental platforms, and digital registration solutions while gaining hands-on experience in backend development, database design, deployment, and software delivery.'
+                        }
                     </p>
                 </div>
 

@@ -19,7 +19,7 @@ exports[`PrintResume matches snapshot 1`] = `
           Tony Wangolo Inganga
         </h1>
         <p>
-          Software Engineer | 1.5+ Years Experience
+          Junior Full Stack Developer
         </p>
         <p>
           Nairobi, Kenya | +254 111 414 441 | 
@@ -71,7 +71,7 @@ exports[`PrintResume matches snapshot 1`] = `
       </div>
     </div>
     <p>
-      Highly motivated Full Stack Software Engineer specializing in scalable backend architecture, robust relational database design, and end-to-end web deployment ecosystems. Proven track record of developing production-ready systems using Python (Django | Flask) and JavaScript | TypeScript. Adept at creating optimized data structures, implementing secure Role-Based Access Control (RBAC), and maximizing software utility under cloud infrastructure resource constraints.
+      Junior Full Stack Developer specializing in backend development with Python, Django, REST APIs, PostgreSQL, and modern JavaScript frameworks. Experienced in building and deploying practical web applications including management systems, marketplaces, and digital platforms. Skilled in database design, authentication systems, role-based access control, and cloud deployment workflows. Passionate about creating reliable software solutions that solve real-world problems.
     </p>
     <div>
       <div>
@@ -86,10 +86,10 @@ exports[`PrintResume matches snapshot 1`] = `
             <span>
               Technical Stack:
             </span>
-             Python | Django | PostgreSQL | Render | TailwindCSS
+             Python | Django | PostgreSQL | Render | Tailwind CSS
           </p>
           <p>
-            Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.
+            Built a full-stack school management platform for handling administrative workflows including student records, attendance tracking, fee management, and library operations. Designed Django-based backend systems with role-based access control for different user groups and developed responsive dashboards using Tailwind CSS. Deployed the application using cloud hosting services.
           </p>
           <p>
             <span>
@@ -118,16 +118,16 @@ exports[`PrintResume matches snapshot 1`] = `
         </div>
         <div>
           <h3>
-            Ustawi | The Smart Rental & Property Platform
+            Ustawi | Smart Rental & Property Platform
           </h3>
           <p>
             <span>
               Technical Stack:
             </span>
-             Python | Django | Next.js | PostgreSQL (Neon Serverless) | Vercel
+             Python | Django REST Framework | Next.js | PostgreSQL | Vercel | Neon
           </p>
           <p>
-            Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance metrics efficiently while respecting tight environment resource baselines.
+            Developed a full-stack rental platform connecting tenants and property managers. Built backend APIs using Django REST Framework and designed database models for managing users, properties, and rental-related data. Implemented authentication, frontend interfaces, and cloud deployment using modern web technologies.
           </p>
           <p>
             <span>
@@ -164,20 +164,14 @@ exports[`PrintResume matches snapshot 1`] = `
             </span>
           </div>
           <h3>
-            ICT Lead 
+            ICT Lead (Volunteer) 
             <span>
               | ODM Comrades Chapter
             </span>
           </h3>
           <ul>
             <li>
-              Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.
-            </li>
-            <li>
-              Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university directories, improving operational data extraction efficiency by 40%.
-            </li>
-            <li>
-              Collaborated with backend engineers to integrate Laravel REST endpoints and structure high-volume concurrent submission interfaces with clean, maintainable frontend architecture.
+              Led frontend development for a university digital registration platform built using PHP and Laravel. Designed responsive interfaces, registration workflows, and dashboard components used for managing student records across multiple campuses. Collaborated with other contributors to improve data collection processes and streamline digital registration operations, supporting registration of over 800 students.
             </li>
           </ul>
         </div>
@@ -195,13 +189,7 @@ exports[`PrintResume matches snapshot 1`] = `
           </h3>
           <ul>
             <li>
-              Architected, tested, and deployed end-to-end full-stack web platforms using Python (Flask | Django), Streamlit, and MySQL, focusing heavily on secure authentication modules and robust backend query structures.
-            </li>
-            <li>
-              Implemented machine learning and analytical models into custom dashboard interfaces, providing automated decision support tools and predictive analysis layers for localized business platforms.
-            </li>
-            <li>
-              Authored clean, maintainable, and reusable codebase patterns, collaborating iteratively to integrate frontend responsive designs with complex relational data systems.
+              Built and deployed full-stack web applications using Python, Django, Flask, Streamlit, and MySQL. Developed backend APIs, authentication systems, database structures, and responsive user interfaces for different client and personal projects. Worked across the software development lifecycle including planning, development, testing, deployment, and maintenance.
             </li>
           </ul>
         </div>
@@ -219,10 +207,7 @@ exports[`PrintResume matches snapshot 1`] = `
           </h3>
           <ul>
             <li>
-              Upskilled and trained over 50 community members in digital literacy, version control fundamentals utilizing Git | GitHub, and core programming paradigms.
-            </li>
-            <li>
-              Orchestrated technical engineering workshops, guiding junior learners through local workflow environments, structural web basics, and clean programming code principles.
+              Trained over 50 community members in digital literacy, Git/GitHub, programming fundamentals, and web development concepts. Conducted practical sessions covering computer skills, development workflows, and basic software engineering practices.
             </li>
           </ul>
         </div>
@@ -245,7 +230,7 @@ exports[`PrintResume matches snapshot 1`] = `
         <div>
           <div>
             <span>
-              Graduated
+              Completed
             </span>
           </div>
           <h3>
@@ -265,7 +250,7 @@ exports[`PrintResume matches snapshot 1`] = `
             Languages
           </h3>
           <p>
-            Python | JavaScript | TypeScript | PHP | SQL | HTML5 | CSS3 | SASS
+            Python | JavaScript | TypeScript | SQL | PHP | HTML/CSS
           </p>
         </div>
         <div>
@@ -273,23 +258,23 @@ exports[`PrintResume matches snapshot 1`] = `
             Frameworks & Libraries
           </h3>
           <p>
-            Django | Flask | Next.js | React | Laravel | TailwindCSS | Streamlit | Redux
+            Django | Django REST Framework | React | Next.js | Flask | Laravel | Tailwind CSS | Streamlit
           </p>
         </div>
         <div>
           <h3>
-            Databases & Storage
+            Databases
           </h3>
           <p>
-            PostgreSQL | MySQL | SQL Server | Supabase
+            PostgreSQL | MySQL | Supabase
           </p>
         </div>
         <div>
           <h3>
-            Infrastructure & DevOps
+            Tools & Deployment
           </h3>
           <p>
-            Docker | Linux | Git | GitHub Actions | Jenkins | Render | Vercel
+            Git | GitHub Actions | Docker | Linux | Render | Vercel
           </p>
         </div>
         <div>
@@ -297,7 +282,7 @@ exports[`PrintResume matches snapshot 1`] = `
             Core Competencies
           </h3>
           <p>
-            API Design | Role-Based Access Control (RBAC) | Data Analysis | System Architecture
+            REST API Development | Database Design | Authentication & Authorization | Role-Based Access Control | Full Stack Development
           </p>
         </div>
       </div>

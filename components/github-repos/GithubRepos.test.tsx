@@ -26,10 +26,10 @@ jest.mock('framer-motion', () => {
 describe('GithubRepos', () => {
     it('renders section heading', () => {
         render(<GithubRepos />)
-        expect(screen.getByRole('heading', { level: 2, name: /Featured Production Repositories/i })).toBeInTheDocument()
+        expect(screen.getByRole('heading', { level: 2, name: /Featured Repositories/i })).toBeInTheDocument()
     })
 
-    it('renders featured production repo names', () => {
+    it('renders featured repo names', () => {
         render(<GithubRepos />)
         expect(screen.getByText('schoolsys1')).toBeInTheDocument()
         expect(screen.getByText('USTAWI1')).toBeInTheDocument()
@@ -38,13 +38,14 @@ describe('GithubRepos', () => {
 
     it('renders repo descriptions', () => {
         render(<GithubRepos />)
-        expect(screen.getByText(/Full-Stack Django\/PostgreSQL School ERP/)).toBeInTheDocument()
+        expect(screen.getByText(/Full-stack rental platform connecting tenants and property managers/)).toBeInTheDocument()
+        expect(screen.getByText(/Django\/PostgreSQL school management platform/)).toBeInTheDocument()
     })
 
     it('renders repo links with correct href', () => {
         render(<GithubRepos />)
-        const link = screen.getByRole('link', { name: /schoolsys1/i })
-        expect(link).toHaveAttribute('href', 'https://github.com/captainblair/schoolsys1')
+        const link = screen.getByRole('link', { name: /USTAWI1/i })
+        expect(link).toHaveAttribute('href', 'https://github.com/captainblair/USTAWI1')
     })
 
     it('always renders featured repos without API data', () => {

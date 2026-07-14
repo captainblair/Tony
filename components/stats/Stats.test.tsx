@@ -16,26 +16,12 @@ afterEach(() => {
     jest.restoreAllMocks()
 })
 
-jest.mock('@/utils', () => ({
-    useSiteData: () => ({
-        experience: [
-            { period: ['06/01/2005'], role: 'Eng', duties: '', skills: [] },
-            { period: ['01/01/2010', '01/01/2015'], role: 'Dev', duties: '', skills: [] }
-        ],
-        projects: [{ title: 'P1' }, { title: 'P2' }, { title: 'P3' }]
-    })
-}))
-
-jest.mock('@/components/introduce/utils', () => ({
-    findEarliestDate: () => '2005-06-01'
-}))
-
 describe('Stats', () => {
     it('renders all stat labels', () => {
         render(<Stats />)
-        expect(screen.getByText('Years of experience')).toBeInTheDocument()
-        expect(screen.getByText('Roles & companies')).toBeInTheDocument()
-        expect(screen.getByText('Production projects')).toBeInTheDocument()
+        expect(screen.getByText('Projects Built')).toBeInTheDocument()
+        expect(screen.getByText('Platforms Developed')).toBeInTheDocument()
+        expect(screen.getByText('Years Learning & Building')).toBeInTheDocument()
     })
 
     it('renders the stats section container', () => {

@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { animate, motion, useInView, useMotionValue, useTransform } from 'framer-motion'
 
-import { useSiteData } from '@/utils'
-
 import styles from './styles.module.sass'
 
 type StatItemProps = {
@@ -42,12 +40,10 @@ const StatItem: React.FC<StatItemProps> = ({ value, suffix = '', label, delay = 
 }
 
 export const Stats: React.FC = () => {
-    const data = useSiteData()
-
     const statItems = [
-        { delay: 0, label: 'Years of experience', suffix: '.5+', value: 1 },
-        { delay: 0.15, label: 'Roles & companies', value: 1 },
-        { delay: 0.3, label: 'Production projects', value: data?.projects?.length ?? 5 }
+        { delay: 0, label: 'Projects Built', suffix: '+', value: 10 },
+        { delay: 0.15, label: 'Platforms Developed', suffix: '+', value: 3 },
+        { delay: 0.3, label: 'Years Learning & Building', suffix: '+', value: 2 }
     ]
 
     return (

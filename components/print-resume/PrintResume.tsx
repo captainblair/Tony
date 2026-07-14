@@ -30,36 +30,42 @@ const ResumeLink: React.FC<ResumeLinkProps> = ({ href, children }) => (
 )
 
 const SKILLS = [
-    { group: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'HTML5', 'CSS3', 'SASS'] },
+    { group: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'SQL', 'PHP', 'HTML/CSS'] },
     {
         group: 'Frameworks & Libraries',
-        items: ['Django', 'Flask', 'Next.js', 'React', 'Laravel', 'TailwindCSS', 'Streamlit', 'Redux']
+        items: ['Django', 'Django REST Framework', 'React', 'Next.js', 'Flask', 'Laravel', 'Tailwind CSS', 'Streamlit']
     },
-    { group: 'Databases & Storage', items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Supabase'] },
+    { group: 'Databases', items: ['PostgreSQL', 'MySQL', 'Supabase'] },
     {
-        group: 'Infrastructure & DevOps',
-        items: ['Docker', 'Linux', 'Git', 'GitHub Actions', 'Jenkins', 'Render', 'Vercel']
+        group: 'Tools & Deployment',
+        items: ['Git', 'GitHub Actions', 'Docker', 'Linux', 'Render', 'Vercel']
     },
     {
         group: 'Core Competencies',
-        items: ['API Design', 'Role-Based Access Control (RBAC)', 'Data Analysis', 'System Architecture']
+        items: [
+            'REST API Development',
+            'Database Design',
+            'Authentication & Authorization',
+            'Role-Based Access Control',
+            'Full Stack Development'
+        ]
     }
 ]
 
 const PROJECTS = [
     {
         title: 'SchoolSys | School Management & Operations Platform',
-        stack: ['Python', 'Django', 'PostgreSQL', 'Render', 'TailwindCSS'],
+        stack: ['Python', 'Django', 'PostgreSQL', 'Render', 'Tailwind CSS'],
         impact:
-            'Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.',
+            'Built a full-stack school management platform for handling administrative workflows including student records, attendance tracking, fee management, and library operations. Designed Django-based backend systems with role-based access control for different user groups and developed responsive dashboards using Tailwind CSS. Deployed the application using cloud hosting services.',
         link: 'https://schoolsys-00mj.onrender.com/',
         repo: 'https://github.com/captainblair/schoolsys1'
     },
     {
-        title: 'Ustawi | The Smart Rental & Property Platform',
-        stack: ['Python', 'Django', 'Next.js', 'PostgreSQL (Neon Serverless)', 'Vercel'],
+        title: 'Ustawi | Smart Rental & Property Platform',
+        stack: ['Python', 'Django REST Framework', 'Next.js', 'PostgreSQL', 'Vercel', 'Neon'],
         impact:
-            'Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance metrics efficiently while respecting tight environment resource baselines.',
+            'Developed a full-stack rental platform connecting tenants and property managers. Built backend APIs using Django REST Framework and designed database models for managing users, properties, and rental-related data. Implemented authentication, frontend interfaces, and cloud deployment using modern web technologies.',
         link: 'https://ustawi-1.vercel.app/',
         repo: 'https://github.com/captainblair/USTAWI1'
     }
@@ -67,13 +73,11 @@ const PROJECTS = [
 
 const EXPERIENCE = [
     {
-        role: 'ICT Lead',
+        role: 'ICT Lead (Volunteer)',
         org: 'ODM Comrades Chapter',
         period: 'January 2026 | Present | Nairobi, Kenya',
         duties: [
-            'Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.',
-            'Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university directories, improving operational data extraction efficiency by 40%.',
-            'Collaborated with backend engineers to integrate Laravel REST endpoints and structure high-volume concurrent submission interfaces with clean, maintainable frontend architecture.'
+            'Led frontend development for a university digital registration platform built using PHP and Laravel. Designed responsive interfaces, registration workflows, and dashboard components used for managing student records across multiple campuses. Collaborated with other contributors to improve data collection processes and streamline digital registration operations, supporting registration of over 800 students.'
         ]
     },
     {
@@ -81,9 +85,7 @@ const EXPERIENCE = [
         org: 'Remote',
         period: '2024 | Present',
         duties: [
-            'Architected, tested, and deployed end-to-end full-stack web platforms using Python (Flask | Django), Streamlit, and MySQL, focusing heavily on secure authentication modules and robust backend query structures.',
-            'Implemented machine learning and analytical models into custom dashboard interfaces, providing automated decision support tools and predictive analysis layers for localized business platforms.',
-            'Authored clean, maintainable, and reusable codebase patterns, collaborating iteratively to integrate frontend responsive designs with complex relational data systems.'
+            'Built and deployed full-stack web applications using Python, Django, Flask, Streamlit, and MySQL. Developed backend APIs, authentication systems, database structures, and responsive user interfaces for different client and personal projects. Worked across the software development lifecycle including planning, development, testing, deployment, and maintenance.'
         ]
     },
     {
@@ -91,8 +93,7 @@ const EXPERIENCE = [
         org: 'LEA Organization',
         period: 'January 2025 | June 2026 | Nairobi, Kenya',
         duties: [
-            'Upskilled and trained over 50 community members in digital literacy, version control fundamentals utilizing Git | GitHub, and core programming paradigms.',
-            'Orchestrated technical engineering workshops, guiding junior learners through local workflow environments, structural web basics, and clean programming code principles.'
+            'Trained over 50 community members in digital literacy, Git/GitHub, programming fundamentals, and web development concepts. Conducted practical sessions covering computer skills, development workflows, and basic software engineering practices.'
         ]
     }
 ]
@@ -106,7 +107,7 @@ const EDUCATION = [
     {
         degree: 'Professional Backend Web Development Certification',
         institution: 'ALX Africa',
-        period: 'Graduated'
+        period: 'Completed'
     }
 ]
 
@@ -127,7 +128,7 @@ export const PrintResume: React.FC = () => (
             </div>
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
-                <p className={styles.titleRole}>{'Software Engineer | 1.5+ Years Experience'}</p>
+                <p className={styles.titleRole}>{'Junior Full Stack Developer'}</p>
                 <p className={styles.location}>
                     {'Nairobi, Kenya | +254 111 414 441 | '}
                     <ResumeLink href={'mailto:wangolotony4@gmail.com'}>{'wangolotony4@gmail.com'}</ResumeLink>
@@ -145,7 +146,7 @@ export const PrintResume: React.FC = () => (
 
         <p className={styles.summary}>
             {
-                'Highly motivated Full Stack Software Engineer specializing in scalable backend architecture, robust relational database design, and end-to-end web deployment ecosystems. Proven track record of developing production-ready systems using Python (Django | Flask) and JavaScript | TypeScript. Adept at creating optimized data structures, implementing secure Role-Based Access Control (RBAC), and maximizing software utility under cloud infrastructure resource constraints.'
+                'Junior Full Stack Developer specializing in backend development with Python, Django, REST APIs, PostgreSQL, and modern JavaScript frameworks. Experienced in building and deploying practical web applications including management systems, marketplaces, and digital platforms. Skilled in database design, authentication systems, role-based access control, and cloud deployment workflows. Passionate about creating reliable software solutions that solve real-world problems.'
             }
         </p>
 

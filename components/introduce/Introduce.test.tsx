@@ -24,7 +24,7 @@ jest.mock('@/utils', () => ({
     useSiteData: () => ({
         biography: {
             name: 'Tony Wangolo Inganga',
-            title: 'Full Stack Software Engineer',
+            title: 'Junior Full Stack Developer',
             location: 'Nairobi, Kenya',
             timezone: 'East Africa Time (UTC+3)',
             availableForWork: true
@@ -54,8 +54,8 @@ describe('Introduce Component', () => {
     it('displays facts correctly', () => {
         render(<Introduce />)
 
-        expect(screen.getByText('1.5+ Years')).toBeInTheDocument()
-        expect(screen.getByText('Experience')).toBeInTheDocument()
+        expect(screen.getByText('Hands-on')).toBeInTheDocument()
+        expect(screen.getByText('Development Experience')).toBeInTheDocument()
         expect(screen.getByText('Updated')).toBeInTheDocument()
         expect(screen.getByText(formatDate(update, 'dddd, MMM D, YYYY'))).toBeInTheDocument()
     })
@@ -68,7 +68,7 @@ describe('Introduce Component', () => {
 
     it('renders the description text', () => {
         render(<Introduce />)
-        expect(screen.getByText(/scalable backend architecture/i)).toBeInTheDocument()
+        expect(screen.getByText(/focused on backend engineering/i)).toBeInTheDocument()
     })
 
     it('renders CTA buttons', () => {

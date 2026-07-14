@@ -29,15 +29,8 @@ const ForkIcon = () => (
 
 const FEATURED_REPOS = [
     {
-        description: 'Full-Stack Django/PostgreSQL School ERP — role-based dashboards, attendance, fees, and library management.',
-        forks: 0,
-        language: 'Python',
-        name: 'schoolsys1',
-        stars: 0,
-        url: 'https://github.com/captainblair/schoolsys1'
-    },
-    {
-        description: 'Next.js/Django Smart Rental Platform — two-sided marketplace with serverless PostgreSQL on Neon.',
+        description:
+            'Full-stack rental platform connecting tenants and property managers. Built with Django, Next.js, and PostgreSQL.',
         forks: 0,
         language: 'TypeScript',
         name: 'USTAWI1',
@@ -45,7 +38,16 @@ const FEATURED_REPOS = [
         url: 'https://github.com/captainblair/USTAWI1'
     },
     {
-        description: 'Django enterprise consulting platform — editorial publishing, recruitment pipelines, and role-based access control.',
+        description:
+            'Django/PostgreSQL school management platform with dashboards for students, teachers, and administrators. Includes attendance, fee tracking, and library management features.',
+        forks: 0,
+        language: 'Python',
+        name: 'schoolsys1',
+        stars: 0,
+        url: 'https://github.com/captainblair/schoolsys1'
+    },
+    {
+        description: 'Django-based consulting platform with content management features, user roles, and business workflows.',
         forks: 0,
         language: 'Python',
         name: 'Traviona1',
@@ -67,7 +69,7 @@ const cardVariants = {
 export const GithubRepos: React.FC = () => {
     return (
         <section className={styles.reposSection}>
-            <h2 className={'pageTitle'}>{'Featured Production Repositories'}</h2>
+            <h2 className={'pageTitle'}>{'Featured Repositories'}</h2>
 
             <motion.ul
                 className={styles.reposGrid}
