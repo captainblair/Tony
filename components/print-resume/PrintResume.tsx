@@ -1,5 +1,9 @@
 import React from 'react'
 
+import Image from 'next/image'
+
+import tonyPic from '@/public/tony.jpeg'
+
 import styles from './styles.module.sass'
 
 const formatList = (items: string[]): string => items.join(' | ')
@@ -7,6 +11,7 @@ const formatList = (items: string[]): string => items.join(' | ')
 const PORTFOLIO_URL = 'https://tony-three.vercel.app'
 
 const CONTACT_LINKS = [
+    { href: PORTFOLIO_URL, label: 'Portfolio:' },
     { href: 'https://github.com/captainblair', label: 'GitHub:' },
     { href: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', label: 'LinkedIn:' }
 ]
@@ -78,7 +83,7 @@ const EXPERIENCE = [
         period: 'January 2026 | Present | Nairobi, Kenya',
         duties: [
             'Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.',
-            'Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university directories, improving operational data extraction efficiency by 40%.',
+            'Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university ecosystems, improving operational data extraction efficiency by 40%.',
             'Collaborated with backend engineers to integrate Laravel REST endpoints and structure high-volume concurrent submission interfaces with clean, maintainable frontend architecture.'
         ]
     },
@@ -131,18 +136,22 @@ export const PrintResume: React.FC = () => (
         id={'print-resume'}
         className={styles.printResume}
         aria-hidden={'true'}
-        inert
     >
         <div className={styles.header}>
+            <div className={styles.tony}>
+                <Image
+                    src={tonyPic}
+                    alt={'Tony Wangolo Inganga'}
+                    width={90}
+                    height={90}
+                />
+            </div>
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
                 <p className={styles.titleRole}>{'Software Engineer | 1.5+ Years Experience'}</p>
                 <p className={styles.location}>
                     {'Nairobi, Kenya | +254 111 414 441 | '}
                     <ResumeLink href={'mailto:wangolotony4@gmail.com'}>{'wangolotony4@gmail.com'}</ResumeLink>
-                    {' | '}
-                    <span className={styles.contactLabel}>{'Portfolio:'}</span>{' '}
-                    <ResumeLink href={PORTFOLIO_URL}>{PORTFOLIO_URL}</ResumeLink>
                 </p>
                 <ul className={styles.contactList}>
                     {CONTACT_LINKS.map((item) => (

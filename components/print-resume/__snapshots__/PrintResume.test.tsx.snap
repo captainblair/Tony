@@ -5,9 +5,15 @@ exports[`PrintResume matches snapshot 1`] = `
   <div
     aria-hidden="true"
     id="print-resume"
-    inert=""
   >
     <div>
+      <div>
+        <img
+          alt="Tony Wangolo Inganga"
+          data-testid="project-image"
+          src="mocked-tony.jpeg"
+        />
+      </div>
       <div>
         <h1>
           Tony Wangolo Inganga
@@ -22,20 +28,21 @@ exports[`PrintResume matches snapshot 1`] = `
           >
             wangolotony4@gmail.com
           </a>
-           | 
-          <span>
-            Portfolio:
-          </span>
-           
-          <a
-            href="https://tony-three.vercel.app"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            https://tony-three.vercel.app
-          </a>
         </p>
         <ul>
+          <li>
+            <span>
+              Portfolio:
+            </span>
+             
+            <a
+              href="https://tony-three.vercel.app"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://tony-three.vercel.app
+            </a>
+          </li>
           <li>
             <span>
               GitHub:
@@ -173,7 +180,7 @@ exports[`PrintResume matches snapshot 1`] = `
               Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.
             </li>
             <li>
-              Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university directories, improving operational data extraction efficiency by 40%.
+              Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university ecosystems, improving operational data extraction efficiency by 40%.
             </li>
             <li>
               Collaborated with backend engineers to integrate Laravel REST endpoints and structure high-volume concurrent submission interfaces with clean, maintainable frontend architecture.

@@ -56,10 +56,9 @@ describe('PrintResume', () => {
             'href',
             'https://schoolsys-00mj.onrender.com/'
         )
-        expect(screen.getByRole('link', { name: 'https://github.com/captainblair/schoolsys1', hidden: true })).toHaveAttribute(
-            'href',
-            'https://github.com/captainblair/schoolsys1'
-        )
+        expect(
+            screen.getByRole('link', { name: 'https://github.com/captainblair/schoolsys1', hidden: true })
+        ).toHaveAttribute('href', 'https://github.com/captainblair/schoolsys1')
     })
 
     it('renders the summary description', () => {
@@ -159,9 +158,11 @@ describe('PrintResume', () => {
         ).toBeInTheDocument()
     })
 
-    it('does not render a profile image in the printable CV', () => {
+    it('renders the tony image in the header only', () => {
         render(<PrintResume />)
-        expect(screen.queryByRole('img', { hidden: true })).not.toBeInTheDocument()
+        const images = screen.getAllByTestId('project-image')
+        expect(images).toHaveLength(1)
+        expect(images[0]).toHaveAttribute('alt', 'Tony Wangolo Inganga')
     })
 
     it('matches snapshot', () => {
