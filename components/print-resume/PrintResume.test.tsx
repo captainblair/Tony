@@ -158,11 +158,11 @@ describe('PrintResume', () => {
         ).toBeInTheDocument()
     })
 
-    it('renders the tony image in the header only', () => {
+    it('renders the header photo only', () => {
         render(<PrintResume />)
-        const images = screen.getAllByTestId('project-image')
-        expect(images).toHaveLength(1)
-        expect(images[0]).toHaveAttribute('alt', 'Tony Wangolo Inganga')
+        const image = screen.getByRole('img', { name: 'Tony Wangolo Inganga', hidden: true })
+        expect(image).toHaveAttribute('src', '/tony.jpeg')
+        expect(screen.getAllByRole('img', { hidden: true })).toHaveLength(1)
     })
 
     it('matches snapshot', () => {

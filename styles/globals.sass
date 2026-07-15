@@ -166,5 +166,26 @@ body
         size: A4
         margin: 12mm 14mm
 
-    canvas, header, main, footer
+    html,
+    body
+        background: #fff !important
+        height: auto !important
+        overflow: visible !important
+
+    // Keep print fast: hide everything except the CV (no canvas, no huge page DOM)
+    canvas,
+    header,
+    main,
+    footer,
+    .skipLink,
+    [class*='starField'],
+    [class*='StarField']
         display: none !important
+
+    #print-resume
+        display: block !important
+        position: absolute !important
+        left: 0 !important
+        top: 0 !important
+        width: 100% !important
+        background: #fff !important

@@ -1,9 +1,5 @@
 import React from 'react'
 
-import Image from 'next/image'
-
-import tonyPic from '@/public/tony.jpeg'
-
 import styles from './styles.module.sass'
 
 const formatList = (items: string[]): string => items.join(' | ')
@@ -139,8 +135,10 @@ export const PrintResume: React.FC = () => (
     >
         <div className={styles.header}>
             <div className={styles.tony}>
-                <Image
-                    src={tonyPic}
+                {/* Native img: reliable in print, stays in header only */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                    src={'/tony.jpeg'}
                     alt={'Tony Wangolo Inganga'}
                     width={90}
                     height={90}

@@ -1,17 +1,18 @@
-/**
- * Print the downloadable CV using the main page print CSS.
- * Clears the document title so Edge/Chrome headers/footers do not stamp
- * the site name or date when Headers and footers are left on.
- */
+/** Fast CV print: blank title (no date/URL headers) + immediate print dialog. */
 export const printCv = (): void => {
     const previousTitle = document.title
     document.title = ''
 
-    const restoreTitle = () => {
+    const restore = () => {
         document.title = previousTitle
-        window.removeEventListener('afterprint', restoreTitle)
+        window.removeEventListener('afterprint', restore)
     }
 
-    window.addEventListener('afterprint', restoreTitle)
-    window.print()
+    window.addEventListener('afterprint', restore)
+    // Restore title even if afterprint is delayed/missed
+    window.setTimeout(restore, 1000)
+
+    requestAnimationFrame(() => {
+        window.print()
+    })
 }

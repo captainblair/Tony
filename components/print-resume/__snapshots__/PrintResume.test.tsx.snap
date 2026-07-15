@@ -10,8 +10,9 @@ exports[`PrintResume matches snapshot 1`] = `
       <div>
         <img
           alt="Tony Wangolo Inganga"
-          data-testid="project-image"
-          src="mocked-tony.jpeg"
+          height="90"
+          src="/tony.jpeg"
+          width="90"
         />
       </div>
       <div>

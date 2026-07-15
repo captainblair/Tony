@@ -3,16 +3,28 @@
 
     @media print
         display: block
-        color: #000
-        background: #fff
-        font-family: -apple-system, system-ui, 'Helvetica Neue', Roboto, sans-serif
-        font-size: 11px
-        line-height: 1.45
-        padding: 12mm 14mm
+        color: #000 !important
+        background: #fff !important
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 11.5px
+        line-height: 1.5
+        padding: 0
+        width: 100%
+        max-width: 100%
         -webkit-print-color-adjust: exact
         print-color-adjust: exact
 
-        // ── Header ──────────────────────────────────────────────────────
+        p,
+        li,
+        h1,
+        h2,
+        h3,
+        span,
+        div
+            color: #000 !important
+            opacity: 1 !important
+
+        // Header + photo locked to page 1 together — never orphaned on page 2
         .header
             display: flex
             align-items: flex-start
@@ -20,35 +32,48 @@
             padding-bottom: 10px
             border-bottom: 2px solid #ffc107
             margin-bottom: 10px
+            page-break-after: avoid
+            break-after: avoid-page
             page-break-inside: avoid
             break-inside: avoid-page
 
         .tony
             flex-shrink: 0
+            width: 90px
+            height: 90px
+            overflow: hidden
+            page-break-inside: avoid
+            break-inside: avoid-page
+            page-break-after: avoid
+            break-after: avoid-page
 
             img
+                display: block !important
+                width: 90px
+                height: 90px
                 border-radius: 6px
                 object-fit: cover
-                display: block
 
         .identity
             flex: 1
+            min-width: 0
 
         .name
             font-size: 22px
             font-weight: 700
             margin: 0 0 2px
-            color: #000
+            color: #000 !important
 
         .titleRole
             font-size: 13px
-            font-weight: 600
-            color: #222
+            font-weight: 700
+            color: #000 !important
             margin: 0 0 3px
 
         .location
             font-size: 11px
-            color: #222
+            font-weight: 500
+            color: #000 !important
             margin: 0 0 6px
 
         .contactList
@@ -60,34 +85,36 @@
             gap: 2px 16px
 
             li
-                font-size: 10px
-                color: #222
+                font-size: 10.5px
+                font-weight: 500
+                color: #000 !important
 
         .contactLabel
-            font-weight: 600
-            color: #111
+            font-weight: 700
+            color: #000 !important
 
         .contactValue
-            color: #222
+            color: #000 !important
 
         .resumeLink
-            color: #1155cc
-            text-decoration: underline
+            color: #003d99 !important
+            text-decoration: underline !important
+            font-weight: 600 !important
             word-break: break-all
 
+            &:link,
             &:visited
-                color: #1155cc
+                color: #003d99 !important
 
-        // ── Summary ─────────────────────────────────────────────────────
         .summary
-            font-size: 10.5px
-            color: #222
+            font-size: 11px
+            font-weight: 500
+            color: #000 !important
             margin: 0 0 10px
             padding-bottom: 8px
             border-bottom: 1px solid #ddd
-            line-height: 1.5
+            line-height: 1.55
 
-        // ── Body two-column ─────────────────────────────────────────────
         .body
             display: flex
             gap: 16px
@@ -99,22 +126,18 @@
         .skills
             flex: 1
 
-        // ── Section headings ────────────────────────────────────────────
         .sectionTitle
             font-size: 13px
             font-weight: 700
             text-transform: uppercase
             letter-spacing: 0.08em
-            color: #000
+            color: #000 !important
             margin: 0 0 8px
             padding-bottom: 3px
             border-bottom: 1.5px solid #ffc107
 
-        // ── Experience entries ───────────────────────────────────────────
         .role
-            margin-bottom: 10px
-            page-break-inside: avoid
-            break-inside: avoid-page
+            margin-bottom: 8px
 
         .roleMeta
             display: flex
@@ -124,33 +147,34 @@
 
         .period
             font-size: 10px
-            font-weight: 600
-            color: #222
-            background: #f5f5f5
+            font-weight: 700
+            color: #000 !important
+            background: #fff
             padding: 1px 6px
             border-radius: 3px
-            border: 1px solid #ddd
+            border: 1px solid #ffc107
             white-space: nowrap
 
         .duration
             font-size: 10px
-            color: #555
+            color: #000 !important
 
         .roleTitle
             font-size: 11.5px
             font-weight: 700
-            color: #000
+            color: #000 !important
             margin: 0 0 3px
 
         .roleOrg
-            font-weight: 400
-            color: #333
+            font-weight: 600
+            color: #000 !important
 
         .duties
-            font-size: 10px
-            color: #222
+            font-size: 10.5px
+            font-weight: 500
+            color: #000 !important
             margin: 0 0 4px
-            line-height: 1.4
+            line-height: 1.5
 
         .dutyList
             list-style: none
@@ -166,15 +190,16 @@
                     content: '•'
                     position: absolute
                     left: 0
-                    color: #111
+                    color: #000 !important
                     font-weight: 700
 
         .projectStack,
         .projectLink
-            font-size: 10px
-            color: #222
+            font-size: 10.5px
+            font-weight: 500
+            color: #000 !important
             margin: 0 0 3px
-            line-height: 1.4
+            line-height: 1.5
 
         .skillStack
             list-style: none
@@ -185,23 +210,22 @@
             gap: 1px 10px
 
             li
-                font-size: 9.5px
-                color: #333
+                font-size: 10px
+                font-weight: 500
+                color: #000 !important
 
-        // ── Skills sidebar ───────────────────────────────────────────────
         .skillGroup
-            margin-bottom: 10px
-            page-break-inside: avoid
-            break-inside: avoid-page
+            margin-bottom: 8px
 
         .skillGroupTitle
             font-size: 10.5px
             font-weight: 700
-            color: #111
+            color: #000 !important
             margin: 0 0 3px
 
         .skillTags
-            font-size: 10px
-            color: #222
+            font-size: 10.5px
+            font-weight: 500
+            color: #000 !important
             margin: 0 0 8px
-            line-height: 1.5
+            line-height: 1.55
