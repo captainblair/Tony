@@ -172,7 +172,6 @@ body
         height: auto !important
         overflow: visible !important
 
-    // Keep print fast: hide everything except the CV (no canvas, no huge page DOM)
     canvas,
     header,
     main,
@@ -180,6 +179,12 @@ body
     .skipLink,
     [class*='starField'],
     [class*='StarField']
+        display: none !important
+
+    body.printing-cv canvas,
+    body.printing-cv header,
+    body.printing-cv main,
+    body.printing-cv footer
         display: none !important
 
     #print-resume

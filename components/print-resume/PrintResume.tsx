@@ -138,10 +138,10 @@ export const PrintResume: React.FC = () => (
                 {/* Native img: reliable in print, stays in header only */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                    src={'/tony.jpeg'}
+                    src={'/tony-cv.jpg'}
                     alt={'Tony Wangolo Inganga'}
-                    width={90}
-                    height={90}
+                    width={120}
+                    height={120}
                 />
             </div>
             <div className={styles.identity}>

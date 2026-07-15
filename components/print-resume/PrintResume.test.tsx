@@ -161,7 +161,9 @@ describe('PrintResume', () => {
     it('renders the header photo only', () => {
         render(<PrintResume />)
         const image = screen.getByRole('img', { name: 'Tony Wangolo Inganga', hidden: true })
-        expect(image).toHaveAttribute('src', '/tony.jpeg')
+        expect(image).toHaveAttribute('src', '/tony-cv.jpg')
+        expect(image).toHaveAttribute('width', '120')
+        expect(image).toHaveAttribute('height', '120')
         expect(screen.getAllByRole('img', { hidden: true })).toHaveLength(1)
     })
 

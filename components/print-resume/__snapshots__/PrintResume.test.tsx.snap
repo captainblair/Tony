@@ -10,9 +10,9 @@ exports[`PrintResume matches snapshot 1`] = `
       <div>
         <img
           alt="Tony Wangolo Inganga"
-          height="90"
-          src="/tony.jpeg"
-          width="90"
+          height="120"
+          src="/tony-cv.jpg"
+          width="120"
         />
       </div>
       <div>
