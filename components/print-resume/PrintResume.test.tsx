@@ -20,7 +20,9 @@ describe('PrintResume', () => {
         expect(
             screen.getByRole('heading', { level: 1, name: 'Tony Wangolo Inganga', hidden: true })
         ).toBeInTheDocument()
-        expect(screen.getByText(/Software Engineer \| 1\.5\+ Years Experience/)).toBeInTheDocument()
+        expect(
+            screen.getByText(/Full Stack Software Engineer \| Backend Systems \| Cloud & Application Implementation/)
+        ).toBeInTheDocument()
     })
 
     it('renders biography location', () => {

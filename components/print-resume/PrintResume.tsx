@@ -146,7 +146,9 @@ export const PrintResume: React.FC = () => (
             </div>
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
-                <p className={styles.titleRole}>{'Software Engineer | 1.5+ Years Experience'}</p>
+                <p className={styles.titleRole}>
+                    {'Full Stack Software Engineer | Backend Systems | Cloud & Application Implementation'}
+                </p>
                 <p className={styles.location}>
                     {'Nairobi, Kenya | +254 111 414 441 | '}
                     <ResumeLink href={'mailto:wangolotony4@gmail.com'}>{'wangolotony4@gmail.com'}</ResumeLink>
