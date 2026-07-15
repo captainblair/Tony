@@ -1,9 +1,5 @@
 import React from 'react'
 
-import Image from 'next/image'
-
-import tonyPic from '@/public/tony.jpeg'
-
 import styles from './styles.module.sass'
 
 const formatList = (items: string[]): string => items.join(' | ')
@@ -138,14 +134,6 @@ export const PrintResume: React.FC = () => (
         inert
     >
         <div className={styles.header}>
-            <div className={styles.tony}>
-                <Image
-                    src={tonyPic}
-                    alt={'Tony Wangolo Inganga'}
-                    width={90}
-                    height={90}
-                />
-            </div>
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
                 <p className={styles.titleRole}>{'Software Engineer | 1.5+ Years Experience'}</p>
@@ -153,6 +141,7 @@ export const PrintResume: React.FC = () => (
                     {'Nairobi, Kenya | +254 111 414 441 | '}
                     <ResumeLink href={'mailto:wangolotony4@gmail.com'}>{'wangolotony4@gmail.com'}</ResumeLink>
                     {' | '}
+                    <span className={styles.contactLabel}>{'Portfolio:'}</span>{' '}
                     <ResumeLink href={PORTFOLIO_URL}>{PORTFOLIO_URL}</ResumeLink>
                 </p>
                 <ul className={styles.contactList}>

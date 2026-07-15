@@ -30,6 +30,7 @@ describe('PrintResume', () => {
 
     it('renders clickable contact links including portfolio after email', () => {
         render(<PrintResume />)
+        expect(screen.getByText('Portfolio:')).toBeInTheDocument()
         expect(screen.getByRole('link', { name: 'https://tony-three.vercel.app', hidden: true })).toHaveAttribute(
             'href',
             'https://tony-three.vercel.app'
@@ -158,10 +159,9 @@ describe('PrintResume', () => {
         ).toBeInTheDocument()
     })
 
-    it('renders the tony image with the biography name as alt text', () => {
+    it('does not render a profile image in the printable CV', () => {
         render(<PrintResume />)
-        const images = screen.getAllByTestId('project-image')
-        expect(images[0]).toHaveAttribute('alt', 'Tony Wangolo Inganga')
+        expect(screen.queryByRole('img', { hidden: true })).not.toBeInTheDocument()
     })
 
     it('matches snapshot', () => {

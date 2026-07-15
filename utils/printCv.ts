@@ -23,7 +23,12 @@ const HIGH_CONTRAST_PRINT_CSS = `
         color: #000 !important
         background: #fff !important
 
-    #print-resume *
+    #print-resume p,
+    #print-resume li,
+    #print-resume h1,
+    #print-resume h2,
+    #print-resume h3,
+    #print-resume span
         color: #000 !important
         opacity: 1 !important
         -webkit-print-color-adjust: exact
@@ -35,6 +40,12 @@ const HIGH_CONTRAST_PRINT_CSS = `
         text-decoration: underline !important
         font-weight: 600 !important
 `
+
+const absolutizeImageSources = (doc: Document): void => {
+    doc.querySelectorAll('img').forEach((img) => {
+        img.remove()
+    })
+}
 
 export const printCv = (): void => {
     const resume = document.getElementById('print-resume')
@@ -84,6 +95,7 @@ export const printCv = (): void => {
     }
 
     const triggerPrint = () => {
+        absolutizeImageSources(frameDoc)
         frameWindow.focus()
         frameWindow.print()
         window.addEventListener('afterprint', cleanup)

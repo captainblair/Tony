@@ -9,13 +9,6 @@ exports[`PrintResume matches snapshot 1`] = `
   >
     <div>
       <div>
-        <img
-          alt="Tony Wangolo Inganga"
-          data-testid="project-image"
-          src="mocked-tony.jpeg"
-        />
-      </div>
-      <div>
         <h1>
           Tony Wangolo Inganga
         </h1>
@@ -30,6 +23,10 @@ exports[`PrintResume matches snapshot 1`] = `
             wangolotony4@gmail.com
           </a>
            | 
+          <span>
+            Portfolio:
+          </span>
+           
           <a
             href="https://tony-three.vercel.app"
             rel="noopener noreferrer"
