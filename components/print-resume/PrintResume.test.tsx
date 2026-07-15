@@ -134,6 +134,14 @@ describe('PrintResume', () => {
                 hidden: true
             })
         ).toBeInTheDocument()
+        expect(
+            screen.getByRole('heading', { level: 3, name: 'Backend Web Development', hidden: true })
+        ).toBeInTheDocument()
+        expect(
+            screen.getByRole('heading', { level: 3, name: 'Artificial Intelligence (AI)', hidden: true })
+        ).toBeInTheDocument()
+        expect(screen.getAllByText('Graduated 2025')).toHaveLength(3)
+        expect(screen.getAllByText('ALX Africa')).toHaveLength(3)
     })
 
     it('renders the Skills section heading', () => {

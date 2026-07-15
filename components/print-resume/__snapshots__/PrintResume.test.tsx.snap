@@ -252,11 +252,37 @@ exports[`PrintResume matches snapshot 1`] = `
         <div>
           <div>
             <span>
-              Graduated
+              Graduated 2025
             </span>
           </div>
           <h3>
             Professional Backend Web Development Certification
+          </h3>
+          <p>
+            ALX Africa
+          </p>
+        </div>
+        <div>
+          <div>
+            <span>
+              Graduated 2025
+            </span>
+          </div>
+          <h3>
+            Backend Web Development
+          </h3>
+          <p>
+            ALX Africa
+          </p>
+        </div>
+        <div>
+          <div>
+            <span>
+              Graduated 2025
+            </span>
+          </div>
+          <h3>
+            Artificial Intelligence (AI)
           </h3>
           <p>
             ALX Africa

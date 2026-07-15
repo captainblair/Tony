@@ -115,7 +115,17 @@ const EDUCATION = [
     {
         degree: 'Professional Backend Web Development Certification',
         institution: 'ALX Africa',
-        period: 'Graduated'
+        period: 'Graduated 2025'
+    },
+    {
+        degree: 'Backend Web Development',
+        institution: 'ALX Africa',
+        period: 'Graduated 2025'
+    },
+    {
+        degree: 'Artificial Intelligence (AI)',
+        institution: 'ALX Africa',
+        period: 'Graduated 2025'
     }
 ]
 

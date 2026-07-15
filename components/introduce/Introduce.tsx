@@ -11,7 +11,8 @@ import styles from './styles.module.sass'
 
 const printCv = () => {
     const previousTitle = document.title
-    document.title = 'Tony Wangolo'
+    // Empty title so browser print headers/footers do not show the site name on every page
+    document.title = ' '
 
     const restoreTitle = () => {
         document.title = previousTitle
@@ -128,7 +129,7 @@ export const Introduce: React.FC = () => {
                     <a
                         href={'/'}
                         className={styles.ctaSecondary}
-                        title={"Opens print dialog — choose 'Save as PDF' and turn off Headers and footers"}
+                        title={"Opens print dialog — choose Save as PDF and turn Headers and footers OFF to hide dates"}
                         onClick={(event) => {
                             event.preventDefault()
                             printCv()
