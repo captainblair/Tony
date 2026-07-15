@@ -1,6 +1,5 @@
 .printResume
     // Keep in layout (not display:none) so print-to-PDF engines embed hyperlinks.
-    // Off-screen + inert (set in JSX) prevents interaction on the live site.
     position: absolute
     left: -10000px
     top: 0
@@ -23,9 +22,8 @@
         font-family: -apple-system, system-ui, 'Helvetica Neue', Roboto, sans-serif
         font-size: 11px
         line-height: 1.45
-        padding: 12mm 14mm
+        padding: 0
 
-        // ── Header ──────────────────────────────────────────────────────
         .header
             display: flex
             align-items: flex-start
@@ -86,7 +84,6 @@
             text-decoration: underline !important
             word-break: break-all
             cursor: pointer
-            // Helps Chromium/Edge embed working PDF annotations
             -webkit-print-color-adjust: exact
             print-color-adjust: exact
 
@@ -94,7 +91,6 @@
             &:visited
                 color: #1155cc !important
 
-        // ── Summary ─────────────────────────────────────────────────────
         .summary
             font-size: 10.5px
             color: #444
@@ -103,7 +99,6 @@
             border-bottom: 1px solid #ddd
             line-height: 1.5
 
-        // ── Body two-column ─────────────────────────────────────────────
         .body
             display: flex
             gap: 16px
@@ -115,7 +110,6 @@
         .skills
             flex: 1
 
-        // ── Section headings ────────────────────────────────────────────
         .sectionTitle
             font-size: 13px
             font-weight: 700
@@ -126,7 +120,6 @@
             padding-bottom: 3px
             border-bottom: 1.5px solid #ffc107
 
-        // ── Experience entries ───────────────────────────────────────────
         .role
             margin-bottom: 10px
             page-break-inside: avoid
@@ -203,7 +196,6 @@
                 font-size: 9.5px
                 color: #666
 
-        // ── Skills sidebar ───────────────────────────────────────────────
         .skillGroup
             margin-bottom: 10px
             page-break-inside: avoid

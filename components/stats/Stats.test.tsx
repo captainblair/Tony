@@ -16,12 +16,18 @@ afterEach(() => {
     jest.restoreAllMocks()
 })
 
+jest.mock('@/utils', () => ({
+    useSiteData: () => ({
+        projects: [{ title: 'P1' }, { title: 'P2' }, { title: 'P3' }, { title: 'P4' }]
+    })
+}))
+
 describe('Stats', () => {
     it('renders all stat labels', () => {
         render(<Stats />)
-        expect(screen.getByText('Full-Stack Projects')).toBeInTheDocument()
-        expect(screen.getByText('Deployed Applications')).toBeInTheDocument()
-        expect(screen.getByText('Years Building Software')).toBeInTheDocument()
+        expect(screen.getByText('Years of experience')).toBeInTheDocument()
+        expect(screen.getByText('Roles & companies')).toBeInTheDocument()
+        expect(screen.getByText('Production projects')).toBeInTheDocument()
     })
 
     it('renders the stats section container', () => {

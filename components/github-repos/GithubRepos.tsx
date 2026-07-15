@@ -6,21 +6,21 @@ import styles from './styles.module.sass'
 const FEATURED_REPOS = [
     {
         description:
-            'Full-stack rental platform helping tenants discover properties and allowing property managers to manage listings. Built with Django, Next.js, and PostgreSQL, featuring authentication, property listings, user workflows, and backend APIs.',
-        language: 'TypeScript',
-        name: 'USTAWI1',
-        url: 'https://github.com/captainblair/USTAWI1'
-    },
-    {
-        description:
-            'Django/PostgreSQL school management platform with role-based dashboards for students, teachers, and administrators. Includes attendance tracking, fee management, and library operations.',
+            'Full-Stack Django/PostgreSQL School ERP — role-based dashboards, attendance, fees, and library management.',
         language: 'Python',
         name: 'schoolsys1',
         url: 'https://github.com/captainblair/schoolsys1'
     },
     {
         description:
-            'Built a Django-based consulting platform supporting content management, user roles, and business workflows for a professional services organization.',
+            'Next.js/Django Smart Rental Platform — two-sided marketplace with serverless PostgreSQL on Neon.',
+        language: 'TypeScript',
+        name: 'USTAWI1',
+        url: 'https://github.com/captainblair/USTAWI1'
+    },
+    {
+        description:
+            'Django enterprise consulting platform — editorial publishing, recruitment pipelines, and role-based access control.',
         language: 'Python',
         name: 'Traviona1',
         url: 'https://github.com/captainblair/Traviona1'

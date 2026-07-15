@@ -20,7 +20,7 @@ describe('PrintResume', () => {
         expect(
             screen.getByRole('heading', { level: 1, name: 'Tony Wangolo Inganga', hidden: true })
         ).toBeInTheDocument()
-        expect(screen.getByText('Junior Full Stack Developer')).toBeInTheDocument()
+        expect(screen.getByText(/Software Engineer \| 1\.5\+ Years Experience/)).toBeInTheDocument()
     })
 
     it('renders biography location', () => {
@@ -28,8 +28,13 @@ describe('PrintResume', () => {
         expect(screen.getByText(/Nairobi, Kenya \| \+254 111 414 441/)).toBeInTheDocument()
     })
 
-    it('renders contact links with labels and https hrefs', () => {
+    it('renders clickable contact links including portfolio', () => {
         render(<PrintResume />)
+        expect(screen.getByText('Portfolio:')).toBeInTheDocument()
+        expect(screen.getByRole('link', { name: 'https://tony.vercel.app', hidden: true })).toHaveAttribute(
+            'href',
+            'https://tony.vercel.app'
+        )
         expect(screen.getByText('GitHub:')).toBeInTheDocument()
         expect(screen.getByRole('link', { name: 'https://github.com/captainblair', hidden: true })).toHaveAttribute(
             'href',
@@ -39,7 +44,10 @@ describe('PrintResume', () => {
         expect(
             screen.getByRole('link', { name: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', hidden: true })
         ).toHaveAttribute('href', 'https://www.linkedin.com/in/tony-wangolo-545b23285/')
-        expect(screen.queryByText('X:')).not.toBeInTheDocument()
+        expect(screen.getByRole('link', { name: 'wangolotony4@gmail.com', hidden: true })).toHaveAttribute(
+            'href',
+            'mailto:wangolotony4@gmail.com'
+        )
     })
 
     it('renders clickable project live and repository links', () => {
@@ -57,7 +65,7 @@ describe('PrintResume', () => {
     it('renders the summary description', () => {
         render(<PrintResume />)
         expect(
-            screen.getByText(/Junior Full Stack Developer specializing in backend development with Python, Django, REST APIs/)
+            screen.getByText(/Highly motivated Full Stack Software Engineer specializing in scalable backend architecture/)
         ).toBeInTheDocument()
     })
 
@@ -67,7 +75,7 @@ describe('PrintResume', () => {
             screen.getByRole('heading', { level: 2, name: 'Core Production Projects', hidden: true })
         ).toBeInTheDocument()
         expect(screen.getByText(/SchoolSys \| School Management & Operations Platform/)).toBeInTheDocument()
-        expect(screen.getByText(/Ustawi \| Smart Rental \& Property Platform/)).toBeInTheDocument()
+        expect(screen.getByText(/Ustawi \| The Smart Rental & Property Platform/)).toBeInTheDocument()
     })
 
     it('renders the Experience section heading', () => {
@@ -80,10 +88,10 @@ describe('PrintResume', () => {
     it('renders experience roles', () => {
         render(<PrintResume />)
         expect(
-            screen.getByRole('heading', { level: 3, name: 'ICT Lead (Volunteer) | ODM Comrades Chapter', hidden: true })
+            screen.getByRole('heading', { level: 3, name: 'ICT Lead | ODM Comrades Chapter', hidden: true })
         ).toBeInTheDocument()
         expect(
-            screen.getByRole('heading', { level: 3, name: 'Freelance Developer | Remote', hidden: true })
+            screen.getByRole('heading', { level: 3, name: 'Freelance Full Stack Developer | Remote', hidden: true })
         ).toBeInTheDocument()
         expect(
             screen.getByRole('heading', {
@@ -94,15 +102,15 @@ describe('PrintResume', () => {
         ).toBeInTheDocument()
     })
 
-    it('renders experience duties with believable metrics', () => {
+    it('renders experience duties with metrics', () => {
         render(<PrintResume />)
         expect(
             screen.getByText(
-                /Led frontend development for a university digital registration platform built using PHP and Laravel/
+                /Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel/
             )
         ).toBeInTheDocument()
-        expect(screen.getByText(/supporting registration of over 800 students/)).toBeInTheDocument()
-        expect(screen.getByText(/Trained over 50 community members/)).toBeInTheDocument()
+        expect(screen.getByText(/improving operational data extraction efficiency by 40%/)).toBeInTheDocument()
+        expect(screen.getByText(/Upskilled and trained over 50 community members/)).toBeInTheDocument()
     })
 
     it('renders the Education section heading', () => {
@@ -120,7 +128,11 @@ describe('PrintResume', () => {
             })
         ).toBeInTheDocument()
         expect(
-            screen.getByRole('heading', { level: 3, name: 'Professional Backend Web Development Certification', hidden: true })
+            screen.getByRole('heading', {
+                level: 3,
+                name: 'Professional Backend Web Development Certification',
+                hidden: true
+            })
         ).toBeInTheDocument()
     })
 
@@ -132,14 +144,11 @@ describe('PrintResume', () => {
     it('renders skill group titles and tags', () => {
         render(<PrintResume />)
         expect(screen.getByRole('heading', { level: 3, name: 'Languages', hidden: true })).toBeInTheDocument()
-        expect(screen.getByText(/Python \| JavaScript \| TypeScript \| SQL \| PHP \| HTML\/CSS/)).toBeInTheDocument()
+        expect(screen.getByText(/Python \| JavaScript \| TypeScript \| PHP \| SQL/)).toBeInTheDocument()
         expect(screen.getByRole('heading', { level: 3, name: 'Frameworks & Libraries', hidden: true })).toBeInTheDocument()
         expect(
-            screen.getByText(
-                /Django \| Django REST Framework \| React \| Next.js \| Flask \| Laravel \| Tailwind CSS \| Streamlit/
-            )
+            screen.getByText(/Django \| Flask \| Next.js \| React \| Laravel \| TailwindCSS \| Streamlit \| Redux/)
         ).toBeInTheDocument()
-        expect(screen.getByRole('heading', { level: 3, name: 'Tools & Deployment', hidden: true })).toBeInTheDocument()
     })
 
     it('renders the tony image with the biography name as alt text', () => {

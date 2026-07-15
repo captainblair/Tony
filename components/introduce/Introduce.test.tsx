@@ -2,13 +2,9 @@ import React from 'react'
 
 import { render, screen } from '@testing-library/react'
 
-import { update } from '@/update'
-import { formatDate } from '@/utils/date'
-
 import { Introduce } from './Introduce'
 
 import '@testing-library/jest-dom'
-
 
 jest.mock('next/image', () => ({
     __esModule: true,
@@ -16,25 +12,19 @@ jest.mock('next/image', () => ({
     default: jest.fn(() => <img alt='mocked image' />)
 }))
 
-jest.mock('@/update', () => ({
-    update: '2023-08-01T00:00:00Z'
-}))
-
 jest.mock('@/utils', () => ({
     useSiteData: () => ({
         biography: {
             name: 'Tony Wangolo Inganga',
-            title: 'Full Stack Developer',
+            title: 'Full Stack Software Engineer',
             location: 'Nairobi, Kenya',
             timezone: 'East Africa Time (UTC+3)',
             availableForWork: true
         },
-        contactLinks: [
-            { link: 'https://github.com/captainblair', label: 'GitHub', icon: 'github' }
-        ],
+        contactLinks: [{ link: 'https://github.com/captainblair', label: 'GitHub', icon: 'github' }],
         experience: [
             {
-                role: 'Freelance Developer',
+                role: 'Freelance Full Stack Developer',
                 period: ['01/01/2024']
             }
         ]
@@ -50,13 +40,13 @@ describe('Introduce Component', () => {
         expect(githubLink).toHaveAttribute('href', 'https://github.com/captainblair')
     })
 
-    it('displays facts correctly', () => {
+    it('displays experience and facts without updated date', () => {
         render(<Introduce />)
 
-        expect(screen.getByText('Building Software')).toBeInTheDocument()
-        expect(screen.getByText('Since 2024')).toBeInTheDocument()
-        expect(screen.getByText('Updated')).toBeInTheDocument()
-        expect(screen.getByText(formatDate(update, 'dddd, MMM D, YYYY'))).toBeInTheDocument()
+        expect(screen.getByText('1.5+ Years')).toBeInTheDocument()
+        expect(screen.getByText('Experience')).toBeInTheDocument()
+        expect(screen.getByText('Location')).toBeInTheDocument()
+        expect(screen.queryByText('Updated')).not.toBeInTheDocument()
     })
 
     it('does not render age tracker', () => {
@@ -67,7 +57,7 @@ describe('Introduce Component', () => {
 
     it('renders the description text', () => {
         render(<Introduce />)
-        expect(screen.getByText(/focused on backend engineering/i)).toBeInTheDocument()
+        expect(screen.getByText(/scalable backend architecture/i)).toBeInTheDocument()
     })
 
     it('renders CTA buttons', () => {

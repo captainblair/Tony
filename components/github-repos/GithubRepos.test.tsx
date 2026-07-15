@@ -43,16 +43,13 @@ describe('GithubRepos', () => {
 
     it('renders repo descriptions', () => {
         render(<GithubRepos />)
-        expect(screen.getByText(/helping tenants discover properties and allowing property managers to manage listings/)).toBeInTheDocument()
-        expect(
-            screen.getByText(/supporting content management, user roles, and business workflows for a professional services organization/)
-        ).toBeInTheDocument()
+        expect(screen.getByText(/Full-Stack Django\/PostgreSQL School ERP/)).toBeInTheDocument()
     })
 
     it('renders repo links with correct href', () => {
         render(<GithubRepos />)
-        const link = screen.getByRole('link', { name: /USTAWI1/i })
-        expect(link).toHaveAttribute('href', 'https://github.com/captainblair/USTAWI1')
+        const link = screen.getByRole('link', { name: /schoolsys1/i })
+        expect(link).toHaveAttribute('href', 'https://github.com/captainblair/schoolsys1')
     })
 
     it('always renders featured repos without API data', () => {

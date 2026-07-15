@@ -5,24 +5,28 @@ import Link from 'next/link'
 
 import { Icon, IconTypes } from '@/components'
 import tonyPic from '@/public/tony.jpeg'
-import { update } from '@/update'
 import { useSiteData } from '@/utils'
 
 import styles from './styles.module.sass'
 
+const printCv = () => {
+    const previousTitle = document.title
+    document.title = 'Tony Wangolo'
+
+    const restoreTitle = () => {
+        document.title = previousTitle
+        window.removeEventListener('afterprint', restoreTitle)
+    }
+
+    window.addEventListener('afterprint', restoreTitle)
+    window.print()
+}
+
 export const Introduce: React.FC = () => {
     const data = useSiteData()
 
-    const dateUpdate = new Date(update).toLocaleDateString('en-us', {
-        day: 'numeric',
-        month: 'short',
-        weekday: 'long',
-        year: 'numeric'
-    })
-
     return (
         <section className={styles.introduceSection}>
-            {/* tony with animated glow ring */}
             <div className={styles.tonyWrapper}>
                 <div
                     className={styles.tonyGlow}
@@ -34,7 +38,7 @@ export const Introduce: React.FC = () => {
                         fill
                         sizes={'(max-width: 768px) 240px, 45vw'}
                         style={{ objectFit: 'cover' }}
-                        alt={"Hi, I'm Tony - Picture of the author"}
+                        alt={"Hi I'm Tony - Picture of the author"}
                         priority
                     />
                 </div>
@@ -44,7 +48,7 @@ export const Introduce: React.FC = () => {
                 <div className={styles.header}>
                     <div className={styles.title}>
                         <h1>
-                            {"Hi, I'm "}
+                            {"Hi I'm "}
                             {/* eslint-disable-next-line react/jsx-max-depth */}
                             <span>{data?.biography?.name}</span>
                         </h1>
@@ -82,16 +86,15 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.counterPills}>
                     <div className={styles.pill}>
-                        <span className={styles.pillValue}>{'Building Software'}</span>
-                        <span className={styles.pillLabel}>{'Since 2024'}</span>
+                        <span className={styles.pillValue}>{'1.5+ Years'}</span>
+                        <span className={styles.pillLabel}>{'Experience'}</span>
                     </div>
                 </div>
 
                 <ul className={styles.factsList}>
                     {[
                         { title: 'Location', value: data?.biography?.location },
-                        { title: 'Timezone', value: data?.biography?.timezone },
-                        { title: 'Updated', value: dateUpdate }
+                        { title: 'Timezone', value: data?.biography?.timezone }
                     ].map(({ title, value }) => (
                         <li key={`fact-${title}`}>
                             <div className={styles.key}>{title}</div>
@@ -102,10 +105,16 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.description}>
                     <p>
-                        {'Full Stack Developer focused on backend engineering with'} <b>{'Python'}</b>{', '}
-                        <b>{'Django'}</b>{', REST APIs, '}
-                        <b>{'PostgreSQL'}</b>
-                        {', and modern frontend technologies. I build practical web applications with authentication, business workflows, and responsive user interfaces.'}
+                        {'Full Stack Software Engineer specializing in scalable backend architecture, relational database design, and end-to-end web deployment. I build production-ready systems with'}{' '}
+                        <b>{'Python (Django/Flask)'}</b>
+                        {' and '}
+                        <b>{'JavaScript/TypeScript'}</b>
+                        {', with a focus on RBAC, API design, and cloud-native delivery.'}
+                    </p>
+                    <p>
+                        {
+                            'Shipped enterprise platforms including school administration systems, rental marketplaces, and university registration hubs — architecting secure data pipelines, optimized schemas, and role-based dashboards for real-world scale.'
+                        }
                     </p>
                 </div>
 
@@ -119,10 +128,10 @@ export const Introduce: React.FC = () => {
                     <a
                         href={'/'}
                         className={styles.ctaSecondary}
-                        title={"Opens print dialog — choose 'Save as PDF' in Edge or Chrome so links stay clickable"}
+                        title={"Opens print dialog — choose 'Save as PDF' and turn off Headers and footers"}
                         onClick={(event) => {
                             event.preventDefault()
-                            window.print()
+                            printCv()
                         }}
                     >
                         {'Download CV'}
