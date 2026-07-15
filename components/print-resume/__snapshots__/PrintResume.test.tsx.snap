@@ -29,21 +29,16 @@ exports[`PrintResume matches snapshot 1`] = `
           >
             wangolotony4@gmail.com
           </a>
+           | 
+          <a
+            href="https://tony-three.vercel.app"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            https://tony-three.vercel.app
+          </a>
         </p>
         <ul>
-          <li>
-            <span>
-              Portfolio:
-            </span>
-             
-            <a
-              href="https://tony.vercel.app"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              https://tony.vercel.app
-            </a>
-          </li>
           <li>
             <span>
               GitHub:

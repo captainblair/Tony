@@ -28,12 +28,11 @@ describe('PrintResume', () => {
         expect(screen.getByText(/Nairobi, Kenya \| \+254 111 414 441/)).toBeInTheDocument()
     })
 
-    it('renders clickable contact links including portfolio', () => {
+    it('renders clickable contact links including portfolio after email', () => {
         render(<PrintResume />)
-        expect(screen.getByText('Portfolio:')).toBeInTheDocument()
-        expect(screen.getByRole('link', { name: 'https://tony.vercel.app', hidden: true })).toHaveAttribute(
+        expect(screen.getByRole('link', { name: 'https://tony-three.vercel.app', hidden: true })).toHaveAttribute(
             'href',
-            'https://tony.vercel.app'
+            'https://tony-three.vercel.app'
         )
         expect(screen.getByText('GitHub:')).toBeInTheDocument()
         expect(screen.getByRole('link', { name: 'https://github.com/captainblair', hidden: true })).toHaveAttribute(

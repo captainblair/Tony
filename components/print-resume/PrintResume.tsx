@@ -8,8 +8,9 @@ import styles from './styles.module.sass'
 
 const formatList = (items: string[]): string => items.join(' | ')
 
+const PORTFOLIO_URL = 'https://tony-three.vercel.app'
+
 const CONTACT_LINKS = [
-    { href: 'https://tony.vercel.app', label: 'Portfolio:' },
     { href: 'https://github.com/captainblair', label: 'GitHub:' },
     { href: 'https://www.linkedin.com/in/tony-wangolo-545b23285/', label: 'LinkedIn:' }
 ]
@@ -151,6 +152,8 @@ export const PrintResume: React.FC = () => (
                 <p className={styles.location}>
                     {'Nairobi, Kenya | +254 111 414 441 | '}
                     <ResumeLink href={'mailto:wangolotony4@gmail.com'}>{'wangolotony4@gmail.com'}</ResumeLink>
+                    {' | '}
+                    <ResumeLink href={PORTFOLIO_URL}>{PORTFOLIO_URL}</ResumeLink>
                 </p>
                 <ul className={styles.contactList}>
                     {CONTACT_LINKS.map((item) => (

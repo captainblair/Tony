@@ -5,23 +5,9 @@ import Link from 'next/link'
 
 import { Icon, IconTypes } from '@/components'
 import tonyPic from '@/public/tony.jpeg'
-import { useSiteData } from '@/utils'
+import { printCv, useSiteData } from '@/utils'
 
 import styles from './styles.module.sass'
-
-const printCv = () => {
-    const previousTitle = document.title
-    // Empty title so browser print headers/footers do not show the site name on every page
-    document.title = ' '
-
-    const restoreTitle = () => {
-        document.title = previousTitle
-        window.removeEventListener('afterprint', restoreTitle)
-    }
-
-    window.addEventListener('afterprint', restoreTitle)
-    window.print()
-}
 
 export const Introduce: React.FC = () => {
     const data = useSiteData()
@@ -129,7 +115,7 @@ export const Introduce: React.FC = () => {
                     <a
                         href={'/'}
                         className={styles.ctaSecondary}
-                        title={"Opens print dialog — choose Save as PDF and turn Headers and footers OFF to hide dates"}
+                        title={'Opens print dialog — turn Headers and footers OFF for a clean PDF without dates or URLs'}
                         onClick={(event) => {
                             event.preventDefault()
                             printCv()

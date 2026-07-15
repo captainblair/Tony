@@ -1,3 +1,4 @@
+export { printCv } from './printCv'
 export { DataProvider, useSiteData } from './DataProvider'
 export { calculateStreak } from './github-streak'
 export { GithubDataProvider, useGithubData } from './GithubDataProvider'
