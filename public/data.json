@@ -85,20 +85,6 @@
     ],
     "projects": [
         {
-            "image": "/images/school1.png",
-            "title": "SchoolSys — School Management & Operations Platform",
-            "link": "https://schoolsys-00mj.onrender.com/",
-            "github": "https://github.com/captainblair/schoolsys1",
-            "description": "Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards for students, teachers, and administrators. Optimized database schemas for profile approvals, attendance, financial fee records, and library loans into a unified platform."
-        },
-        {
-            "image": "/images/Ustawilive.png",
-            "title": "Ustawi — The Smart Rental & Property Platform",
-            "link": "https://ustawi-1.vercel.app/",
-            "github": "https://github.com/captainblair/USTAWI1",
-            "description": "Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance efficiently while respecting tight environment resource baselines."
-        },
-        {
             "image": "/images/occ.jpeg",
             "title": "ODM Comrades Platform — Centralized University Registration Hub",
             "link": "https://occ.co.ke/",
@@ -106,11 +92,27 @@
             "description": "Led frontend engineering for a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
         },
         {
+            "image": "/images/Ustawilive.png",
+            "title": "Ustawi — The Smart Rental & Property Platform",
+            "link": "https://ustawi-1.vercel.app/",
+            "github": "https://github.com/captainblair/USTAWI1",
+            "statusNotice": "Database Migration in Progress — Some project features may be temporarily unavailable.",
+            "description": "Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance efficiently while respecting tight environment resource baselines."
+        },
+        {
             "image": "/images/travionalive.png",
             "title": "Traviona Consulting — Global Strategy, Insights & Talent Solutions",
             "link": "https://travionaconsulting.top/",
             "github": "https://github.com/captainblair/Traviona1",
+            "statusNotice": "Database Migration in Progress — Some project features may be temporarily unavailable.",
             "description": "Built a modern, professional platform for an international consulting firm specializing in business strategy, geopolitical intelligence, and global talent recruitment."
+        },
+        {
+            "image": "/images/school1.png",
+            "title": "SchoolSys — School Management & Operations Platform",
+            "github": "https://github.com/captainblair/schoolsys1",
+            "statusNotice": "Database Migration in Progress — Some project features may be temporarily unavailable.",
+            "description": "Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards for students, teachers, and administrators. Optimized database schemas for profile approvals, attendance, financial fee records, and library loans into a unified platform."
         }
     ],
     "experience": [
