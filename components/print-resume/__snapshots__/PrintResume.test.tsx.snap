@@ -83,46 +83,6 @@ exports[`PrintResume matches snapshot 1`] = `
         </h2>
         <div>
           <h3>
-            SchoolSys | School Management & Operations Platform
-          </h3>
-          <p>
-            <span>
-              Technical Stack:
-            </span>
-             Python | Django | PostgreSQL | Render | TailwindCSS
-          </p>
-          <p>
-            Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.
-          </p>
-          <p>
-            <span>
-              Live Link:
-            </span>
-             
-            <a
-              href="https://schoolsys-00mj.onrender.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              https://schoolsys-00mj.onrender.com/
-            </a>
-          </p>
-          <p>
-            <span>
-              Repository:
-            </span>
-             
-            <a
-              href="https://github.com/captainblair/schoolsys1"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              https://github.com/captainblair/schoolsys1
-            </a>
-          </p>
-        </div>
-        <div>
-          <h3>
             Ustawi | The Smart Rental & Property Platform
           </h3>
           <p>
@@ -158,6 +118,33 @@ exports[`PrintResume matches snapshot 1`] = `
               target="_blank"
             >
               https://github.com/captainblair/USTAWI1
+            </a>
+          </p>
+        </div>
+        <div>
+          <h3>
+            SchoolSys | School Management & Operations Platform
+          </h3>
+          <p>
+            <span>
+              Technical Stack:
+            </span>
+             Python | Django | PostgreSQL | Render | TailwindCSS
+          </p>
+          <p>
+            Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.
+          </p>
+          <p>
+            <span>
+              Repository:
+            </span>
+             
+            <a
+              href="https://github.com/captainblair/schoolsys1"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://github.com/captainblair/schoolsys1
             </a>
           </p>
         </div>

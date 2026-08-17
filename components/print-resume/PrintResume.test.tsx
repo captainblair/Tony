@@ -52,15 +52,25 @@ describe('PrintResume', () => {
         )
     })
 
-    it('renders clickable project live and repository links', () => {
+    it('shows Ustawi first with its live and repository links, and SchoolSys with its repository only', () => {
         render(<PrintResume />)
-        expect(screen.getByRole('link', { name: 'https://schoolsys-00mj.onrender.com/', hidden: true })).toHaveAttribute(
+        const projectHeadings = screen.getAllByRole('heading', { level: 3, hidden: true })
+        expect(projectHeadings[0]).toHaveTextContent('Ustawi | The Smart Rental & Property Platform')
+        expect(projectHeadings[1]).toHaveTextContent('SchoolSys | School Management & Operations Platform')
+        expect(screen.getByRole('link', { name: 'https://ustawi-1.vercel.app/', hidden: true })).toHaveAttribute(
             'href',
-            'https://schoolsys-00mj.onrender.com/'
+            'https://ustawi-1.vercel.app/'
+        )
+        expect(screen.getByRole('link', { name: 'https://github.com/captainblair/USTAWI1', hidden: true })).toHaveAttribute(
+            'href',
+            'https://github.com/captainblair/USTAWI1'
         )
         expect(
             screen.getByRole('link', { name: 'https://github.com/captainblair/schoolsys1', hidden: true })
         ).toHaveAttribute('href', 'https://github.com/captainblair/schoolsys1')
+        expect(
+            screen.queryByRole('link', { name: 'https://schoolsys-00mj.onrender.com/', hidden: true })
+        ).not.toBeInTheDocument()
     })
 
     it('renders the summary description', () => {

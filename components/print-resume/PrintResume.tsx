@@ -55,20 +55,19 @@ const SKILLS = [
 
 const PROJECTS = [
     {
-        title: 'SchoolSys | School Management & Operations Platform',
-        stack: ['Python', 'Django', 'PostgreSQL', 'Render', 'TailwindCSS'],
-        impact:
-            'Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.',
-        link: 'https://schoolsys-00mj.onrender.com/',
-        repo: 'https://github.com/captainblair/schoolsys1'
-    },
-    {
         title: 'Ustawi | The Smart Rental & Property Platform',
         stack: ['Python', 'Django', 'Next.js', 'PostgreSQL (Neon Serverless)', 'Vercel'],
         impact:
             'Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance metrics efficiently while respecting tight environment resource baselines.',
         link: 'https://ustawi-1.vercel.app/',
         repo: 'https://github.com/captainblair/USTAWI1'
+    },
+    {
+        title: 'SchoolSys | School Management & Operations Platform',
+        stack: ['Python', 'Django', 'PostgreSQL', 'Render', 'TailwindCSS'],
+        impact:
+            'Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards to manage multi-tiered user streams (students, teachers, administrators). Optimized database schemas for tracking profile approvals, attendance, financial fee records, and library loans into a unified platform.',
+        repo: 'https://github.com/captainblair/schoolsys1'
     }
 ]
 
@@ -183,10 +182,12 @@ export const PrintResume: React.FC = () => (
                             <span className={styles.contactLabel}>{'Technical Stack:'}</span> {formatList(project.stack)}
                         </p>
                         <p className={styles.duties}>{project.impact}</p>
-                        <p className={styles.projectLink}>
-                            <span className={styles.contactLabel}>{'Live Link:'}</span>{' '}
-                            <ResumeLink href={project.link}>{project.link}</ResumeLink>
-                        </p>
+                        {'link' in project && project.link && (
+                            <p className={styles.projectLink}>
+                                <span className={styles.contactLabel}>{'Live Link:'}</span>{' '}
+                                <ResumeLink href={project.link}>{project.link}</ResumeLink>
+                            </p>
+                        )}
                         {'repo' in project && project.repo && (
                             <p className={styles.projectLink}>
                                 <span className={styles.contactLabel}>{'Repository:'}</span>{' '}
