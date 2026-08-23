@@ -113,17 +113,6 @@ export const Introduce: React.FC = () => {
                         {'View My Work'}
                     </a>
                     <a
-                        href={'/'}
-                        className={styles.ctaSecondary}
-                        title={'Opens print dialog — turn Headers and footers OFF for a clean PDF without dates or URLs'}
-                        onClick={(event) => {
-                            event.preventDefault()
-                            printCv()
-                        }}
-                    >
-                        {'Download CV'}
-                    </a>
-                    <a
                         href={'#contact'}
                         className={styles.ctaTertiary}
                     >
