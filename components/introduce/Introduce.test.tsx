@@ -63,7 +63,7 @@ describe('Introduce Component', () => {
     it('renders CTA buttons', () => {
         render(<Introduce />)
         expect(screen.getByText('View My Work')).toBeInTheDocument()
-        expect(screen.getByRole('link', { name: 'Download CV' })).toHaveAttribute('href', '/tony_wangolo_cv.pdf')
+        expect(screen.getByText('Download CV')).toBeInTheDocument()
         expect(screen.getByText('Contact Me')).toBeInTheDocument()
     })
 })

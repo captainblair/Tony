@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { Icon, IconTypes } from '@/components'
 import tonyPic from '@/public/tony.jpeg'
-import { useSiteData } from '@/utils'
+import { printCv, useSiteData } from '@/utils'
 
 import styles from './styles.module.sass'
 
@@ -113,9 +113,13 @@ export const Introduce: React.FC = () => {
                         {'View My Work'}
                     </a>
                     <a
-                        href={'/tony_wangolo_cv.pdf'}
-                        download
+                        href={'/'}
                         className={styles.ctaSecondary}
+                        title={'Opens print dialog — turn Headers and footers OFF for a clean PDF without dates or URLs'}
+                        onClick={(event) => {
+                            event.preventDefault()
+                            printCv()
+                        }}
                     >
                         {'Download CV'}
                     </a>
