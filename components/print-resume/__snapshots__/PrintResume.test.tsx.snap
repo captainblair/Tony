@@ -8,14 +8,6 @@ exports[`PrintResume matches snapshot 1`] = `
   >
     <div>
       <div>
-        <img
-          alt="Tony Wangolo Inganga"
-          height="120"
-          src="/tony-cv.jpg"
-          width="120"
-        />
-      </div>
-      <div>
         <h1>
           Tony Wangolo Inganga
         </h1>

@@ -133,16 +133,6 @@ export const PrintResume: React.FC = () => (
         aria-hidden={'true'}
     >
         <div className={styles.header}>
-            <div className={styles.tony}>
-                {/* Native img: reliable in print, stays in header only */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                    src={'/tony-cv.jpg'}
-                    alt={'Tony Wangolo Inganga'}
-                    width={120}
-                    height={120}
-                />
-            </div>
             <div className={styles.identity}>
                 <h1 className={styles.name}>{'Tony Wangolo Inganga'}</h1>
                 <p className={styles.titleRole}>
