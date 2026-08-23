@@ -92,7 +92,9 @@ export const Introduce: React.FC = () => {
 
                 <div className={styles.description}>
                     <p>
-                        {'Full Stack Software Engineer specializing in scalable backend architecture, relational database design, and end-to-end web deployment. I build production-ready systems with'}{' '}
+                        {
+                            'Full Stack Software Engineer specializing in scalable backend architecture, relational database design, and end-to-end web deployment. I build production-ready systems with'
+                        }{' '}
                         <b>{'Python (Django/Flask)'}</b>
                         {' and '}
                         <b>{'JavaScript/TypeScript'}</b>
@@ -111,6 +113,13 @@ export const Introduce: React.FC = () => {
                         className={styles.ctaPrimary}
                     >
                         {'View My Work'}
+                    </a>
+                    <a
+                        href={'/tony_wangolo_cv.pdf'}
+                        download
+                        className={styles.ctaSecondary}
+                    >
+                        {'Download CV'}
                     </a>
                     <a
                         href={'#contact'}
