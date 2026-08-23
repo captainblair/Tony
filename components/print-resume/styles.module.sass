@@ -111,33 +111,21 @@
             font-size: 11px
             font-weight: 500
             color: #000 !important
-            margin: 0
+            margin: 0 0 10px
+            padding-bottom: 8px
+            border-bottom: 1px solid #ddd
             line-height: 1.55
 
-        .resumeSection
-            margin-bottom: 12px
-            break-inside: avoid-page
-            page-break-inside: avoid
+        .body
+            display: flex
+            gap: 16px
+            align-items: flex-start
 
-        .achievementGrid
-            display: grid
-            grid-template-columns: repeat(2, minmax(0, 1fr))
-            gap: 7px
+        .experience
+            flex: 0 0 63%
 
-        .achievement
-            border: 1px solid #ddd
-            border-left: 3px solid #ffc107
-            padding: 6px 8px
-
-            h3
-                font-size: 10.5px
-                font-weight: 700
-                margin: 0 0 2px
-
-            p
-                font-size: 10px
-                margin: 0
-                line-height: 1.4
+        .skills
+            flex: 1
 
         .sectionTitle
             font-size: 13px
@@ -159,7 +147,6 @@
             margin-bottom: 2px
 
         .period
-            display: inline-block
             font-size: 10px
             font-weight: 700
             color: #000 !important
