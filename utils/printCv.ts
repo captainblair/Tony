@@ -36,7 +36,6 @@ export const printCv = (): void => {
     }
 
     window.addEventListener('afterprint', restore)
-    window.setTimeout(restore, 5000)
 
     requestAnimationFrame(() => {
         window.print()
