@@ -110,7 +110,6 @@
             "image": "/images/school1.png",
             "title": "SchoolSys — School Management & Operations Platform",
             "github": "https://github.com/captainblair/schoolsys1",
-            "statusNotice": "Database Migration in Progress — Some project features may be temporarily unavailable.",
             "description": "Built and shipped a production-ready, full-stack enterprise school administration platform. Architected granular role-based dashboards for students, teachers, and administrators. Optimized database schemas for profile approvals, attendance, financial fee records, and library loans into a unified platform."
         }
     ],
