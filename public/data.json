@@ -96,7 +96,6 @@
             "title": "Ustawi — The Smart Rental & Property Platform",
             "link": "https://ustawi-1.vercel.app/",
             "github": "https://github.com/captainblair/USTAWI1",
-            "statusNotice": "Database Migration in Progress — Some project features may be temporarily unavailable.",
             "description": "Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance efficiently while respecting tight environment resource baselines."
         },
         {
