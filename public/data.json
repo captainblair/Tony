@@ -106,6 +106,12 @@
             "description": "Built a modern, professional platform for an international consulting firm specializing in business strategy, geopolitical intelligence, and global talent recruitment."
         },
         {
+            "image": "/images/nexa1.png",
+            "title": "Nexa",
+            "link": "https://nexa-dqg2.onrender.com/",
+            "description": "Built and shipped a production-ready studio platform designed to showcase Nexa Nairobi’s engineering capabilities and portfolio. Architected a responsive, editorial-style experience with modular sections for services, engineering principles, project case studies, and contact workflows. Implemented performant page transitions, motion-driven interactions, and a maintainable component architecture using Next.js, TypeScript, Tailwind CSS, and Framer Motion."
+        },
+        {
             "image": "/images/school1.png",
             "title": "SchoolSys — School Management & Operations Platform",
             "github": "https://github.com/captainblair/schoolsys1",
