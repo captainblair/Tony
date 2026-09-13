@@ -99,6 +99,13 @@
             "description": "Developed a full-stack, two-sided rental marketplace matching tenants with property managers. Optimized database queries and implemented serverless PostgreSQL schema connections to scale performance efficiently while respecting tight environment resource baselines."
         },
         {
+            "image": "/images/Amani.png",
+            "title": "AmaniBuild",
+            "link": "https://amani-build.vercel.app/",
+            "github": "https://github.com/captainblair/AmaniBuild/",
+            "description": "Built a full-stack construction management platform designed for Kenyan construction teams, providing centralized management of construction projects, workforce, materials, procurement, documents, and site activities. The system includes role-based workflows for project management, daily site diaries, attendance tracking, procurement and inventory management, task scheduling, document management, and analytics, with separate capabilities for contractors, project teams, clients, and consultants."
+        },
+        {
             "image": "/images/travionalive.png",
             "title": "Traviona Consulting — Global Strategy, Insights & Talent Solutions",
             "link": "https://travionaconsulting.top/",
