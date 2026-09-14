@@ -89,7 +89,7 @@
             "title": "ODM Comrades Platform — Centralized University Registration Hub",
             "link": "https://occ.co.ke/",
             "github": "https://github.com/osumba404/occ",
-            "description": "Led the engineering for a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
+            "description": "Led the engineering of a centralized university registration platform built with PHP and Laravel, delivering responsive registration workflows and role-aware dashboards that supported secure onboarding of 800+ active student records with zero downtime. Built validation-driven UI layers and multi-campus data capture flows that improved operational data extraction efficiency by 40%."
         },
         {
             "image": "/images/Ustawilive.png",
@@ -129,7 +129,7 @@
         {
             "period": ["01/01/2026"],
             "role": "ICT Lead",
-            "duties": "Led the engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime. Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university ecosystems.",
+            "duties": "Led the engineering of a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime. Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university ecosystems.",
             "skills": [
                 {
                     "area": "Frontend",

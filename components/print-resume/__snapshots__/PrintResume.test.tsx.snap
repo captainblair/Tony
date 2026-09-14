@@ -157,7 +157,7 @@ exports[`PrintResume matches snapshot 1`] = `
           </h3>
           <ul>
             <li>
-              Led the engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.
+              Led the engineering of a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.
             </li>
             <li>
               Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university ecosystems, improving operational data extraction efficiency by 40%.
