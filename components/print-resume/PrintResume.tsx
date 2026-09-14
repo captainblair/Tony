@@ -77,7 +77,7 @@ const EXPERIENCE = [
         org: 'ODM Comrades Chapter',
         period: 'January 2026 | Present | Nairobi, Kenya',
         duties: [
-            'Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.',
+            'Led the engineering for a centralized university digital registration platform built with PHP and Laravel, delivering responsive, role-aware interfaces and multi-step registration workflows that supported secure onboarding of 800+ active student records with zero downtime.',
             'Engineered client-side validation layers, dashboard UI components, and data capture flows across multi-campus university ecosystems, improving operational data extraction efficiency by 40%.',
             'Collaborated with backend engineers to integrate Laravel REST endpoints and structure high-volume concurrent submission interfaces with clean, maintainable frontend architecture.'
         ]

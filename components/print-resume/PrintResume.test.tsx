@@ -117,7 +117,7 @@ describe('PrintResume', () => {
         render(<PrintResume />)
         expect(
             screen.getByText(
-                /Led frontend engineering for a centralized university digital registration platform built with PHP and Laravel/
+                /Led the engineering for a centralized university digital registration platform built with PHP and Laravel/
             )
         ).toBeInTheDocument()
         expect(screen.getByText(/improving operational data extraction efficiency by 40%/)).toBeInTheDocument()
